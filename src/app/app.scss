@@ -1,0 +1,25 @@
+main {
+  display: block;
+  min-height: 60vh;
+}
+
+.whm-skip-link {
+  position: fixed;
+  top: -60px;
+  left: var(--wh-space-3);
+  z-index: 100;
+  background: var(--wh-navy-900);
+  color: var(--wh-white);
+  font-family: var(--wh-font-display);
+  font-weight: 600;
+  font-size: var(--wh-text-sm);
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--wh-radius-sm);
+  transition: top var(--wh-duration-fast) var(--wh-ease);
+}
+
+/* Only ever visible when reached via keyboard — a mouse/touch user
+   never sees it appear. */
+.whm-skip-link:focus {
+  top: var(--wh-space-3);
+}

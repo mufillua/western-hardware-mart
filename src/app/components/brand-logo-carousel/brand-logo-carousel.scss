@@ -1,0 +1,105 @@
+.whm-logo-carousel {
+  overflow: hidden;
+  /* Fades the track edges so logos entering/leaving don't hard-cut —
+     a small but real "premium" detail on infinite marquees. */
+  mask-image: linear-gradient(90deg, transparent 0, #000 8%, #000 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 8%, #000 92%, transparent 100%);
+}
+
+.whm-logo-carousel__track {
+  display: flex;
+  align-items: center;
+  gap: var(--wh-space-6);
+  width: max-content;
+  animation: whm-logo-scroll 28s linear infinite;
+}
+
+/* Pause on hover, resume on mouse-leave — animation-play-state does
+   this for free, no JS needed. */
+.whm-logo-carousel:hover .whm-logo-carousel__track {
+  animation-play-state: paused;
+}
+
+@keyframes whm-logo-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.whm-logo-carousel__item {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  height: 84px;
+  background: var(--wh-white);
+  border: 1px solid var(--wh-border);
+  border-radius: var(--wh-radius-md);
+  box-shadow: var(--wh-shadow-sm);
+  padding: var(--wh-space-3);
+  transition: transform var(--wh-duration-base) var(--wh-ease),
+    box-shadow var(--wh-duration-base) var(--wh-ease);
+
+  &:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: var(--wh-shadow-md);
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+/* Fallback for a brand with no logo file — a clean typographic lockup,
+   not a fabricated logo graphic. */
+.whm-logo-carousel__text {
+  font-family: var(--wh-font-display);
+  font-weight: 800;
+  font-size: var(--wh-text-md);
+  letter-spacing: 0.02em;
+  color: var(--wh-navy-900);
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .whm-logo-carousel__item {
+    width: 140px;
+    height: 72px;
+  }
+}
+
+@media (max-width: 560px) {
+  .whm-logo-carousel__track {
+    gap: var(--wh-space-4);
+  }
+  .whm-logo-carousel__item {
+    width: 120px;
+    height: 64px;
+    padding: var(--wh-space-2);
+  }
+}
+
+/* Static row instead of motion for anyone who's asked for reduced
+   motion — logos still visible and legible, just not scrolling. */
+@media (prefers-reduced-motion: reduce) {
+  .whm-logo-carousel {
+    mask-image: none;
+    -webkit-mask-image: none;
+    overflow-x: auto;
+  }
+  .whm-logo-carousel__track {
+    animation: none;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: center;
+  }
+  /* The duplicated (aria-hidden) copy exists only to make the motion
+     loop seamless — with no motion, showing it twice is just noise. */
+  .whm-logo-carousel__item[aria-hidden='true'] {
+    display: none;
+  }
+}

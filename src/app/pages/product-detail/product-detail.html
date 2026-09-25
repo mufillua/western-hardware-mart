@@ -1,0 +1,96 @@
+<section class="whm-pd-hero">
+  <div class="wh-container whm-pd">
+    @if (product(); as p) {
+      <whm-breadcrumbs [items]="breadcrumbs()" />
+
+      <div class="whm-pd__layout wh-reveal" whmReveal>
+        <div class="whm-pd__gallery">
+          <whm-product-gallery [images]="p.images" [modelCode]="p.modelCode" />
+
+          @if (catalogue(); as cat) {
+            <a class="whm-pd__catalogue-link" [href]="cat.url" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+              </svg>
+              <span>
+                <strong>{{ brandName() }} Catalogue</strong>
+                <small>PDF · Manufacturer catalogue</small>
+              </span>
+              <span class="whm-pd__catalogue-open">Open →</span>
+            </a>
+          }
+        </div>
+
+        <div class="whm-pd__info">
+          <span class="wh-eyebrow">{{ categoryName() }}</span>
+          <h1>{{ p.name }}</h1>
+
+          <dl class="whm-pd__meta">
+            <div>
+              <dt>Brand</dt>
+              <dd>{{ brandName() }}</dd>
+            </div>
+            <div>
+              <dt>Model / Product Code</dt>
+              <dd>{{ p.modelCode }}</dd>
+            </div>
+            @if (p.sizeRange) {
+              <div>
+                <dt>Size Range</dt>
+                <dd>{{ p.sizeRange }}</dd>
+              </div>
+            }
+          </dl>
+
+          <p class="whm-pd__desc">{{ p.shortDescription }}</p>
+
+          @if (p.specifications.length > 0) {
+            <h2 class="whm-pd__specs-heading">Product Information</h2>
+            <whm-spec-table [specifications]="p.specifications" />
+          } @else {
+            <p class="whm-pd__no-specs">No specifications were published for this product in the source catalogue.</p>
+          }
+
+          <div class="whm-pd__enquiry">
+            <span class="wh-eyebrow">Direct Enquiry</span>
+            <h2>Interested in this product?</h2>
+            <p>Get pricing, availability and product details from Western Hardware Mart.</p>
+            <div class="whm-pd__enquiry-actions">
+              <whm-whatsapp-button label="WhatsApp Enquiry" [message]="whatsappMessage()" [block]="true" />
+              <whm-email-button
+                label="Request Quote by Email"
+                [subject]="emailSubject()"
+                [body]="emailBody()"
+                [block]="true"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a routerLink="/products" class="whm-pd__back">← Back to Products</a>
+    } @else {
+      <div class="whm-pd__not-found">
+        <h1>Product not found</h1>
+        <p>This product may have been removed or the link is incorrect.</p>
+        <a routerLink="/products" class="wh-btn wh-btn--primary">Back to Products</a>
+      </div>
+    }
+  </div>
+</section>
+
+@if (product() && relatedProducts().length > 0) {
+  <section class="wh-section">
+    <div class="wh-container">
+      <div class="wh-section-head wh-reveal" whmReveal>
+        <h2>Related in {{ categoryName() }}</h2>
+      </div>
+      <div class="wh-grid whm-pd__related-grid wh-reveal-stagger" whmReveal>
+        @for (related of relatedProducts(); track related.id) {
+          <whm-product-card [product]="related" />
+        }
+      </div>
+    </div>
+  </section>
+}

@@ -1,0 +1,6 @@
+/* See whatsapp-button.scss for why this is `block` and not `contents` —
+   product-detail's enquiry-actions grows this host directly via a
+   `> *` selector, which needs a normal box to size. */
+:host {
+  display: block;
+}

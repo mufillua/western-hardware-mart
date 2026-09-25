@@ -1,0 +1,100 @@
+.whm-footer {
+  background: var(--wh-navy-900);
+  color: var(--wh-grey-300);
+  padding-top: var(--wh-space-6);
+}
+
+.whm-footer__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: var(--wh-space-5);
+  padding-bottom: var(--wh-space-5);
+}
+
+.whm-footer__about {
+  img { margin-bottom: var(--wh-space-2); }
+  h4 { color: var(--wh-white); margin-bottom: var(--wh-space-1); }
+  p { color: var(--wh-grey-300); font-size: var(--wh-text-sm); margin-bottom: var(--wh-space-1); }
+}
+
+.whm-footer__location { color: var(--wh-grey-500) !important; }
+
+.whm-footer h4 {
+  color: var(--wh-white);
+  font-size: var(--wh-text-sm);
+  text-transform: none;
+  margin-bottom: var(--wh-space-2);
+}
+
+.whm-footer ul li {
+  margin-bottom: var(--wh-space-1);
+  font-size: var(--wh-text-sm);
+}
+
+.whm-footer a {
+  color: var(--wh-grey-300);
+}
+.whm-footer a:hover {
+  color: var(--wh-white);
+}
+
+.whm-footer__contact li { color: var(--wh-grey-300); }
+
+.whm-footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: var(--wh-space-3) var(--wh-space-4);
+  font-size: var(--wh-text-xs);
+  color: var(--wh-grey-500);
+}
+
+@media (max-width: 900px) {
+  .whm-footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 560px) {
+  .whm-footer__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.whm-footer__social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1.25rem;
+}
+
+.whm-footer__social a {
+  width: 42px;
+  height: 42px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.06);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  transition:
+    color var(--wh-duration-fast) var(--wh-ease),
+    background-color var(--wh-duration-fast) var(--wh-ease),
+    border-color var(--wh-duration-fast) var(--wh-ease),
+    transform var(--wh-duration-fast) var(--wh-ease);
+}
+
+.whm-footer__social a:hover {
+  color: var(--wh-white);
+  background: var(--wh-steel-600);
+  border-color: var(--wh-steel-600);
+  transform: translateY(-3px);
+}
+
+.whm-footer__social svg {
+  display: block;
+}

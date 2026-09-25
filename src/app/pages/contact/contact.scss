@@ -1,0 +1,287 @@
+.whm-contact-hero {
+  padding: var(--wh-space-7) 0 var(--wh-space-6);
+}
+
+/* ============ Main grid: quick-contact + form ============ */
+.whm-contact-main {
+  padding-top: var(--wh-space-6);
+}
+
+.whm-contact-main__grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: var(--wh-space-5);
+  align-items: start;
+}
+
+.whm-contact-quick {
+  display: flex;
+  flex-direction: column;
+  gap: var(--wh-space-3);
+  min-width: 0;
+}
+
+.whm-contact-quick__card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--wh-space-3);
+  background: var(--wh-surface);
+  border: 1px solid var(--wh-border);
+  border-radius: var(--wh-radius-md);
+  box-shadow: var(--wh-shadow-sm);
+  padding: var(--wh-space-3);
+  color: inherit;
+  transition: transform var(--wh-duration-base) var(--wh-ease),
+    box-shadow var(--wh-duration-base) var(--wh-ease);
+
+  &:hover {
+    text-decoration: none;
+    transform: translateY(-3px);
+    box-shadow: var(--wh-shadow-md);
+  }
+
+  /* The icon + text-block div are flex children — without min-width:0
+     the text block refuses to shrink below its content's natural
+     width. A long unbroken string (the email address) then forces
+     this card, and with it the whole page, wider than the viewport —
+     that's what was clipping this card AND the unrelated "Good to
+     Know" box below it on mobile: the whole page had stretched, not
+     just this card. */
+  > div {
+    min-width: 0;
+  }
+
+  strong {
+    display: block;
+    font-family: var(--wh-font-display);
+    font-size: var(--wh-text-md);
+    color: var(--wh-navy-900);
+    margin: 2px 0;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+}
+
+.whm-contact-quick__card--pending {
+  cursor: default;
+  &:hover { transform: none; box-shadow: var(--wh-shadow-sm); }
+  strong { font-size: var(--wh-text-sm); color: var(--wh-grey-700); }
+}
+
+.whm-contact-quick__icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--wh-radius-sm);
+  color: var(--wh-white);
+}
+.whm-contact-quick__icon--wa {
+  background: var(--wh-whatsapp);
+}
+.whm-contact-quick__icon--email {
+  background: var(--wh-indigo-700);
+}
+
+.whm-contact-quick__label {
+  display: block;
+  font-size: var(--wh-text-xs);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--wh-accent-dark);
+}
+
+.whm-contact-quick__note {
+  font-size: var(--wh-text-xs);
+  color: var(--wh-text-muted);
+}
+
+.whm-contact-quick__tips {
+  background: var(--wh-surface-alt);
+  border: 1px solid var(--wh-steel-100);
+  border-left: 3px solid var(--wh-accent);
+  border-radius: var(--wh-radius-md);
+  padding: var(--wh-space-4) var(--wh-space-3) var(--wh-space-3);
+  box-shadow: var(--wh-shadow-sm);
+
+  .whm-contact-quick__label {
+    color: var(--wh-accent-dark);
+    margin-bottom: var(--wh-space-2);
+    display: block;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--wh-space-2);
+    /* was flush against the card's own bottom edge with no closing
+       space, which is what cut the last line off in the screenshot */
+    margin-bottom: var(--wh-space-1);
+  }
+
+  li {
+    font-size: var(--wh-text-sm);
+    color: var(--wh-grey-700);
+    line-height: 1.5;
+    padding-left: var(--wh-space-3);
+    position: relative;
+
+    &::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--wh-accent);
+    }
+  }
+}
+
+/* ============ Quote form ============ */
+.whm-contact-form {
+  min-width: 0;
+  background: var(--wh-surface);
+  border: 1px solid var(--wh-border);
+  border-radius: var(--wh-radius-lg);
+  box-shadow: var(--wh-shadow-md);
+  padding: var(--wh-space-5);
+
+  h2 {
+    margin-top: 2px;
+    margin-bottom: var(--wh-space-1);
+  }
+}
+
+.whm-contact-form__note {
+  color: var(--wh-grey-700);
+  font-size: var(--wh-text-sm);
+  margin-bottom: var(--wh-space-4);
+}
+
+.whm-contact-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--wh-space-3);
+}
+
+.whm-contact-form__row label,
+.whm-contact-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: var(--wh-font-display);
+  font-size: var(--wh-text-sm);
+  font-weight: 600;
+  color: var(--wh-grey-700);
+  margin-bottom: var(--wh-space-3);
+
+  span[aria-hidden] {
+    color: var(--wh-accent-dark);
+  }
+}
+
+.whm-contact-form input,
+.whm-contact-form select,
+.whm-contact-form textarea {
+  font-family: var(--wh-font-body);
+  font-weight: 400;
+  font-size: var(--wh-text-base);
+  color: var(--wh-text);
+  padding: 0.65rem 0.85rem;
+  border: 1.5px solid var(--wh-border);
+  border-radius: var(--wh-radius-sm);
+  background: var(--wh-white);
+  transition: border-color var(--wh-duration-fast) var(--wh-ease),
+    box-shadow var(--wh-duration-fast) var(--wh-ease);
+
+  &:focus {
+    outline: none;
+    border-color: var(--wh-accent);
+    box-shadow: 0 0 0 4px rgba(28, 127, 168, 0.14);
+  }
+}
+
+.whm-contact-form textarea {
+  resize: vertical;
+  min-height: 110px;
+  font-family: var(--wh-font-body);
+}
+
+.whm-contact-form__submit {
+  margin-top: var(--wh-space-1);
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none !important;
+    box-shadow: none !important;
+  }
+}
+
+/* ============ How to Reach (unchanged from before) ============ */
+.whm-contact__reach {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: var(--wh-space-5);
+  align-items: start;
+}
+
+.whm-contact__details {
+  dl {
+    display: flex;
+    flex-direction: column;
+    gap: var(--wh-space-3);
+    margin: 0 0 var(--wh-space-4);
+    padding: var(--wh-space-3);
+    background: var(--wh-surface);
+    border: 1px solid var(--wh-border);
+    border-radius: var(--wh-radius-md);
+    box-shadow: var(--wh-shadow-sm);
+  }
+
+  dt {
+    font-size: var(--wh-text-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--wh-grey-500);
+    margin-bottom: 2px;
+  }
+
+  dd {
+    margin: 0;
+    font-family: var(--wh-font-display);
+    font-weight: 600;
+    color: var(--wh-navy-900);
+    line-height: 1.4;
+  }
+}
+
+.whm-contact__map {
+  border-radius: var(--wh-radius-md);
+  overflow: hidden;
+  border: 1px solid var(--wh-border);
+  box-shadow: var(--wh-shadow-sm);
+  aspect-ratio: 4 / 3;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .whm-contact-main__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .whm-contact__reach {
+    grid-template-columns: 1fr;
+  }
+  .whm-contact-form__row {
+    grid-template-columns: 1fr;
+  }
+}

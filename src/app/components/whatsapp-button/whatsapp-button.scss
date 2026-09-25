@@ -1,0 +1,78 @@
+.whm-wa-sticky {
+  display: none;
+}
+
+/* lg variant used in the hero — exact dimensions per spec, matching
+   the primary button's height so both hero CTAs sit flush together. */
+.wh-btn--lg {
+  width: 335px;
+  height: 58px;
+  padding: 0 var(--wh-space-4);
+  justify-content: center;
+}
+
+/* Custom elements default to display:inline, which means when this
+   component is a flex child sized via a parent's `> *` rule (e.g.
+   product-detail's enquiry actions), the host needs a normal block box
+   to actually receive that sizing. Kept as `block` (not `contents`) so
+   direct-child flex rules targeting the host keep working. Where a
+   parent instead grows the *inner* .wh-btn via a descendant selector
+   (e.g. product-card's actions row), that selector is fixed on its own
+   side to target `> *` too, for the same reason. */
+:host {
+  display: block;
+}
+
+@media (max-width: 720px) {
+  .whm-wa-sticky {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: var(--wh-space-3);
+    bottom: var(--wh-space-3);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--wh-whatsapp);
+    color: var(--wh-white);
+    box-shadow: 0 4px 14px rgba(22, 35, 47, 0.28);
+    z-index: 40;
+    transition: transform var(--wh-duration-fast) var(--wh-ease);
+  }
+
+  .whm-wa-sticky:hover {
+    transform: scale(1.06);
+    box-shadow: 0 6px 20px rgba(22, 35, 47, 0.34);
+  }
+
+  .whm-wa-sticky:active {
+    transform: scale(0.94);
+  }
+
+  /* A single expanding ring every few seconds — a quiet "this is
+     tappable" cue, not a constant bounce. isolate on a pseudo-element so
+     it never affects the button's own hit-box or icon. */
+  .whm-wa-sticky::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 2px solid var(--wh-whatsapp);
+    opacity: 0;
+    animation: whm-wa-pulse 3.2s ease-out infinite;
+  }
+}
+
+@keyframes whm-wa-pulse {
+  0% { transform: scale(1); opacity: 0.55; }
+  70% { transform: scale(1.55); opacity: 0; }
+  100% { transform: scale(1.55); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .whm-wa-sticky::after {
+    animation: none;
+    display: none;
+  }
+}

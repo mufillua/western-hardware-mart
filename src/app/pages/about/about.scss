@@ -1,0 +1,116 @@
+.whm-about {
+  padding-top: var(--wh-space-6);
+}
+
+.whm-about__intro {
+  max-width: 68ch;
+  margin-bottom: var(--wh-space-6);
+
+  p {
+    color: var(--wh-grey-700);
+  }
+
+  a {
+    font-weight: 600;
+  }
+}
+
+.whm-about__values {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.whm-about__value {
+  background: var(--wh-white);
+  border: 1px solid var(--wh-border);
+  border-top: 3px solid var(--wh-accent);
+  border-radius: var(--wh-radius-md);
+  box-shadow: var(--wh-shadow-sm);
+  padding: var(--wh-space-3) var(--wh-space-3) var(--wh-space-4);
+  transition: transform var(--wh-duration-base) var(--wh-ease),
+    box-shadow var(--wh-duration-base) var(--wh-ease);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--wh-shadow-lg);
+  }
+
+  h3 { margin-bottom: var(--wh-space-1); }
+  p { color: var(--wh-grey-700); margin-bottom: 0; font-size: var(--wh-text-sm); }
+}
+
+.whm-about__team {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 640px;
+}
+
+.whm-about__member {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.whm-about__member-initial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--wh-sky-50);
+  color: var(--wh-steel-600);
+  font-family: var(--wh-font-display);
+  font-weight: 800;
+  font-size: var(--wh-text-lg);
+  margin-bottom: var(--wh-space-2);
+}
+
+.whm-about__member-role {
+  font-size: var(--wh-text-sm);
+  color: var(--wh-indigo-700);
+  font-weight: 600;
+}
+
+.whm-about__cta-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--wh-space-5);
+  flex-wrap: wrap;
+
+  h2 { max-width: 32ch; margin-bottom: var(--wh-space-1); }
+  p { color: var(--wh-grey-700); margin-bottom: 0; }
+}
+
+.whm-about__cta {
+  position: relative;
+  overflow: hidden;
+}
+
+.whm-about__cta-glow {
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  top: 50%;
+  right: -10%;
+  transform: translateY(-50%);
+  background: radial-gradient(circle, rgba(59, 150, 190, 0.25) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.whm-about__cta-actions {
+  display: flex;
+  gap: var(--wh-space-2);
+  flex-wrap: wrap;
+}
+
+@media (max-width: 760px) {
+  .whm-about__values {
+    grid-template-columns: 1fr;
+  }
+  .whm-about__team {
+    grid-template-columns: 1fr;
+  }
+}

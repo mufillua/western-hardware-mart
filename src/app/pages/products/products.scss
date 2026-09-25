@@ -1,0 +1,44 @@
+.whm-products-page {
+  padding: var(--wh-space-6) 0 var(--wh-space-7);
+}
+
+.whm-products-page__controls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--wh-space-3);
+  background: var(--wh-surface-alt);
+  border: 1px solid var(--wh-border);
+  border-radius: var(--wh-radius-md);
+  padding: var(--wh-space-4);
+  margin-bottom: var(--wh-space-4);
+}
+
+.whm-products-page__meta {
+  font-size: var(--wh-text-sm);
+  color: var(--wh-grey-700);
+  margin-bottom: var(--wh-space-3);
+}
+
+.whm-products-page__grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.whm-products-page__empty {
+  text-align: center;
+  padding: var(--wh-space-7) var(--wh-space-4);
+  border: 1px dashed var(--wh-border);
+  border-radius: var(--wh-radius-md);
+
+  h3 { margin-bottom: var(--wh-space-1); }
+  p { color: var(--wh-grey-700); margin: 0 auto var(--wh-space-3); }
+}
+
+@media (max-width: 1024px) {
+  .whm-products-page__grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 760px) {
+  .whm-products-page__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .whm-products-page__grid { grid-template-columns: 1fr; }
+}

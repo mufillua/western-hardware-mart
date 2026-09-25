@@ -1,0 +1,23 @@
+<div class="whm-logo-carousel">
+  <div class="whm-logo-carousel__track">
+    <!-- Rendered twice for the seamless loop — see component doc comment. aria-hidden on the second copy so screen readers only announce each logo once. -->
+    @for (brand of brands; track brand.name) {
+      <div class="whm-logo-carousel__item">
+        @if (brand.logo) {
+          <img [src]="brand.logo" [alt]="brand.name" loading="lazy" />
+        } @else {
+          <span class="whm-logo-carousel__text">{{ brand.name }}</span>
+        }
+      </div>
+    }
+    @for (brand of brands; track brand.name + '-dup') {
+      <div class="whm-logo-carousel__item" aria-hidden="true">
+        @if (brand.logo) {
+          <img [src]="brand.logo" alt="" loading="lazy" />
+        } @else {
+          <span class="whm-logo-carousel__text">{{ brand.name }}</span>
+        }
+      </div>
+    }
+  </div>
+</div>

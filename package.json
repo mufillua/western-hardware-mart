@@ -1,0 +1,35 @@
+{
+  "name": "western-hardware-mart",
+  "version": "0.1.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "generate:sitemap": "node scripts/generate-sitemap.mjs",
+    "serve:ssr:western-hardware-mart": "node dist/western-hardware-mart/server/server.mjs"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/common": "20.3.31",
+    "@angular/compiler": "20.3.31",
+    "@angular/core": "20.3.31",
+    "@angular/forms": "20.3.31",
+    "@angular/platform-browser": "20.3.31",
+    "@angular/platform-server": "20.3.31",
+    "@angular/router": "20.3.31",
+    "@angular/ssr": "^20.3.37",
+    "express": "^5.1.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.6.0",
+    "zone.js": "~0.15.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^20.3.0",
+    "@angular/cli": "^20.3.0",
+    "@angular/compiler-cli": "20.3.31",
+    "@types/express": "^5.0.1",
+    "@types/node": "^20.17.19",
+    "typescript": "~5.8.0"
+  }
+}

@@ -1,0 +1,74 @@
+<section class="whm-about">
+  <div class="wh-container">
+    <div class="wh-section-head">
+      <span class="wh-eyebrow">About Us</span>
+      <h1>About {{ company.name }}</h1>
+      <p class="wh-lede">{{ company.tagline }} — {{ company.supportingLine }}, based in {{ company.city }}.</p>
+    </div>
+
+    <div class="whm-about__intro wh-reveal" whmReveal>
+      <p>
+        {{ company.name }} supplies hydraulic valves, couplings, tube fittings and process
+        instrumentation products in {{ company.city }}. We work as a supplier and stockist of
+        established manufacturer ranges — including {{ brandNamesJoined() }} — rather than
+        manufacturing the products ourselves.
+      </p>
+      <p>
+        Our catalogue currently lists <strong>{{ productCount }} products</strong> across
+        hydraulic valves, flow control and needle valves, check valves, couplings, tube
+        fittings, and pressure/temperature instrumentation — searchable and filterable on the
+        <a routerLink="/products">Products</a> page, with a WhatsApp or email enquiry option on
+        every listing.
+      </p>
+    </div>
+  </div>
+
+  <div class="wh-section wh-section--alt">
+    <div class="wh-container">
+      <div class="wh-section-head">
+        <span class="wh-eyebrow">Our Approach</span>
+        <h2>Why customers work with us</h2>
+      </div>
+      <div class="wh-grid whm-about__values wh-reveal-stagger" whmReveal>
+        @for (value of values; track value.title) {
+          <div class="whm-about__value">
+            <h3>{{ value.title }}</h3>
+            <p>{{ value.copy }}</p>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+
+  <div class="wh-section">
+    <div class="wh-container">
+      <div class="wh-section-head">
+        <span class="wh-eyebrow">Leadership</span>
+        <h2>Our Partners</h2>
+      </div>
+      <div class="wh-grid whm-about__team wh-reveal-stagger" whmReveal>
+        @for (member of team; track member.name) {
+          <div class="wh-card whm-about__member">
+            <span class="whm-about__member-initial" aria-hidden="true">{{ member.name.charAt(0) }}</span>
+            <h3>{{ member.name }}</h3>
+            <span class="whm-about__member-role">{{ member.role }}</span>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+
+  <div class="wh-section wh-section--dark whm-about__cta">
+    <div class="whm-about__cta-glow" aria-hidden="true"></div>
+    <div class="wh-container whm-about__cta-inner wh-reveal" whmReveal>
+      <div>
+        <h2>Have a question for the team?</h2>
+        <p>Reach out on WhatsApp or email and we'll get back to you directly.</p>
+      </div>
+      <div class="whm-about__cta-actions">
+        <whm-whatsapp-button label="Chat with us on WhatsApp" />
+        <whm-email-button label="Send an Email" />
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,30 @@
+<article class="whm-product-card">
+  <a class="whm-product-card__media" [routerLink]="['/products', product().slug]">
+    @if (product().images.length > 0) {
+      <img [src]="product().images[0]" [alt]="product().name" loading="lazy" />
+    } @else {
+      <span class="whm-product-card__placeholder" aria-hidden="true">{{ initials() }}</span>
+    }
+  </a>
+
+  <div class="whm-product-card__body">
+    <span class="whm-product-card__category">{{ categoryName() }}</span>
+    <h3 class="whm-product-card__name">
+      <a [routerLink]="['/products', product().slug]">{{ product().name }}</a>
+    </h3>
+    <span class="whm-product-card__brand">{{ brandName() }}</span>
+
+    @if (product().sizeRange) {
+      <span class="whm-product-card__range">{{ product().sizeRange }}</span>
+    }
+
+    <p class="whm-product-card__desc">{{ product().shortDescription }}</p>
+  </div>
+
+  <div class="whm-product-card__actions">
+    <a class="wh-btn wh-btn--outline whm-product-card__view" [routerLink]="['/products', product().slug]">
+      View Product
+    </a>
+    <whm-whatsapp-button label="Enquiry" [message]="whatsappMessage()" />
+  </div>
+</article>

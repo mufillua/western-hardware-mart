@@ -1,0 +1,51 @@
+<section class="whm-cat-hero">
+  <div class="wh-container">
+    <span class="wh-eyebrow">Full Catalogue</span>
+    <h1>Product Categories</h1>
+    <p class="wh-lede">
+      Every category below is one we actually carry products in — drawn directly from the
+      manufacturer catalogues, not a speculative product list.
+    </p>
+  </div>
+</section>
+
+<section class="wh-section">
+  <div class="wh-container">
+    <div class="whm-cat-grid wh-reveal-stagger" whmReveal>
+      @for (category of categories; track category.slug; let i = $index) {
+        <a class="whm-cat-card" [routerLink]="['/products']" [queryParams]="{ category: category.slug }">
+          <div class="whm-cat-card__media">
+            @if (imageFor(category.slug); as img) {
+              <img [src]="img" [alt]="category.name" loading="lazy" />
+            } @else {
+              <span class="whm-cat-card__icon" aria-hidden="true">{{ initialFor(category.name) }}</span>
+            }
+            <span class="whm-cat-card__index">{{ (i + 1) < 10 ? '0' + (i + 1) : (i + 1) }}</span>
+          </div>
+          <div class="whm-cat-card__body">
+            <h3>{{ category.name }}</h3>
+            <p>{{ category.description }}</p>
+            <span class="whm-cat-card__footer">
+              <span>{{ countFor(category.slug) }} products</span>
+              <span class="whm-cat-card__arrow" aria-hidden="true">→</span>
+            </span>
+          </div>
+        </a>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="wh-section wh-section--dark whm-cat-cta">
+  <div class="whm-cat-cta__glow" aria-hidden="true"></div>
+  <div class="wh-container whm-cat-cta__inner wh-reveal" whmReveal>
+    <div>
+      <h2>Don't see the category you need?</h2>
+      <p>We may still carry it — ask us directly and we'll check the full catalogue for you.</p>
+    </div>
+    <div class="whm-cat-cta__actions">
+      <whm-whatsapp-button label="Chat with us on WhatsApp" />
+      <whm-email-button label="Send an Email" />
+    </div>
+  </div>
+</section>

@@ -1,0 +1,87 @@
+.whm-filters {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--wh-space-3);
+  flex-wrap: wrap;
+}
+
+.whm-filters__field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 220px;
+  flex: 1;
+
+  span {
+    font-family: var(--wh-font-display);
+    font-size: var(--wh-text-xs);
+    font-weight: 600;
+    color: var(--wh-grey-700);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    transition: color var(--wh-duration-fast) var(--wh-ease);
+  }
+
+  select {
+    font-family: var(--wh-font-body);
+    font-size: var(--wh-text-base);
+    padding: 0.65rem 0.75rem;
+    border: 1.5px solid var(--wh-border);
+    border-radius: var(--wh-radius-sm);
+    background: var(--wh-white);
+    color: var(--wh-text);
+    transition: border-color var(--wh-duration-fast) var(--wh-ease),
+      box-shadow var(--wh-duration-fast) var(--wh-ease);
+
+    &:focus {
+      outline: none;
+      border-color: var(--wh-accent);
+      box-shadow: 0 0 0 4px rgba(28, 127, 168, 0.12);
+    }
+  }
+
+  /* A filter that's actually narrowing the results should look visibly
+     different from an idle "All Categories" dropdown — otherwise there's
+     no way to tell at a glance which filters are in effect. */
+  &--active {
+    span { color: var(--wh-accent-dark); }
+
+    select {
+      border-color: var(--wh-accent);
+      background: var(--wh-sky-50);
+      font-weight: 600;
+    }
+  }
+}
+
+.whm-filters__clear {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  background: transparent;
+  color: var(--wh-accent-dark);
+  font-family: var(--wh-font-display);
+  font-weight: 600;
+  font-size: var(--wh-text-sm);
+  cursor: pointer;
+  padding: 0.65rem 0;
+  white-space: nowrap;
+  transition: opacity var(--wh-duration-fast) var(--wh-ease);
+}
+.whm-filters__clear:hover {
+  opacity: 0.75;
+}
+
+.whm-filters__clear-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background: var(--wh-accent);
+  color: var(--wh-white);
+  font-size: 10px;
+}

@@ -1,0 +1,14 @@
+<nav class="whm-breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    @for (item of items(); track item.label; let last = $last) {
+      <li>
+        @if (item.link && !last) {
+          <a [routerLink]="item.link" [queryParams]="item.queryParams">{{ item.label }}</a>
+          <span class="whm-breadcrumbs__sep" aria-hidden="true">/</span>
+        } @else {
+          <span aria-current="page">{{ item.label }}</span>
+        }
+      </li>
+    }
+  </ol>
+</nav>

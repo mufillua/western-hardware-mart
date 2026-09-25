@@ -1,0 +1,111 @@
+.whm-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--wh-space-2);
+  margin-top: var(--wh-space-6);
+  flex-wrap: wrap;
+}
+
+.whm-pagination__nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 40px;
+  padding: 0 var(--wh-space-3);
+  border: 1.5px solid var(--wh-border);
+  border-radius: var(--wh-radius-sm);
+  background: var(--wh-white);
+  color: var(--wh-navy-900);
+  font-family: var(--wh-font-display);
+  font-weight: 600;
+  font-size: var(--wh-text-sm);
+  cursor: pointer;
+  transition: border-color var(--wh-duration-fast) var(--wh-ease),
+    background-color var(--wh-duration-fast) var(--wh-ease),
+    transform var(--wh-duration-fast) var(--wh-ease);
+
+  &:hover:not(:disabled) {
+    border-color: var(--wh-accent);
+    background: var(--wh-sky-50);
+    transform: translateY(-1px);
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+}
+
+.whm-pagination__pages {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  li {
+    display: flex;
+  }
+}
+
+.whm-pagination__page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+  padding: 0 4px;
+  border: 1.5px solid transparent;
+  border-radius: var(--wh-radius-sm);
+  background: transparent;
+  color: var(--wh-navy-900);
+  font-family: var(--wh-font-display);
+  font-weight: 600;
+  font-size: var(--wh-text-sm);
+  cursor: pointer;
+  transition: border-color var(--wh-duration-fast) var(--wh-ease),
+    background-color var(--wh-duration-fast) var(--wh-ease),
+    color var(--wh-duration-fast) var(--wh-ease);
+
+  &:hover {
+    border-color: var(--wh-border);
+    background: var(--wh-sky-50);
+  }
+}
+
+.whm-pagination__page--active {
+  background: var(--wh-gradient-accent);
+  border-color: transparent;
+  color: var(--wh-white);
+
+  &:hover {
+    background: var(--wh-gradient-accent);
+  }
+}
+
+.whm-pagination__ellipsis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 40px;
+  color: var(--wh-text-muted);
+  font-weight: 600;
+}
+
+/* Keep the whole control compact and tap-friendly on narrow screens —
+   the icon alone still communicates Previous/Next once the label is
+   hidden, and dropping it is what keeps this from ever needing to
+   scroll horizontally. */
+@media (max-width: 480px) {
+  .whm-pagination__nav-label {
+    display: none;
+  }
+  .whm-pagination__nav {
+    padding: 0 var(--wh-space-2);
+  }
+  .whm-pagination__page,
+  .whm-pagination__ellipsis {
+    min-width: 34px;
+    height: 36px;
+  }
+}

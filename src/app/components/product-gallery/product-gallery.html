@@ -1,0 +1,26 @@
+<div class="whm-gallery">
+  @if (images().length > 0) {
+    <div class="whm-gallery__main">
+      <img [src]="activeImage()" [alt]="modelCode()" />
+    </div>
+    @if (images().length > 1) {
+      <div class="whm-gallery__thumbs">
+        @for (img of images(); track img; let i = $index) {
+          <button
+            type="button"
+            class="whm-gallery__thumb"
+            [class.whm-gallery__thumb--active]="i === activeIndex()"
+            (click)="select(i)"
+          >
+            <img [src]="img" [alt]="modelCode() + ' image ' + (i + 1)" loading="lazy" />
+          </button>
+        }
+      </div>
+    }
+  } @else {
+    <div class="whm-gallery__placeholder">
+      <span class="whm-gallery__placeholder-code">{{ initials() }}</span>
+      <span class="whm-gallery__placeholder-note">Product photo coming soon</span>
+    </div>
+  }
+</div>

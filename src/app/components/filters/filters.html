@@ -1,0 +1,28 @@
+<div class="whm-filters">
+  <label class="whm-filters__field" [class.whm-filters__field--active]="!!categorySlug()">
+    <span>Category</span>
+    <select [value]="categorySlug() ?? ''" (change)="onCategoryChange($any($event.target).value)">
+      <option value="">All Categories</option>
+      @for (category of categories(); track category.slug) {
+        <option [value]="category.slug">{{ category.name }} ({{ categoryCount(category.slug) }})</option>
+      }
+    </select>
+  </label>
+
+  <label class="whm-filters__field" [class.whm-filters__field--active]="!!brandSlug()">
+    <span>Brand</span>
+    <select [value]="brandSlug() ?? ''" (change)="onBrandChange($any($event.target).value)">
+      <option value="">All Brands</option>
+      @for (brand of brands(); track brand.slug) {
+        <option [value]="brand.slug">{{ brand.name }} ({{ brandCount(brand.slug) }})</option>
+      }
+    </select>
+  </label>
+
+  @if (hasActiveFilters()) {
+    <button type="button" class="whm-filters__clear" (click)="clear()">
+      Clear filters
+      <span class="whm-filters__clear-count">{{ (categorySlug() ? 1 : 0) + (brandSlug() ? 1 : 0) }}</span>
+    </button>
+  }
+</div>

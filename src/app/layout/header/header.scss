@@ -1,0 +1,248 @@
+.whm-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid transparent;
+  box-shadow: none;
+  transition: background-color var(--wh-duration-base) var(--wh-ease),
+    box-shadow var(--wh-duration-base) var(--wh-ease),
+    border-color var(--wh-duration-base) var(--wh-ease);
+}
+
+.whm-header--scrolled {
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom-color: var(--wh-border);
+  box-shadow: var(--wh-shadow-sm);
+}
+
+.whm-header--scrolled .whm-header__bar {
+  height: var(--wh-header-height-scrolled);
+}
+
+.whm-header__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--wh-header-height);
+  gap: var(--wh-space-4);
+  transition: height var(--wh-duration-base) var(--wh-ease);
+}
+
+.whm-header__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--wh-space-2);
+  color: var(--wh-text);
+  min-width: 0;
+
+  &:hover { text-decoration: none; }
+}
+
+.whm-header__logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.whm-header__name {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  min-width: 0;
+
+  strong {
+    font-family: var(--wh-font-display);
+    font-size: var(--wh-text-md);
+    color: var(--wh-navy-900);
+    white-space: nowrap;
+  }
+
+  small {
+    font-size: var(--wh-text-xs);
+    color: var(--wh-text-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.whm-header__toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid var(--wh-border);
+  border-radius: var(--wh-radius-sm);
+  cursor: pointer;
+
+  span {
+    display: block;
+    height: 2px;
+    background: var(--wh-navy-900);
+    margin: 0 8px;
+  }
+}
+
+.whm-header__nav {
+  display: flex;
+  align-items: center;
+  gap: var(--wh-space-4);
+  font-family: var(--wh-font-display);
+  font-weight: 600;
+  font-size: var(--wh-text-sm);
+
+  a {
+    position: relative;
+    color: var(--wh-text);
+    white-space: nowrap;
+  }
+  a:hover { color: var(--wh-accent-dark); }
+
+  /* Animated underline: grows from the left on hover rather than just
+     appearing, so it reads as a deliberate cue, not a flicker. Only for
+     the plain text links — the quote button has its own filled-button
+     hover treatment and must not inherit this link underline or its
+     padding-bottom (which was throwing the button's box height off and
+     making it sit visibly lower than the surrounding nav text). */
+  a:not(.whm-header__phone):not(.whm-header__quote-btn) {
+    padding-bottom: 2px;
+  }
+  a:not(.whm-header__phone):not(.whm-header__quote-btn)::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: var(--wh-accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--wh-duration-fast) var(--wh-ease);
+  }
+  a:not(.whm-header__phone):not(.whm-header__quote-btn):hover::after {
+    transform: scaleX(1);
+  }
+
+  /* Active route gets a permanent accent, not just the hover underline —
+     so a visitor always knows which page they're on, not only where
+     their cursor last was. */
+  .whm-header__nav-link--active {
+    color: var(--wh-accent-dark);
+  }
+  .whm-header__nav-link--active::after {
+    transform: scaleX(1) !important;
+  }
+}
+
+.whm-header__phone {
+  color: var(--wh-accent-dark) !important;
+  font-weight: 700;
+}
+
+.whm-header__quote-btn {
+  align-self: center;
+  flex-shrink: 0;
+  height: 38px;
+  padding: 0 1.1rem;
+  margin: 0;
+  font-size: var(--wh-text-sm);
+
+  svg {
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .whm-header__toggle { display: flex; }
+
+  .whm-header__nav {
+    position: fixed;
+    inset: var(--wh-header-height) var(--wh-space-3) auto auto;
+    width: min(320px, calc(100vw - #{var(--wh-space-3)} * 2));
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    background: var(--wh-white);
+    border-radius: var(--wh-radius-md);
+    box-shadow: var(--wh-shadow-lg);
+    border: 1px solid var(--wh-border);
+    transform: translateY(-10px) scale(0.98);
+    transform-origin: top right;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--wh-duration-base) var(--wh-ease),
+      transform var(--wh-duration-base) var(--wh-ease);
+    padding: var(--wh-space-2) var(--wh-space-4) var(--wh-space-4);
+
+    a {
+      width: 100%;
+      padding: var(--wh-space-2) 0;
+      border-bottom: 1px solid var(--wh-grey-100);
+    }
+
+    .whm-header__quote-btn {
+      margin-top: var(--wh-space-3);
+      width: 100%;
+      border-bottom: none;
+      justify-content: center;
+    }
+  }
+
+  .whm-header--scrolled .whm-header__nav {
+    top: var(--wh-header-height-scrolled);
+  }
+
+  .whm-header__nav--open {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+  }
+}
+
+.whm-header__phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  color: var(--wh-navy-900);
+  font-family: var(--wh-font-display);
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  white-space: nowrap;
+  text-decoration: none;
+
+  transition:
+    color var(--wh-duration-fast) var(--wh-ease),
+    transform var(--wh-duration-fast) var(--wh-ease);
+}
+
+.whm-header__phone svg {
+  color: var(--wh-steel-600);
+  flex-shrink: 0;
+}
+
+.whm-header__phone:hover {
+  color: var(--wh-steel-700);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.whm-header__phone:hover svg {
+  color: var(--wh-steel-700);
+}
+
+@media (max-width: 900px) {
+  .whm-header__phone {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0.75rem 0;
+  }
+}

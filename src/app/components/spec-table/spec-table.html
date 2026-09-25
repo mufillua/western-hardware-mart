@@ -1,0 +1,10 @@
+<table class="whm-spec-table">
+  <tbody>
+    @for (spec of specifications(); track spec.label) {
+      <tr>
+        <th scope="row">{{ spec.label }}</th>
+        <td>{{ spec.value }}</td>
+      </tr>
+    }
+  </tbody>
+</table>

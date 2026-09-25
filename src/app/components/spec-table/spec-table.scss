@@ -1,0 +1,55 @@
+:host {
+  display: block;
+  background: var(--wh-surface);
+  border: 1px solid var(--wh-border);
+  border-radius: var(--wh-radius-lg);
+  box-shadow: var(--wh-shadow-sm);
+  padding: var(--wh-space-2) var(--wh-space-4);
+  overflow: hidden;
+}
+
+.whm-spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--wh-text-sm);
+
+  tr {
+    border-bottom: 1px solid var(--wh-grey-100);
+    transition: background-color var(--wh-duration-fast) var(--wh-ease);
+  }
+  tr:last-child {
+    border-bottom: none;
+  }
+  /* Subtle zebra striping + hover highlight — scannable without being
+     busy, since these tables can run to a dozen+ rows. */
+  tr:nth-child(even) {
+    background: var(--wh-surface-alt);
+  }
+  tr:hover {
+    background: var(--wh-sky-50);
+  }
+
+  th,
+  td {
+    text-align: left;
+    padding: var(--wh-space-2);
+    vertical-align: top;
+  }
+
+  th {
+    width: 42%;
+    font-family: var(--wh-font-display);
+    font-weight: 600;
+    color: var(--wh-grey-700);
+  }
+
+  td {
+    color: var(--wh-navy-900);
+  }
+}
+
+@media (max-width: 480px) {
+  .whm-spec-table th {
+    width: 46%;
+  }
+}

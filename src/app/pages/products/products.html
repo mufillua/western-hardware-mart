@@ -1,0 +1,48 @@
+<section class="whm-products-page">
+  <div class="wh-container">
+    <div class="wh-section-head">
+      <span class="wh-eyebrow">Full Catalogue</span>
+      <h1>Products</h1>
+      <p class="wh-lede">
+        Search or filter the catalogue below, then enquire on WhatsApp directly from any product.
+      </p>
+    </div>
+
+    <div class="whm-products-page__controls">
+      <whm-search-bar [(query)]="query" />
+      <whm-filters [(categorySlug)]="categorySlug" [(brandSlug)]="brandSlug" />
+    </div>
+
+    <div class="whm-products-page__meta" #resultsAnchor>
+      <span>
+        @if (results().length > 0) {
+          Showing {{ rangeStart() }}–{{ rangeEnd() }} of {{ results().length }} product{{ results().length === 1 ? '' : 's' }}
+        } @else {
+          0 products
+        }
+        @if (activeCategoryName()) { in <strong>{{ activeCategoryName() }}</strong> }
+        @if (activeBrandName()) { from <strong>{{ activeBrandName() }}</strong> }
+      </span>
+    </div>
+
+    @if (results().length > 0) {
+      <div class="wh-grid whm-products-page__grid wh-reveal-stagger" whmReveal>
+        @for (product of paginatedResults(); track product.id) {
+          <whm-product-card [product]="product" />
+        }
+      </div>
+
+      <whm-pagination
+        [currentPage]="currentPage()"
+        [totalPages]="totalPages()"
+        (pageChange)="goToPage($event, resultsAnchor)"
+      />
+    } @else {
+      <div class="whm-products-page__empty">
+        <h3>No products match your search</h3>
+        <p>Try a different term, or clear the filters below.</p>
+        <button type="button" class="wh-btn wh-btn--primary" (click)="clearAll()">Clear all filters</button>
+      </div>
+    }
+  </div>
+</section>

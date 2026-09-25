@@ -1,0 +1,543 @@
+/* =========================================================
+   HERO — full rebuild per mufi's exact visual specification. Two
+   distinct zones via CSS Grid (left ~45% clean content, right ~55%
+   product visual), not a single background-image hack. No cards, no
+   borders, no floating stat chips — the product photo blends directly
+   into the pale-blue right-side background via a mask fade, with
+   diagonal bands and a bottom wave as the only decorative elements.
+   ========================================================= */
+.wh-hero {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 45fr 55fr;
+  align-items: stretch;
+  min-height: 560px;
+  background: var(--wh-white);
+  /* Same left edge as wh-container: centered max-width box plus its
+     own side padding — computed here, where 100% means the full page
+     width, not inside the already-narrowed content column. */
+  padding-left: max(var(--wh-space-4), calc((100% - var(--wh-max-width)) / 2 + var(--wh-space-4)));
+}
+
+.wh-hero__background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  /* Left: near-white. Right: pale industrial blue. One continuous
+     gradient, not two flat halves. */
+  background: linear-gradient(90deg, var(--wh-white) 0%, var(--wh-white) 42%, var(--wh-sky-50) 62%, var(--wh-steel-100) 100%);
+}
+
+.wh-hero__diagonal {
+  position: absolute;
+  top: -15%;
+  width: 90px;
+  height: 150%;
+  background: linear-gradient(180deg, transparent 0%, rgba(59, 150, 190, 0.22) 45%, transparent 100%);
+  transform: rotate(18deg);
+  pointer-events: none;
+}
+.wh-hero__diagonal--1 { right: 6%; }
+.wh-hero__diagonal--2 { right: 16%; width: 46px; opacity: 0.7; }
+
+.wh-hero__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: var(--wh-space-6) var(--wh-space-3) var(--wh-space-6) 0;
+}
+
+.wh-hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  font-family: var(--wh-font-display);
+  font-size: var(--wh-text-xs);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--wh-accent-dark);
+  background: var(--wh-sky-50);
+  border: 1px solid var(--wh-steel-100);
+  border-radius: 999px;
+  padding: 6px 14px;
+  margin-bottom: var(--wh-space-4);
+  animation: wh-hero-in 0.6s var(--wh-ease) both;
+}
+.wh-hero__badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--wh-accent);
+}
+
+.wh-hero__content h1 {
+  margin: 0 0 var(--wh-space-3);
+  animation: wh-hero-in 0.6s var(--wh-ease) 0.08s both;
+}
+
+.wh-hero__subtitle {
+  font-size: clamp(1.05rem, 0.6vw + 0.9rem, 1.4rem);
+  line-height: 1.45;
+  color: var(--wh-grey-700);
+  max-width: 46ch;
+  margin: 0 0 var(--wh-space-5);
+  animation: wh-hero-in 0.6s var(--wh-ease) 0.16s both;
+}
+
+@keyframes wh-hero-in {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.wh-hero__actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: var(--wh-space-6);
+  animation: wh-hero-in 0.6s var(--wh-ease) 0.24s both;
+}
+
+.wh-hero__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 58px;
+  border-radius: var(--wh-radius-sm);
+  font-family: var(--wh-font-display);
+  font-weight: 700;
+  font-size: var(--wh-text-md);
+  white-space: nowrap;
+  transition: transform var(--wh-duration-fast) var(--wh-ease),
+    box-shadow var(--wh-duration-fast) var(--wh-ease);
+}
+.wh-hero__btn:hover {
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+.wh-hero__btn .wh-btn__arrow {
+  transition: transform var(--wh-duration-fast) var(--wh-ease);
+}
+.wh-hero__btn:hover .wh-btn__arrow {
+  transform: translateX(3px);
+}
+
+.wh-hero__btn--primary {
+  width: 290px;
+  background: var(--wh-gradient-accent);
+  color: var(--wh-white);
+  box-shadow: var(--wh-shadow-accent);
+}
+.wh-hero__btn--primary:hover {
+  box-shadow: 0 12px 26px rgba(28, 127, 168, 0.36);
+}
+
+/* Non-clickable — per mufi's earlier explicit instruction, only the
+   two CTA buttons above are interactive elements in this section. */
+.wh-hero__features {
+  display: flex;
+  align-items: center;
+  gap: var(--wh-space-2);
+  flex-wrap: nowrap;
+  animation: wh-hero-in 0.6s var(--wh-ease) 0.32s both;
+}
+
+.wh-hero__feature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  padding-right: var(--wh-space-2);
+  border-right: 1px solid var(--wh-border);
+  color: var(--wh-text);
+  font-family: var(--wh-font-display);
+  font-weight: 600;
+  font-size: var(--wh-text-xs);
+  line-height: 1.25;
+  white-space: nowrap;
+
+  &:last-child {
+    border-right: none;
+    padding-right: 0;
+  }
+}
+
+.wh-hero__feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--wh-sky-50);
+  color: var(--wh-accent-dark);
+}
+
+/* Right visual zone — no card, no border, no shadow. The image blends
+   into this zone's own pale-blue background via a left-edge mask
+   fade, rather than sitting inside a framed box. */
+.wh-hero__visual {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--wh-space-5) 0 0;
+  animation: wh-hero-visual-in 0.7s var(--wh-ease) 0.2s both;
+}
+
+@keyframes wh-hero-visual-in {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.wh-hero__visual-img {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  mask-image: linear-gradient(to right, transparent 0%, black 14%, black 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 14%, black 100%);
+}
+
+.wh-hero__wave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 40px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* =========================================================
+   CATEGORY CARDS — icon-led, hover lift + zoom + arrow nudge
+   ========================================================= */
+.whm-category-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--wh-surface);
+  border: 1px solid var(--wh-border);
+  border-radius: var(--wh-radius-md);
+  padding: var(--wh-space-4);
+  box-shadow: var(--wh-shadow-sm);
+  color: inherit;
+  transition: transform var(--wh-duration-base) var(--wh-ease),
+    box-shadow var(--wh-duration-base) var(--wh-ease),
+    border-color var(--wh-duration-base) var(--wh-ease);
+
+  &:hover {
+    text-decoration: none;
+    transform: translateY(-4px);
+    box-shadow: var(--wh-shadow-lg);
+    border-color: var(--wh-accent);
+  }
+
+  h3 {
+    font-size: var(--wh-text-md);
+    margin-bottom: var(--wh-space-1);
+  }
+  p {
+    font-size: var(--wh-text-sm);
+    color: var(--wh-grey-700);
+    margin-bottom: var(--wh-space-3);
+    flex: 1;
+  }
+}
+
+.whm-category-card:hover .whm-category-card__icon {
+  transform: scale(1.08);
+}
+
+.whm-category-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--wh-space-2);
+  border-top: 1px solid var(--wh-grey-100);
+}
+
+.whm-category-card__count {
+  font-size: var(--wh-text-xs);
+  font-weight: 600;
+  color: var(--wh-text-muted);
+}
+
+.whm-category-card__arrow {
+  color: var(--wh-accent);
+  font-weight: 700;
+  transition: transform var(--wh-duration-fast) var(--wh-ease);
+}
+.whm-category-card:hover .whm-category-card__arrow {
+  transform: translateX(4px);
+}
+
+/* =========================================================
+   USP — numbered rows, deliberately NOT another card grid, so this
+   section reads differently from Categories/Brands above it
+   ========================================================= */
+.whm-usp-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 720px;
+}
+
+.whm-usp-row {
+  display: flex;
+  align-items: baseline;
+  gap: var(--wh-space-4);
+  padding: var(--wh-space-4) 0;
+  border-bottom: 1px solid var(--wh-border);
+
+  &:first-child { padding-top: 0; }
+  &:last-child { border-bottom: none; }
+}
+
+.whm-usp-row__index {
+  flex-shrink: 0;
+  width: 2.4ch;
+  font-family: var(--wh-font-display);
+  font-weight: 800;
+  font-size: var(--wh-text-xl);
+  color: var(--wh-steel-100);
+  -webkit-text-stroke: 1.5px var(--wh-accent);
+}
+
+.whm-usp-row__body {
+  h3 { margin-bottom: var(--wh-space-1); }
+  p { color: var(--wh-grey-700); margin-bottom: 0; }
+}
+
+/* =========================================================
+   GENERAL ENQUIRY CTA
+   ========================================================= */
+.whm-cta {
+  position: relative;
+  overflow: hidden;
+}
+
+.whm-cta__glow {
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  top: 50%;
+  right: -10%;
+  transform: translateY(-50%);
+  background: radial-gradient(circle, rgba(59, 150, 190, 0.25) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.whm-cta__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--wh-space-5);
+  flex-wrap: wrap;
+
+  h2 { max-width: 32ch; margin-bottom: var(--wh-space-1); }
+  p { color: var(--wh-grey-700); margin-bottom: 0; }
+}
+
+.whm-cta__actions {
+  display: flex;
+  gap: var(--wh-space-2);
+  flex-wrap: wrap;
+}
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+@media (max-width: 900px) {
+  .wh-hero {
+    display: block;
+    min-height: 0;
+    padding-left: 0;
+  }
+  .wh-hero__background {
+    background: linear-gradient(180deg, var(--wh-white) 0%, var(--wh-white) 55%, var(--wh-sky-50) 100%);
+  }
+  .wh-hero__diagonal {
+    display: none;
+  }
+  .wh-hero__content {
+    padding: var(--wh-space-6) var(--wh-space-3);
+  }
+  .wh-hero__content h1 {
+    max-width: none;
+  }
+  .wh-hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .wh-hero__btn,
+  .wh-hero__btn--primary {
+    width: 100%;
+  }
+  .wh-hero__features {
+    flex-wrap: wrap;
+  }
+  .wh-hero__feature {
+    border-right: none;
+    padding-right: 0;
+  }
+  .wh-hero__visual {
+    padding: 0 var(--wh-space-4) var(--wh-space-4);
+    min-height: 260px;
+    align-items: center;
+    justify-content: center;
+  }
+  .wh-hero__visual-img {
+    max-width: 420px;
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .wh-hero__features {
+    gap: var(--wh-space-3) var(--wh-space-4);
+  }
+}
+
+@media (max-width: 560px) {
+  .whm-cta__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* =========================================================
+   BRANDS — logos only, via components/brand-logo-carousel.
+   This section intentionally carries almost no styling of its own.
+   ========================================================= */
+.whm-brands-section {
+  text-align: center;
+}
+.whm-brands-section__label {
+  display: block;
+  font-family: var(--wh-font-display);
+  font-size: var(--wh-text-xs);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--wh-text-muted);
+  margin-bottom: var(--wh-space-4);
+}
+
+/* =========================================================
+   FEATURED PRODUCTS CAROUSEL
+   ========================================================= */
+.whm-featured__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--wh-space-4);
+  flex-wrap: wrap;
+  margin-bottom: var(--wh-space-4);
+}
+
+.whm-featured__controls {
+  display: flex;
+  align-items: center;
+  gap: var(--wh-space-2);
+}
+
+.whm-featured__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.5px solid var(--wh-border);
+  background: var(--wh-white);
+  color: var(--wh-navy-900);
+  cursor: pointer;
+  transition: border-color var(--wh-duration-fast) var(--wh-ease),
+    background-color var(--wh-duration-fast) var(--wh-ease),
+    transform var(--wh-duration-fast) var(--wh-ease);
+
+  &:hover {
+    border-color: var(--wh-accent);
+    background: var(--wh-sky-50);
+    transform: translateY(-2px);
+  }
+}
+
+.whm-featured__all {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: var(--wh-space-2);
+  font-family: var(--wh-font-display);
+  font-weight: 600;
+  font-size: var(--wh-text-sm);
+  color: var(--wh-accent-dark);
+  white-space: nowrap;
+
+  .wh-btn__arrow {
+    transition: transform var(--wh-duration-fast) var(--wh-ease);
+  }
+  &:hover {
+    text-decoration: none;
+    .wh-btn__arrow { transform: translateX(3px); }
+  }
+}
+
+.whm-featured__track {
+  display: flex;
+  gap: var(--wh-space-4);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: var(--wh-space-2);
+  /* keep the scrollbar unobtrusive but present for mouse/trackpad users;
+     touch users just swipe */
+  scrollbar-width: thin;
+  scrollbar-color: var(--wh-border) transparent;
+
+  &::-webkit-scrollbar {
+    height: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--wh-border);
+    border-radius: 999px;
+  }
+}
+
+.whm-featured__item {
+  flex: 0 0 auto;
+  width: 270px;
+  scroll-snap-align: start;
+}
+
+@media (max-width: 560px) {
+  .whm-featured__item {
+    width: 78vw;
+  }
+  .whm-featured__all {
+    margin-left: 0;
+    width: 100%;
+  }
+  .whm-featured__head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
