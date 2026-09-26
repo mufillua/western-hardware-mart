@@ -3378,4 +3378,23 @@ export const PRODUCTS: Product[] = [
     ],
     catalogueSource: 'flowcontrol.pdf (Polyhydron), Ref. No. D 05083',
   },
+  {
+    id: 'marine-container-40ft',
+    slug: 'marine-container-40ft',
+    name: 'Marine Container',
+    modelCode: '',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'marine-containers',
+    shortDescription: 'Second-hand 40 ft dry marine shipping container, mild steel construction — supplied directly by Western Hardware Mart.',
+    specifications: [
+      { label: 'Material', value: 'Mild Steel' },
+      { label: 'Container Size', value: '40 ft' },
+      { label: 'Container Type', value: 'Dry Container' },
+      { label: 'Condition', value: 'Second hand' },
+    ],
+    images: [
+      '/assets/products/marine-container.png',
+    ],
+    catalogueSource: 'Provided directly by Western Hardware Mart — not from an uploaded manufacturer catalogue',
+  },
 ];

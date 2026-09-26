@@ -109,10 +109,15 @@ export class ProductDetail {
           : `${COMPANY_CONFIG.siteUrl}/${p.images[0]}`
         : undefined;
       this.seo.update({
-        title: `${p.name} — ${brand} | ${COMPANY_CONFIG.name}`,
+        title:
+          brand === COMPANY_CONFIG.name
+            ? `${p.name} | ${COMPANY_CONFIG.name}`
+            : `${p.name} — ${brand} | ${COMPANY_CONFIG.name}`,
         description: p.shortDescription
           ? `${p.shortDescription.slice(0, 155)}${p.shortDescription.length > 155 ? '…' : ''}`
-          : `${p.name} (${p.modelCode}) — ${category} from ${brand}, supplied by ${COMPANY_CONFIG.name}, Kolkata. Enquire on WhatsApp for availability and a quotation.`,
+          : brand === COMPANY_CONFIG.name
+            ? `${p.name} — ${category}, supplied directly by ${COMPANY_CONFIG.name}, ${COMPANY_CONFIG.city}. Enquire on WhatsApp for availability and a quotation.`
+            : `${p.name} (${p.modelCode}) — ${category} from ${brand}, supplied by ${COMPANY_CONFIG.name}, ${COMPANY_CONFIG.city}. Enquire on WhatsApp for availability and a quotation.`,
         path: `/products/${p.slug}`,
         image,
         type: 'product',

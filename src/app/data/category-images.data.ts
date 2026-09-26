@@ -29,4 +29,5 @@ export const CATEGORY_IMAGES: Record<string, string> = {
   'hydraulic-pumps': 'assets/products/PVR-Series-Double-Vane-Pumps.jpg',
   'directional-control-valves': 'https://www.yukenindia.com/wp-content/uploads/2021/09/DSG01_thmbpng.png',
   'pressure-control-valves': 'assets/products/yuken-yc-cartridge-generic.jpg',
+  'marine-containers': 'assets/products/marine-container.png',
 };

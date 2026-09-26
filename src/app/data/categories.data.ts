@@ -7,6 +7,12 @@ import { Category } from '../models/category.model';
  */
 export const CATEGORIES: Category[] = [
   {
+    slug: 'marine-containers',
+    name: 'Marine Containers',
+    description: 'Second-hand shipping containers, supplied directly by Western Hardware Mart.',
+    sourceBrands: ['western-hardware-mart'],
+  },
+  {
     slug: 'ball-valves',
     name: 'High Pressure Ball Valves',
     description: '2-way, 3-way and 4-way carbon steel ball valves, PN up to 500 bar.',

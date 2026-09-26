@@ -31,10 +31,12 @@
               <dt>Brand</dt>
               <dd>{{ brandName() }}</dd>
             </div>
-            <div>
-              <dt>Model / Product Code</dt>
-              <dd>{{ p.modelCode }}</dd>
-            </div>
+            @if (p.modelCode) {
+              <div>
+                <dt>Model / Product Code</dt>
+                <dd>{{ p.modelCode }}</dd>
+              </div>
+            }
             @if (p.sizeRange) {
               <div>
                 <dt>Size Range</dt>
