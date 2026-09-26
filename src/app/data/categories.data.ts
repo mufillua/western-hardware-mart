@@ -9,7 +9,7 @@ export const CATEGORIES: Category[] = [
   {
     slug: 'marine-containers',
     name: 'Marine Containers',
-    description: 'Second-hand shipping containers, supplied directly by Western Hardware Mart.',
+    description: 'Refurbished shipping containers, supplied directly by Western Hardware Mart.',
     sourceBrands: ['western-hardware-mart'],
   },
   {

@@ -3385,7 +3385,7 @@ export const PRODUCTS: Product[] = [
     modelCode: '',
     brandSlug: 'western-hardware-mart',
     categorySlug: 'marine-containers',
-    shortDescription: 'Second-hand 40 ft dry marine shipping container, mild steel construction — supplied directly by Western Hardware Mart.',
+    shortDescription: 'Refurbished 40 ft dry marine shipping container, mild steel construction — supplied directly by Western Hardware Mart.',
     specifications: [
       { label: 'Material', value: 'Mild Steel' },
       { label: 'Container Size', value: '40 ft' },
