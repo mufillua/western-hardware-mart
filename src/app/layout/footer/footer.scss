@@ -45,6 +45,26 @@
   padding: var(--wh-space-3) var(--wh-space-4);
   font-size: var(--wh-text-xs);
   color: var(--wh-grey-500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.wh-footer__hours {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: var(--wh-space-2);
+  color: var(--wh-grey-400);
+  font-size: var(--wh-text-sm);
+  line-height: 1.5;
+}
+
+.wh-footer__hours-label {
+  margin-bottom: 2px;
+  color: var(--wh-white);
+  font-weight: 700;
 }
 
 @media (max-width: 900px) {

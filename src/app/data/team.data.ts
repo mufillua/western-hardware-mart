@@ -8,6 +8,6 @@ export interface TeamMember {
  * provided and nothing here should be invented about real people.
  */
 export const TEAM: TeamMember[] = [
-  { name: 'Mufaddal Maimoon', role: 'Partner' },
-  { name: 'Husaini Lokhandwala', role: 'Partner' },
+  { name: 'M. Maimoon', role: 'Partner' },
+  { name: 'H. Lokhandwala', role: 'Partner' },
 ];
