@@ -3412,7 +3412,7 @@ export const PRODUCTS: Product[] = [
       { label: 'Category', value: 'Adjustable Wrenches' }
     ],
     sizeRange: '150mm–750mm length',
-    images: [],
+    images: ['/assets/products/taparia-adjustable-wrenches.png'],
     catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — page 1',
   },
   {
@@ -3430,7 +3430,7 @@ export const PRODUCTS: Product[] = [
       { label: 'Category', value: 'Adjustable Wrenches' }
     ],
     sizeRange: '150mm–375mm length',
-    images: [],
+    images: ['/assets/products/taparia-adjustable-spanners-with-soft-grip.png'],
     catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — page 1',
   },
   {
@@ -3448,7 +3448,7 @@ export const PRODUCTS: Product[] = [
       { label: 'Category', value: 'Pliers Group' }
     ],
     sizeRange: '160mm–200mm',
-    images: [],
+    images: ['/assets/products/taparia-combination-side-cutting-pliers.png'],
     catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — pages 1–2',
   },
   {
@@ -3466,7 +3466,7 @@ export const PRODUCTS: Product[] = [
       { label: 'Category', value: 'Pliers Group' }
     ],
     sizeRange: '160mm–200mm',
-    images: [],
+    images: ['/assets/products/taparia-side-cutting-pliers.png'],
     catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — pages 1–2',
   },
   {
@@ -3484,7 +3484,7 @@ export const PRODUCTS: Product[] = [
       { label: 'Category', value: 'Pliers Group' }
     ],
     sizeRange: '160mm–280mm',
-    images: [],
+    images: ['/assets/products/taparia-long-nose-pliers.png'],
     catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — pages 1–2',
   },
   {
@@ -3502,7 +3502,7 @@ export const PRODUCTS: Product[] = [
       { label: 'Category', value: 'Pliers Group' }
     ],
     sizeRange: '160mm–270mm',
-    images: [],
+    images: ['/assets/products/taparia-bent-nose-pliers-econ.png'],
     catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — pages 1–2',
   },
   {
@@ -3520,41 +3520,7 @@ export const PRODUCTS: Product[] = [
       { label: 'Category', value: 'Pliers Group' }
     ],
     sizeRange: '8mm–165mm capacity',
-    images: [],
-    catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — pages 1–2',
-  },
-  {
-    id: 'taparia-vde-pliers',
-    slug: 'taparia-vde-pliers',
-    name: 'VDE Pliers',
-    modelCode: '1421/1430/1431 (VDE-rated)',
-    brandSlug: 'taparia',
-    categorySlug: 'pliers-group',
-    shortDescription: 'VDE-insulated combination, long nose, side cutting and wire stripping pliers, rated to IEC 60900:2018.',
-    specifications: [
-      { label: 'Standard', value: 'IEC 60900:2018' },
-      { label: 'HSN Code', value: '82032000' },
-      { label: 'Model Codes', value: '1421/1430/1431 (VDE-rated)' },
-      { label: 'Category', value: 'Pliers Group' }
-    ],
-    images: [],
-    catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — pages 1–2',
-  },
-  {
-    id: 'taparia-vde-pliers-sets',
-    slug: 'taparia-vde-pliers-sets',
-    name: 'VDE Pliers Sets',
-    modelCode: 'SVDE 01 / SVDE 02',
-    brandSlug: 'taparia',
-    categorySlug: 'pliers-group',
-    shortDescription: 'Boxed sets combining VDE combination, side-cutting and long-nose pliers.',
-    specifications: [
-      { label: 'Standard', value: 'IEC 60900:2018' },
-      { label: 'HSN Code', value: '82032000' },
-      { label: 'Model Codes', value: 'SVDE 01 / SVDE 02' },
-      { label: 'Category', value: 'Pliers Group' }
-    ],
-    images: [],
+    images: ['/assets/products/taparia-circlip-pliers-1.png','/assets/products/taparia-circlip-pliers-2.png'],
     catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — pages 1–2',
   },
   {
@@ -3572,7 +3538,7 @@ export const PRODUCTS: Product[] = [
       { label: 'Category', value: 'Pliers Group' }
     ],
     sizeRange: '215mm–280mm',
-    images: [],
+    images: ['/assets/products/taparia-locking-pliers.png'],
     catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — pages 1–2',
   },
   {
@@ -3589,7 +3555,7 @@ export const PRODUCTS: Product[] = [
       { label: 'Category', value: 'Pliers Group' }
     ],
     sizeRange: '80mm–150mm',
-    images: [],
+    images: ['/assets/products/taparia-mini-pliers.png'],
     catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — pages 1–2',
   },
   {
@@ -3606,7 +3572,7 @@ export const PRODUCTS: Product[] = [
       { label: 'Category', value: 'Pliers Group' }
     ],
     sizeRange: '80mm',
-    images: [],
+    images: ['/assets/products/taparia-micro-jewellery-pliers.png'],
     catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — pages 1–2',
   },
   {
@@ -3623,7 +3589,7 @@ export const PRODUCTS: Product[] = [
       { label: 'Category', value: 'Pliers Group' }
     ],
     sizeRange: '150mm–160mm',
-    images: [],
+    images: ['/assets/products/taparia-long-reach-mini-pliers.png'],
     catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — pages 1–2',
   },
   {
@@ -3641,7 +3607,7 @@ export const PRODUCTS: Product[] = [
       { label: 'Category', value: 'Pliers Group' }
     ],
     sizeRange: '110mm–150mm',
-    images: [],
+    images: ['/assets/products/taparia-pincers.png'],
     catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — pages 1–2',
   },
   {
@@ -3659,7 +3625,7 @@ export const PRODUCTS: Product[] = [
       { label: 'Category', value: 'Pliers Group' }
     ],
     sizeRange: '225mm',
-    images: [],
+    images: ['/assets/products/taparia-tower-pincer.png'],
     catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — pages 1–2',
   },
   {
@@ -3677,7 +3643,7 @@ export const PRODUCTS: Product[] = [
       { label: 'Category', value: 'Pliers Group' }
     ],
     sizeRange: '200mm–300mm',
-    images: [],
+    images: ['/assets/products/taparia-water-pump-pliers.png'],
     catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — pages 1–2',
   },
   {
@@ -3695,7 +3661,7 @@ export const PRODUCTS: Product[] = [
       { label: 'Category', value: 'Pliers Group' }
     ],
     sizeRange: '150mm',
-    images: [],
+    images: ['/assets/products/taparia-slip-joint-pliers.png'],
     catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — pages 1–2',
   },
   {
@@ -3713,41 +3679,7 @@ export const PRODUCTS: Product[] = [
       { label: 'Category', value: 'Pliers Group' }
     ],
     sizeRange: '130mm–160mm',
-    images: [],
-    catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — pages 1–2',
-  },
-  {
-    id: 'taparia-auto-wire-stripper-cutter',
-    slug: 'taparia-auto-wire-stripper-cutter',
-    name: 'Auto Wire Stripper & Cutter',
-    modelCode: 'AWS 7 / AWS 8',
-    brandSlug: 'taparia',
-    categorySlug: 'pliers-group',
-    shortDescription: 'Self-adjusting automatic wire stripper and cutter.',
-    specifications: [
-      { label: 'HSN Code', value: '82032000' },
-      { label: 'Model Codes', value: 'AWS 7 / AWS 8' },
-      { label: 'Category', value: 'Pliers Group' }
-    ],
-    sizeRange: '175mm–205mm',
-    images: [],
-    catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — pages 1–2',
-  },
-  {
-    id: 'taparia-nippers',
-    slug: 'taparia-nippers',
-    name: 'Nippers',
-    modelCode: 'NP04–NP45 series',
-    brandSlug: 'taparia',
-    categorySlug: 'pliers-group',
-    shortDescription: 'General-purpose nippers.',
-    specifications: [
-      { label: 'HSN Code', value: '82032000' },
-      { label: 'Model Codes', value: 'NP04–NP45 series' },
-      { label: 'Category', value: 'Pliers Group' }
-    ],
-    sizeRange: '110mm–160mm',
-    images: [],
+    images: ['/assets/products/taparia-wire-stripping-pliers.png'],
     catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — pages 1–2',
   },
   {
@@ -3764,7 +3696,7 @@ export const PRODUCTS: Product[] = [
       { label: 'Category', value: 'Pliers Group' }
     ],
     sizeRange: '157mm',
-    images: [],
+    images: ['/assets/products/taparia-plastic-cutting-pliers.png'],
     catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — pages 1–2',
   },
   {
@@ -3782,7 +3714,7 @@ export const PRODUCTS: Product[] = [
       { label: 'Category', value: 'VDE Pliers' }
     ],
     sizeRange: '160mm–200mm',
-    images: [],
+    images: ['/assets/products/taparia-vde-pliers.png'],
     catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — page 1',
   },
   {
@@ -3799,7 +3731,7 @@ export const PRODUCTS: Product[] = [
       { label: 'Model Codes', value: 'SVDE 01 / SVDE 02' },
       { label: 'Category', value: 'VDE Pliers' }
     ],
-    images: [],
+    images: ['/assets/products/taparia-vde-pliers-sets.png'],
     catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — page 1',
   },
   {
@@ -3816,7 +3748,7 @@ export const PRODUCTS: Product[] = [
       { label: 'Category', value: 'Nippers & Auto Wire Strippers' }
     ],
     sizeRange: '110mm–160mm',
-    images: [],
+    images: ['/assets/products/taparia-nippers.png'],
     catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — page 2',
   },
   {
@@ -3833,7 +3765,7 @@ export const PRODUCTS: Product[] = [
       { label: 'Category', value: 'Nippers & Auto Wire Strippers' }
     ],
     sizeRange: '175mm–205mm',
-    images: [],
+    images: ['/assets/products/taparia-auto-wire-stripper-cutter.png'],
     catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — page 2',
   },
   {
@@ -3850,7 +3782,7 @@ export const PRODUCTS: Product[] = [
       { label: 'Category', value: 'Crimping Tool' }
     ],
     sizeRange: '0.5–70 sq.mm capacity',
-    images: [],
+    images: ['/assets/products/taparia-crimping-tools.png'],
     catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — page 5',
   },
   {
@@ -3867,7 +3799,7 @@ export const PRODUCTS: Product[] = [
       { label: 'Category', value: 'PVC Insulation Tape' }
     ],
     sizeRange: '17mm width',
-    images: [],
+    images: ['/assets/products/taparia-pvc-insulation-tape.png'],
     catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — page 5',
   },
   {
