@@ -56,9 +56,10 @@
     <div>
       <h4>Categories</h4>
       <ul>
-        @for (category of categories; track category.slug) {
+        @for (category of topCategories; track category.slug) {
           <li><a routerLink="/products" [queryParams]="{ category: category.slug }">{{ category.name }}</a></li>
         }
+        <li><a routerLink="/categories" class="whm-footer__view-all">View All Categories →</a></li>
       </ul>
     </div>
 
@@ -78,7 +79,7 @@
         <li><a [href]="'tel:' + company.whatsappNumberIntl">{{ company.whatsappDisplay }}</a></li>
         <li><a href="tel:919073053864">+91 90730 53864</a></li>
         <li>Shop No. 8, {{ company.address }}</li>
-        <li><a routerLink="/contact">Get Directions</a></li>
+        <li><a routerLink="/contact" class="whm-footer__view-all">Get Directions</a></li>
       </ul>
       
       <div class="wh-footer__hours">

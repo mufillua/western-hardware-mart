@@ -10,4 +10,5 @@ export const CAROUSEL_LOGOS: CarouselLogo[] = [
   { name: 'Hydroline Products', logo: 'assets/brands/hydroline.png' },
   { name: 'Yuken', logo: 'assets/brands/yuken.png' },
   { name: 'Polyhydron', logo: 'assets/brands/polyhydron.png' },
+  { name: 'Taparia', logo: 'assets/brands/taparia.png'},
 ];

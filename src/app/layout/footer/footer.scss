@@ -67,6 +67,14 @@
   font-weight: 700;
 }
 
+.whm-footer__view-all {
+  color: var(--wh-steel-500) !important;
+  font-weight: 600;
+}
+.whm-footer__view-all:hover {
+  color: var(--wh-white) !important;
+}
+
 @media (max-width: 900px) {
   .whm-footer__grid {
     grid-template-columns: 1fr 1fr;

@@ -65,7 +65,7 @@ export class Home {
    * all real catalogue products (the three with confirmed photos first),
    * not a "most popular" claim we have no data to back.
    */
-  private readonly featuredSlugs = ['dv', 'ahf04', 'ah-series', 'khb2', 'cv', 'gauge-ip', 'nv-asian', '2vm'];
+  private readonly featuredSlugs = ['marine-container-40ft', 'yuken-dsg01', 'ah-series', 'khb2sf', 'hydroline-cut', 'gauge-ip', 'polyhydron-tcm10', '3vm'];
   readonly featuredProducts = this.featuredSlugs
     .map((slug) => this.productsService.bySlug(slug))
     .filter((p): p is Product => !!p);

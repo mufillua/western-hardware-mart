@@ -30,4 +30,59 @@ export const CATEGORY_IMAGES: Record<string, string> = {
   'directional-control-valves': 'https://www.yukenindia.com/wp-content/uploads/2021/09/DSG01_thmbpng.png',
   'pressure-control-valves': 'assets/products/yuken-yc-cartridge-generic.jpg',
   'marine-containers': 'assets/products/marine-container.png',
+  'adjustable-wrenches': 'assets/products/adjustable-wrenches.png', 
+  'pliers-group': 'assets/products/pliers-group.png', 
+  'vde-pliers': 'assets/products/vde-pliers.png', 
+  'nippers-auto-wire-strippers': 'assets/products/nippers-auto-wire-strippers.png', 
+  'crimping-tool': 'assets/products/crimping-tool.png', //new
+  'pvc-insulation-tape': 'assets/products/pvc-insulation-tape.png', 
+  'screw-drivers-group': 'assets/products/screw-drivers-group.png', //new
+  'screw-driver-bits': 'assets/products/screw-driver-bits.png', 
+  'sockets-accessories-sets': 'assets/products/sockets-accessories-sets.png', 
+  't-socket-wrench': 'assets/products/t-socket-wrench.png', //new
+  'double-side-socket-wrench': 'assets/products/double-side-socket-wrench.png', //new
+  'torque-wrench-group': 'assets/products/torque-wrench-group.png', 
+  'pipe-wrench-group': 'assets/products/pipe-wrench-group.png', 
+  'aluminium-chain-pipe-wrench': 'assets/products/aluminium-chain-pipe-wrench.png', 
+  'hammer-group': 'assets/products/hammer-group.png', 
+  'fiberglass-hammer-handle': 'assets/products/fiberglass-hammer-handle.png', //new
+  'c-f-clamps': 'assets/products/c-f-clamps.png', 
+  'pipe-vices': 'assets/products/pipe-vices.png', 
+  'l-spanner-box-spanner': 'assets/products/l-spanner-box-spanner.png', 
+  'tubular-spanner-half-moon-spanner': 'assets/products/tubular-spanner-half-moon-spanner.png', 
+  'spanners-group': 'assets/products/spanners-group.png', //new
+  'slogging-spanners': 'assets/products/slogging-spanners.png', 
+  'chisels-group': 'assets/products/chisels-group.png', //new
+  'punches-sets': 'assets/products/punches-sets.png', 
+  'bolt-cable-tin-cutter': 'assets/products/bolt-cable-tin-cutter.png', 
+  'pruning-shear-fiberglass-steel-axe': 'assets/products/pruning-shear-fiberglass-steel-axe.png', 
+  'pvc-pipe-cutter-snap-off-cutter': 'assets/products/pvc-pipe-cutter-snap-off-cutter.png', 
+  'hacksaw-frames-blades': 'assets/products/hacksaw-frames-blades.png',
+  'bearing-puller': 'assets/products/bearing-puller.png', 
+  'allen-keys-sets': 'assets/products/allen-keys-sets.png', 
+  'tool-bags': 'assets/products/tool-bags.png', 
+  'two-wheeler-plumber-mini-tool-kits': 'assets/products/two-wheeler-plumber-mini-tool-kits.png', 
+  'professional-universal-tool-kits': 'assets/products/professional-universal-tool-kits.png', 
+  'cantilever-tool-box': 'assets/products/cantilever-tool-box.png', 
+  'plastic-tool-box': 'assets/products/plastic-tool-box.png', 
+  'tools-trolley': 'assets/products/tools-trolley.png', 
+  'strap-filter-wrench-oil-can-grease-gun': 'assets/products/strap-filter-wrench-oil-can-grease-gun.png', 
+  'bucket-grease-pump-rotary-barrel-pump': 'assets/products/bucket-grease-pump-rotary-barrel-pump.png', //new
+  'hydraulic-bottle-jack-spare-kit': 'assets/products/hydraulic-bottle-jack-spare-kit.png', //new
+  'hydraulic-trolley-jack-jack-stand-spare-kit': 'assets/products/hydraulic-trolley-jack-jack-stand-spare-kit.png', //new
+  'carpenter-tools': 'assets/products/carpenter-tools.png', //new
+  'calipers-spring-dividers': 'assets/products/calipers-spring-dividers.png', //new
+  'hand-riveter': 'assets/products/hand-riveter.png', //new
+  'spirit-levels': 'assets/products/spirit-levels.png', 
+  'bench-vice': 'assets/products/bench-vice.png', //new
+  'diamond-tile-wood-cutting-blades-cup-wheels': 'assets/products/diamond-tile-wood-cutting-blades-cup-wheels.png',
+  'cut-off-wheels-gold-silver-series': 'assets/products/cut-off-wheels-gold-silver-series.png', //new
+  'abrasive-paper-velcro-disc-gold-series': 'assets/products/abrasive-paper-velcro-disc-gold-series.png', //new
+  'bimetal-hole-saw-deep-hole-saw': 'assets/products/bimetal-hole-saw-deep-hole-saw.png', //new
+  'carbide-tip-hole-saw': 'assets/products/carbide-tip-hole-saw.png', //new
+  'chalk-line-reel-set': 'assets/products/chalk-line-reel-set.png', //new
+  'masonry-drill-bits-hss-drills-jobbers-series': 'assets/products/masonry-drill-bits-hss-drills-jobbers-series.png', //new
+  'plus-hammer-drills': 'assets/products/plus-hammer-drills.png', 
+  'steel-files-needle-files': 'assets/products/steel-files-needle-files.png', 
+  'non-sparking-tools': 'assets/products/non-sparking-tools.png', 
 };

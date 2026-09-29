@@ -80,4 +80,18 @@ export const BRANDS: Brand[] = [
       'Polyhydron Pvt. Ltd. is the flagship company of the Polyhydron Group of Industries, manufacturing hydraulic radial piston pumps and industrial and mobile hydraulic valves and accessories.',
     catalogueSource: 'Manufacturer PDF catalogues supplied directly: pressurecontrol.pdf, directioncontrol.pdf, flowcontrol.pdf — not locally hosted for download',
   },
+  {
+    slug: 'taparia',
+    name: 'Taparia',
+    description: 'Taparia Tools Ltd. is an ISO 9001:2015-certified Indian manufacturer of hand tools, spanning wrenches, pliers, screwdrivers, sockets, spanners, hammers, files, cutting tools and workshop equipment.',
+    capabilityNote: 'ISO 9001 company; JAS-ANZ accredited certification mark shown on the catalogue cover.',
+    certifications: ['ISO 9001:2015 (Reg. No. RQ91/375)'],
+    catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 (cover page)',
+  },
+  {
+    slug: 'western-hardware-mart',
+    name: 'Marine Container',
+    description: 'Stock supplied directly by Western Hardware Mart — not sourced from an external manufacturer catalogue.',
+    catalogueSource: 'Provided directly by Western Hardware Mart — not from an uploaded manufacturer catalogue',
+  },
 ];
