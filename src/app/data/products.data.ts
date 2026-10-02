@@ -2,9 +2,9 @@ import { Product } from '../models/product.model';
 
 /**
  * Every entry below is transcribed directly from the uploaded catalogues —
- * ASIAN_HYDRAULICS_CATALOGUE, Asian_Hydrulic_flat_face_QRC,
- * Asian_HydrulicISO_7214-2014_Couplings_QRC, and
- * FLYER_DELTA_INSTRUMENTS_compressed. `catalogueSource` on each product
+ * ASIAN_HYDRAULIC, Asian_Hydrulic_fl,
+ * Asian_HydrulicISO_7214-2014_Co, and
+ * FLYER_DELTA_INSTRUMENTS. `catalogueSource` on each product
  * points back to the source document/page for traceability. No pricing,
  * dimensional detail beyond what's printed, or marketing claims have been added.
  *
@@ -23,7 +23,7 @@ export const PRODUCTS: Product[] = [
     name: 'KHB2 High Pressure Ball Valve — 2-Way',
     modelCode: 'KHB2',
     brandSlug: 'asian-hydraulic',
-    categorySlug: 'ball-valves',
+    categorySlug: 'process-flow-control-valves',
     shortDescription: '2-way carbon steel ball valve, block body, available in DIN ISO 228 BSP, ANSI/ASME NPT and SAE J1926-1 connections, plus DIN 2353 Light and Heavy series.',
     specifications: [
       { label: 'Type', value: 'Ball valve KHB 2-way' },
@@ -39,7 +39,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/khb2.jpg',
     ],
-    catalogueSource: 'no locally hosted',
+    catalogueSource: 'ASIAN_HYDRAULIC p.4-5',
   },
   {
     id: 'kh3',
@@ -47,7 +47,7 @@ export const PRODUCTS: Product[] = [
     name: 'KH3 High Pressure Ball Valve — 3-Way',
     modelCode: 'KH3',
     brandSlug: 'asian-hydraulic',
-    categorySlug: 'ball-valves',
+    categorySlug: 'process-flow-control-valves',
     shortDescription: '3-way carbon steel ball valve, block body, available in DIN ISO 228 BSP, ANSI/ASME NPT and SAE J1926-1 connections, plus DIN 2353 Light and Heavy series.',
     specifications: [
       { label: 'Type', value: 'Ball valve KH3 3-way' },
@@ -63,7 +63,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/kh3.jpg',
     ],
-    catalogueSource: 'no locally hosted',
+    catalogueSource: 'ASIAN_HYDRAULIC p.6-7',
   },
   {
     id: 'kh4',
@@ -71,7 +71,7 @@ export const PRODUCTS: Product[] = [
     name: 'KH4 High Pressure Ball Valve — 4-Way',
     modelCode: 'KH4',
     brandSlug: 'asian-hydraulic',
-    categorySlug: 'ball-valves',
+    categorySlug: 'process-flow-control-valves',
     shortDescription: '4-way carbon steel ball valve, square body, available in 1/4" to 3/4" BSP port sizes.',
     specifications: [
       { label: 'Type', value: 'Ball valve KH4 4-way' },
@@ -87,7 +87,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/kh4.jpg',
     ],
-    catalogueSource: 'no locally hosted',
+    catalogueSource: 'ASIAN_HYDRAULIC p.8',
   },
   {
     id: 'khb2sf',
@@ -95,7 +95,7 @@ export const PRODUCTS: Product[] = [
     name: 'KHB2SF High Pressure Ball Valve with Split Flange',
     modelCode: 'KHB2SF',
     brandSlug: 'asian-hydraulic',
-    categorySlug: 'ball-valves',
+    categorySlug: 'process-flow-control-valves',
     shortDescription: '2-way carbon steel ball valve with split flange connection, block body, SAE J518 S3000/S6000.',
     specifications: [
       { label: 'Type', value: 'Ball valve KHB2SF 2-way' },
@@ -111,7 +111,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/khb2sf.jpg',
     ],
-    catalogueSource: 'ASIAN_HYDRAULICS_CATALOGUE p.9',
+    catalogueSource: 'ASIAN_HYDRAULIC p.9',
   },
   {
     id: 'khp2',
@@ -119,7 +119,7 @@ export const PRODUCTS: Product[] = [
     name: 'KHP2 Manifold Block Mounted High Pressure Ball Valve — 2-Way',
     modelCode: 'KHP2',
     brandSlug: 'asian-hydraulic',
-    categorySlug: 'ball-valves',
+    categorySlug: 'process-flow-control-valves',
     shortDescription: '2-way carbon steel manifold block mounted ball valve, square body.',
     specifications: [
       { label: 'Type', value: 'Ball valve KHP2 2-way' },
@@ -133,7 +133,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/khp2.jpg',
     ],
-    catalogueSource: 'ASIAN_HYDRAULICS_CATALOGUE p.10',
+    catalogueSource: 'ASIAN_HYDRAULIC p.10',
   },
   {
     id: 'khp3',
@@ -141,7 +141,7 @@ export const PRODUCTS: Product[] = [
     name: 'KHP3 Manifold Block Mounted High Pressure Ball Valve — 3-Way',
     modelCode: 'KHP3',
     brandSlug: 'asian-hydraulic',
-    categorySlug: 'ball-valves',
+    categorySlug: 'process-flow-control-valves',
     shortDescription: '3-way carbon steel manifold block mounted ball valve, square body.',
     specifications: [
       { label: 'Type', value: 'Ball valve KHP3 3-way' },
@@ -156,7 +156,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/khp3.jpg',
     ],
-    catalogueSource: 'ASIAN_HYDRAULICS_CATALOGUE p.11',
+    catalogueSource: 'ASIAN_HYDRAULIC p.11',
   },
   {
     id: 'drv',
@@ -164,7 +164,7 @@ export const PRODUCTS: Product[] = [
     name: 'DRV Flow Control Valve with Check Valve',
     modelCode: 'DRV',
     brandSlug: 'asian-hydraulic',
-    categorySlug: 'flow-control-needle-valves',
+    categorySlug: 'process-flow-control-valves',
     shortDescription: 'Inline / panel-mount flow control valve with integrated check valve. NPTF port sizes 1/8" to 1-1/2".',
     specifications: [
       { label: 'Port size', value: 'NPTF, 1/8" to 1-1/2"' },
@@ -176,7 +176,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/drv.jpg',
     ],
-    catalogueSource: 'ASIAN_HYDRAULICS_CATALOGUE p.12',
+    catalogueSource: 'ASIAN_HYDRAULIC p.12',
   },
   {
     id: 'drvp',
@@ -184,7 +184,7 @@ export const PRODUCTS: Product[] = [
     name: 'DRVP Manifold Mounted Flow Control Valve with Check Valve',
     modelCode: 'DRVP',
     brandSlug: 'asian-hydraulic',
-    categorySlug: 'flow-control-needle-valves',
+    categorySlug: 'process-flow-control-valves',
     shortDescription: 'Manifold-mounted flow control valve with integrated check valve, nominal sizes 1/8" to 1-1/2".',
     specifications: [
       { label: 'Nominal size', value: '1/8" to 1-1/2"' },
@@ -196,7 +196,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/drvp.jpg',
     ],
-    catalogueSource: 'ASIAN_HYDRAULICS_CATALOGUE p.13',
+    catalogueSource: 'ASIAN_HYDRAULIC p.13',
   },
   {
     id: 'dv',
@@ -204,7 +204,7 @@ export const PRODUCTS: Product[] = [
     name: 'DV Flow Control Valve without Check Valve (Inline Needle Valve)',
     modelCode: 'DV',
     brandSlug: 'asian-hydraulic',
-    categorySlug: 'flow-control-needle-valves',
+    categorySlug: 'process-flow-control-valves',
     shortDescription: 'Inline needle-valve style flow control valve without check valve. NPTF port sizes 1/8" to 1-1/2".',
     specifications: [
       { label: 'Port size', value: 'NPTF, 1/8" to 1-1/2"' },
@@ -216,7 +216,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/dv.jpg',
     ],
-    catalogueSource: 'ASIAN_HYDRAULICS_CATALOGUE p.14',
+    catalogueSource: 'ASIAN_HYDRAULIC p.14',
   },
   {
     id: 'dvp',
@@ -224,7 +224,7 @@ export const PRODUCTS: Product[] = [
     name: 'DVP Manifold Mounted Flow Control Valve without Check Valve',
     modelCode: 'DVP',
     brandSlug: 'asian-hydraulic',
-    categorySlug: 'flow-control-needle-valves',
+    categorySlug: 'process-flow-control-valves',
     shortDescription: 'Manifold-mounted needle valve without check valve, nominal sizes 1/8" to 1-1/2". Includes DVE cartridge valve variant (3/4-16UNF to 1-5/16-12UNF).',
     specifications: [
       { label: 'Nominal size', value: '1/8" to 1-1/2"' },
@@ -236,7 +236,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/dvp.jpg',
     ],
-    catalogueSource: 'ASIAN_HYDRAULICS_CATALOGUE p.15',
+    catalogueSource: 'ASIAN_HYDRAULIC p.15',
   },
   {
     id: 'nv-asian',
@@ -244,7 +244,7 @@ export const PRODUCTS: Product[] = [
     name: 'NV Needle Valve — 2 Way',
     modelCode: 'NV',
     brandSlug: 'asian-hydraulic',
-    categorySlug: 'flow-control-needle-valves',
+    categorySlug: 'process-flow-control-valves',
     shortDescription: '2-way carbon steel needle valve, square body, DIN ISO 228 connections.',
     specifications: [
       { label: 'Type', value: 'Needle valve NV' },
@@ -259,7 +259,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/nv-asian.jpg',
     ],
-    catalogueSource: 'ASIAN_HYDRAULICS_CATALOGUE p.16',
+    catalogueSource: 'ASIAN_HYDRAULIC p.16',
   },
   {
     id: 'mssl',
@@ -267,7 +267,7 @@ export const PRODUCTS: Product[] = [
     name: 'MSSL Shut Off Valve — Sub-Plate Mounting',
     modelCode: 'MSSL06-2.0',
     brandSlug: 'asian-hydraulic',
-    categorySlug: 'flow-control-needle-valves',
+    categorySlug: 'process-flow-control-valves',
     shortDescription: 'Rising spindle, seat-type shut off valve with metal-to-metal seat for leak-free closure between port A and port B. Mounting interface conforms to ISO 5781-AB-03-4-B.',
     specifications: [
       { label: 'Type', value: 'Rising spindle, metal-to-metal seat' },
@@ -278,7 +278,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/mssl.jpg',
     ],
-    catalogueSource: 'ASIAN_HYDRAULICS_CATALOGUE p.17',
+    catalogueSource: 'ASIAN_HYDRAULIC p.17',
   },
   {
     id: 'cv',
@@ -286,7 +286,7 @@ export const PRODUCTS: Product[] = [
     name: 'CV Inline High Pressure Check Valve — 2 Way',
     modelCode: 'CV',
     brandSlug: 'asian-hydraulic',
-    categorySlug: 'check-valves',
+    categorySlug: 'process-flow-control-valves',
     shortDescription: '2-way inline high pressure check valve, hexagon body, free-flow one direction.',
     specifications: [
       { label: 'Type', value: 'Check valve CV' },
@@ -302,7 +302,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/cv.jpg',
     ],
-    catalogueSource: 'ASIAN_HYDRAULICS_CATALOGUE p.18',
+    catalogueSource: 'ASIAN_HYDRAULIC p.18',
   },
   {
     id: 'qdc',
@@ -310,7 +310,7 @@ export const PRODUCTS: Product[] = [
     name: 'QDC Quick Disconnect Coupling — 2 Way',
     modelCode: 'QDC',
     brandSlug: 'asian-hydraulic',
-    categorySlug: 'couplings',
+    categorySlug: 'couplings-tube-fittings',
     shortDescription: 'Quick disconnect coupling for fast connection/disconnection of hydraulic lines. Offers unrestricted flow when connected and is designed to avoid premature flow before the coupling is fully closed.',
     specifications: [
       { label: 'End connections', value: 'BSP (G) or Metric (M) female' },
@@ -320,7 +320,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/qdc.jpg',
     ],
-    catalogueSource: 'ASIAN_HYDRAULICS_CATALOGUE p.19',
+    catalogueSource: 'ASIAN_HYDRAULIC p.19',
   },
   {
     id: 'ah-series',
@@ -328,7 +328,7 @@ export const PRODUCTS: Product[] = [
     name: 'AH Series ISO 7241:2014 Quick Release Coupling',
     modelCode: 'AH Series',
     brandSlug: 'asian-hydraulic',
-    categorySlug: 'couplings',
+    categorySlug: 'couplings-tube-fittings',
     shortDescription: 'ISO A couplings made to ISO 7241:2014 Series A standard (Atauff AH Series). Suited to agricultural and industrial applications.',
     specifications: [
       { label: 'Construction', value: 'Carbon steel with trivalent (zinc nickel) plating; also available in AISI 316 stainless and Ford style' },
@@ -342,7 +342,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/ah-series-coupling.jpg',
     ],
-    catalogueSource: 'Asian_HydrulicISO_7214-2014_Couplings_QRC',
+    catalogueSource: 'Asian_HydrulicISO_7214-2014_Co',
   },
   {
     id: 'ahf04',
@@ -350,7 +350,7 @@ export const PRODUCTS: Product[] = [
     name: 'AHF04 Flat Face Quick Release Coupling — ISO 16028',
     modelCode: 'AHF04',
     brandSlug: 'asian-hydraulic',
-    categorySlug: 'couplings',
+    categorySlug: 'couplings-tube-fittings',
     shortDescription: 'Atauff AHF04 flat-face quick release coupling, ISO 16028 / 350 Bar, radial ball locking.',
     specifications: [
       { label: 'Standard', value: 'ISO 16028 (DN06 → DN30)' },
@@ -369,7 +369,7 @@ export const PRODUCTS: Product[] = [
       '/assets/products/ahf04-coupling.jpg',
       '/assets/products/ahf04-coupling-alt.jpg',
     ],
-    catalogueSource: 'Asian_Hydrulic_flat_face_QRC',
+    catalogueSource: 'Asian_Hydrulic_fl',
   },
   {
     id: 'gauge-up',
@@ -377,7 +377,7 @@ export const PRODUCTS: Product[] = [
     name: 'UP — Steel Case Pressure Gauge, Black Powder Coated',
     modelCode: 'UP',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Steel case, black powder coated pressure gauge.',
     specifications: [
       { label: 'Nominal size', value: '40 / 50 / 63 / 80 / 100 / 150 / 250 mm' },
@@ -388,7 +388,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-gauge-up.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.01',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.01',
   },
   {
     id: 'gauge-ip',
@@ -396,7 +396,7 @@ export const PRODUCTS: Product[] = [
     name: 'IP — All SS Industrial Gauge',
     modelCode: 'IP',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'All stainless steel industrial pressure gauge.',
     specifications: [
       { label: 'Nominal size', value: '100 / 125 / 150 / 200 / 250 mm' },
@@ -408,7 +408,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-gauge-ip.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.01',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.01',
   },
   {
     id: 'gauge-bi',
@@ -416,7 +416,7 @@ export const PRODUCTS: Product[] = [
     name: 'BI — SS Case Brass Pressure Gauge',
     modelCode: 'BI',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Stainless steel case pressure gauge with brass wetted parts.',
     specifications: [
       { label: 'Nominal size', value: '50 / 63 / 100 mm' },
@@ -427,7 +427,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-gauge-bi.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.01',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.01',
   },
   {
     id: 'gauge-ep',
@@ -435,7 +435,7 @@ export const PRODUCTS: Product[] = [
     name: 'EP — All SS Economical Gauge, Compact Case',
     modelCode: 'EP',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'All stainless steel economical pressure gauge in a compact case.',
     specifications: [
       { label: 'Nominal size', value: '100 mm' },
@@ -447,7 +447,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-gauge-ep.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.01',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.01',
   },
   {
     id: 'gauge-cs',
@@ -455,7 +455,7 @@ export const PRODUCTS: Product[] = [
     name: 'CS — All SS Capsule Type Gauge',
     modelCode: 'CS',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'All stainless steel capsule-type low pressure gauge.',
     specifications: [
       { label: 'Nominal size', value: '63 / 100 / 125 / 150 mm' },
@@ -466,7 +466,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-gauge-cs.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.01',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.01',
   },
   {
     id: 'gauge-ea',
@@ -474,7 +474,7 @@ export const PRODUCTS: Product[] = [
     name: 'EA — All SS External Zero Adjustment Gauge',
     modelCode: 'EA',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'All stainless steel pressure gauge with external zero adjustment.',
     specifications: [
       { label: 'Nominal size', value: '100 mm' },
@@ -486,7 +486,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-gauge-ea.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.01',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.01',
   },
   {
     id: 'gauge-sp',
@@ -494,7 +494,7 @@ export const PRODUCTS: Product[] = [
     name: 'SP — SS Compact Case Gauge',
     modelCode: 'SP',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Stainless steel compact case pressure gauge.',
     specifications: [
       { label: 'Nominal size', value: '63 mm, 100 mm' },
@@ -506,7 +506,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-gauge-sp.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.01',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.01',
   },
   {
     id: 'gauge-mr',
@@ -514,7 +514,7 @@ export const PRODUCTS: Product[] = [
     name: 'MR — Maximum Reading Pressure Gauge',
     modelCode: 'MR',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Pressure gauge that retains the maximum reading recorded.',
     specifications: [
       { label: 'Nominal size', value: '100 / 150 / 200 / 250 mm' },
@@ -526,7 +526,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-gauge-mr.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.01',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.01',
   },
   {
     id: 'gauge-bw',
@@ -534,7 +534,7 @@ export const PRODUCTS: Product[] = [
     name: 'BW — All SS Solid Front Gauge',
     modelCode: 'BW',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'All stainless steel solid front (blow-out proof) pressure gauge.',
     specifications: [
       { label: 'Nominal size', value: '100 / 150 mm' },
@@ -546,7 +546,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-gauge-bw.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.01',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.01',
   },
   {
     id: 'gauge-mg-test',
@@ -554,7 +554,7 @@ export const PRODUCTS: Product[] = [
     name: 'MG — SS Case Test Gauge',
     modelCode: 'MG',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Stainless steel case test / master gauge.',
     specifications: [
       { label: 'Nominal size', value: '150 / 200 / 250 mm' },
@@ -564,7 +564,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-gauge-mg-test.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.01',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.01',
   },
   {
     id: 'gauge-dg',
@@ -572,7 +572,7 @@ export const PRODUCTS: Product[] = [
     name: 'DG — Draft Gauge',
     modelCode: 'DG',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Draft gauge for low differential pressure sensing.',
     specifications: [
       { label: 'Nominal size', value: '150 x 78 mm / 200 x 180 mm' },
@@ -583,7 +583,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-gauge-dg.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.01',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.01',
   },
   {
     id: 'gauge-ie',
@@ -591,7 +591,7 @@ export const PRODUCTS: Product[] = [
     name: 'IE — Electric Contact Type Gauge',
     modelCode: 'IE',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Pressure gauge with electric contact switching output.',
     specifications: [
       { label: 'Nominal size', value: '100 / 150 mm' },
@@ -602,7 +602,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-gauge-ie.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.01',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.01',
   },
   {
     id: 'gauge-ap',
@@ -610,7 +610,7 @@ export const PRODUCTS: Product[] = [
     name: 'AP — Ammonia Pressure Gauge, Bourdon Type',
     modelCode: 'AP',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Bourdon-type pressure gauge for ammonia service.',
     specifications: [
       { label: 'Nominal size', value: '100 mm' },
@@ -621,7 +621,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-gauge-ap.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.01',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.01',
   },
   {
     id: 'gauge-tc-sanitary',
@@ -629,7 +629,7 @@ export const PRODUCTS: Product[] = [
     name: 'TC — All SS Sanitary Gauge',
     modelCode: 'TC',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'All stainless steel sanitary pressure gauge with diaphragm.',
     specifications: [
       { label: 'Nominal size', value: '50 / 63 / 100 mm' },
@@ -641,7 +641,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-gauge-tc-sanitary.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.01',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.01',
   },
   {
     id: 'gauge-dc-schaffer',
@@ -649,7 +649,7 @@ export const PRODUCTS: Product[] = [
     name: 'DC — All SS Schaffer High Pressure Gauge',
     modelCode: 'DC',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'All stainless steel Schaffer-type high pressure diaphragm gauge.',
     specifications: [
       { label: 'Nominal size', value: '100 / 150 mm' },
@@ -661,7 +661,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-gauge-dc-schaffer.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.02',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.02',
   },
   {
     id: 'gauge-sf-schaffer',
@@ -669,7 +669,7 @@ export const PRODUCTS: Product[] = [
     name: 'SF — All SS Schaffer Low Pressure Gauge',
     modelCode: 'SF',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'All stainless steel Schaffer-type low pressure diaphragm gauge.',
     specifications: [
       { label: 'Nominal size', value: '100 / 150 mm' },
@@ -681,7 +681,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-gauge-sf-schaffer.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.02',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.02',
   },
   {
     id: 'gauge-hg',
@@ -689,7 +689,7 @@ export const PRODUCTS: Product[] = [
     name: 'HG — All SS Homogenizer Gauge',
     modelCode: 'HG',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'All stainless steel diaphragm-type homogenizer pressure gauge.',
     specifications: [
       { label: 'Nominal size', value: '100 / 150 mm' },
@@ -701,7 +701,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-gauge-hg.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.02',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.02',
   },
   {
     id: 'gauge-dp',
@@ -709,7 +709,7 @@ export const PRODUCTS: Product[] = [
     name: 'DP — Differential Pressure Gauge (Piston Operated)',
     modelCode: 'DP',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Piston-operated differential pressure gauge with ceramic magnet coupling.',
     specifications: [
       { label: 'Nominal size', value: '63 / 100 / 150 mm' },
@@ -720,7 +720,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-gauge-dp.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.02',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.02',
   },
   {
     id: 'gauge-dsd',
@@ -728,7 +728,7 @@ export const PRODUCTS: Product[] = [
     name: 'DSD — Double Diaphragm Differential Pressure Gauge',
     modelCode: 'DSD',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Double-diaphragm differential pressure gauge.',
     specifications: [
       { label: 'Nominal size', value: '100 / 150 mm' },
@@ -739,7 +739,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-gauge-dsd.jpg',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.02',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.02',
   },
   {
     id: 'gauge-mg-mud',
@@ -747,7 +747,7 @@ export const PRODUCTS: Product[] = [
     name: 'MG — Mud Gauge',
     modelCode: 'MG',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Pressure gauge for drilling mud service.',
     specifications: [
       { label: 'Nominal size', value: '100 mm' },
@@ -758,7 +758,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-gauge-mg-mud.jpg',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.02',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.02',
   },
   {
     id: 'temp-tg',
@@ -766,7 +766,7 @@ export const PRODUCTS: Product[] = [
     name: 'TG — Fully SS Thermometer with Capillary',
     modelCode: 'TG',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Fully stainless steel thermometer with capillary, rigid stem.',
     specifications: [
       { label: 'Nominal size', value: '100 / 125 / 150 / 200 / 250 mm' },
@@ -778,7 +778,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-temp-tg.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.02',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.02',
   },
   {
     id: 'temp-tb',
@@ -786,7 +786,7 @@ export const PRODUCTS: Product[] = [
     name: 'TB — Fully SS Thermometer',
     modelCode: 'TB',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Fully stainless steel bimetal thermometer.',
     specifications: [
       { label: 'Nominal size', value: '40 / 50 / 63 / 80 / 100 / 125 / 150 mm' },
@@ -797,7 +797,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-temp-tb.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.02',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.02',
   },
   {
     id: 'temp-et',
@@ -805,7 +805,7 @@ export const PRODUCTS: Product[] = [
     name: 'ET — Exhaust Thermometer with External Bayonet',
     modelCode: 'ET',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Bayonet-type exhaust thermometer.',
     specifications: [
       { label: 'Nominal size', value: '100 mm' },
@@ -817,7 +817,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-temp-et.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.02',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.02',
   },
   {
     id: 'thermowell-ft',
@@ -825,7 +825,7 @@ export const PRODUCTS: Product[] = [
     name: 'FT — Flanged Type Thermowell',
     modelCode: 'EI1',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Flanged thermowell fabricated from barstock.',
     specifications: [
       { label: 'Model', value: 'EI1' },
@@ -835,7 +835,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-thermowell-ft.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.02',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.02',
   },
   {
     id: 'thermowell-sst',
@@ -843,7 +843,7 @@ export const PRODUCTS: Product[] = [
     name: 'SST — Straight Screwed Type Thermowell',
     modelCode: 'EI2',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Straight screwed thermowell fabricated from barstock.',
     specifications: [
       { label: 'Model', value: 'EI2' },
@@ -854,7 +854,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-thermowell-sst.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.02',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.02',
   },
   {
     id: 'thermowell-ftt',
@@ -862,7 +862,7 @@ export const PRODUCTS: Product[] = [
     name: 'FTT — Flanged Tapered Type Thermowell',
     modelCode: 'EI3',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Flanged, tapered thermowell fabricated from barstock.',
     specifications: [
       { label: 'Model', value: 'EI3' },
@@ -873,7 +873,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-thermowell-ftt.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.02',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.02',
   },
   {
     id: 'thermowell-tst',
@@ -881,7 +881,7 @@ export const PRODUCTS: Product[] = [
     name: 'TST — Tapered Screwed Type Thermowell',
     modelCode: 'TST',
     brandSlug: 'delta',
-    categorySlug: 'instrumentation',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Screwed thermowell, fully tapered, fabricated from barstock.',
     specifications: [
       { label: 'Type', value: 'Fabricated from barstock' },
@@ -891,7 +891,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-thermowell-tst.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.02',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.02',
   },
   {
     id: 'seal-sc',
@@ -899,7 +899,7 @@ export const PRODUCTS: Product[] = [
     name: 'SC — Sanitary Clamp Type Diaphragm Seal',
     modelCode: 'SC',
     brandSlug: 'delta',
-    categorySlug: 'diaphragm-seals',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Diaphragm seal with sanitary clamp connection.',
     specifications: [
       { label: 'Range', value: '-1 to 40 Bar' },
@@ -909,7 +909,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-seal-sc.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.03',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.03',
   },
   {
     id: 'seal-src',
@@ -917,7 +917,7 @@ export const PRODUCTS: Product[] = [
     name: 'SRC — Slip Ring Coupled Type Diaphragm Seal',
     modelCode: 'SRC',
     brandSlug: 'delta',
-    categorySlug: 'diaphragm-seals',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Diaphragm seal with slip ring coupled connection.',
     specifications: [
       { label: 'Range', value: '-1 to 400 Bar' },
@@ -927,7 +927,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-seal-src.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.03',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.03',
   },
   {
     id: 'seal-dis',
@@ -935,7 +935,7 @@ export const PRODUCTS: Product[] = [
     name: 'DIS — "I" Section Type Diaphragm Seal',
     modelCode: 'DIS',
     brandSlug: 'delta',
-    categorySlug: 'diaphragm-seals',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Diaphragm seal with I-section flanged body.',
     specifications: [
       { label: 'Flange', value: 'As per ANSI, ASA, DIN, JIS' },
@@ -945,7 +945,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-seal-dis.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.03',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.03',
   },
   {
     id: 'seal-dc',
@@ -953,7 +953,7 @@ export const PRODUCTS: Product[] = [
     name: 'DC — Direct Coupled Type Diaphragm Seal',
     modelCode: 'DC',
     brandSlug: 'delta',
-    categorySlug: 'diaphragm-seals',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Diaphragm seal with direct coupled connection.',
     specifications: [
       { label: 'Range', value: '-1 to 400 Bar' },
@@ -963,7 +963,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-seal-dc.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.03',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.03',
   },
   {
     id: 'seal-dff',
@@ -971,7 +971,7 @@ export const PRODUCTS: Product[] = [
     name: 'DFF — Direct Flanged Flush Type Diaphragm Seal',
     modelCode: 'DFF',
     brandSlug: 'delta',
-    categorySlug: 'diaphragm-seals',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Flush diaphragm seal with direct flanged connection.',
     specifications: [
       { label: 'Flange', value: 'As per ANSI, ASA, DIN, JIS' },
@@ -981,7 +981,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-seal-dff.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.03',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.03',
   },
   {
     id: 'seal-cd',
@@ -989,7 +989,7 @@ export const PRODUCTS: Product[] = [
     name: 'CD — Compact Design Diaphragm Seal',
     modelCode: 'CD',
     brandSlug: 'delta',
-    categorySlug: 'diaphragm-seals',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Compact screwed diaphragm seal.',
     specifications: [
       { label: 'Range', value: 'Up to 21 Bar' },
@@ -999,7 +999,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-seal-cd.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.03',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.03',
   },
   {
     id: 'seal-dfi',
@@ -1007,7 +1007,7 @@ export const PRODUCTS: Product[] = [
     name: 'DFI — Direct Flanged Insert Type Diaphragm Seal',
     modelCode: 'DFI',
     brandSlug: 'delta',
-    categorySlug: 'diaphragm-seals',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Insert-type diaphragm seal with direct flanged connection.',
     specifications: [
       { label: 'Flange', value: 'As per ANSI, ASA, DIN, JIS' },
@@ -1017,7 +1017,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-seal-dfi.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.03',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.03',
   },
   {
     id: 'seal-fs',
@@ -1025,7 +1025,7 @@ export const PRODUCTS: Product[] = [
     name: 'F/S — Floating Type / Sanitary Type Diaphragm Seal',
     modelCode: 'F/S',
     brandSlug: 'delta',
-    categorySlug: 'diaphragm-seals',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Floating / sanitary type diaphragm seal.',
     specifications: [
       { label: 'Range', value: 'Up to 40 Bar' },
@@ -1035,7 +1035,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-seal-fs.jpg',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.03',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.03',
   },
   {
     id: 'seal-en',
@@ -1043,7 +1043,7 @@ export const PRODUCTS: Product[] = [
     name: 'EN — Extended Neck Type Diaphragm Seal',
     modelCode: 'EN',
     brandSlug: 'delta',
-    categorySlug: 'diaphragm-seals',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Diaphragm seal with extended neck, flanged.',
     specifications: [
       { label: 'Flange', value: 'As per ANSI, ASA, DIN, JIS' },
@@ -1053,7 +1053,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-seal-en.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.03',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.03',
   },
   {
     id: 'seal-sf',
@@ -1061,7 +1061,7 @@ export const PRODUCTS: Product[] = [
     name: 'SF — Screwed Flush Type Diaphragm Seal',
     modelCode: 'SF',
     brandSlug: 'delta',
-    categorySlug: 'diaphragm-seals',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Screwed, flush-mounted diaphragm seal.',
     specifications: [
       { label: 'Range', value: 'Up to 600 Bar' },
@@ -1071,7 +1071,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-seal-sf.jpg',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.03',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.03',
   },
   {
     id: 'seal-wt',
@@ -1079,7 +1079,7 @@ export const PRODUCTS: Product[] = [
     name: 'WT — Wafer Type Diaphragm Seal',
     modelCode: 'WT',
     brandSlug: 'delta',
-    categorySlug: 'diaphragm-seals',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Wafer-type diaphragm seal, flanged.',
     specifications: [
       { label: 'Flange', value: 'As per ANSI, ASA, DIN, JIS' },
@@ -1089,7 +1089,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-seal-wt.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.03',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.03',
   },
   {
     id: 'seal-fr',
@@ -1097,7 +1097,7 @@ export const PRODUCTS: Product[] = [
     name: 'FR — Floating Ring Type Diaphragm Seal',
     modelCode: 'FR',
     brandSlug: 'delta',
-    categorySlug: 'diaphragm-seals',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Floating ring type diaphragm seal for pulp applications.',
     specifications: [
       { label: 'Application', value: 'Pulp' },
@@ -1107,7 +1107,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-seal-fr.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.03',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.03',
   },
   {
     id: 'seal-hm',
@@ -1115,7 +1115,7 @@ export const PRODUCTS: Product[] = [
     name: 'HM — Heavy Duty Mini Seal',
     modelCode: 'HM',
     brandSlug: 'delta',
-    categorySlug: 'diaphragm-seals',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Compact, heavy duty diaphragm seal.',
     specifications: [
       { label: 'Wetted parts', value: 'AISI 316L SS' },
@@ -1124,7 +1124,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-seal-hm.jpg',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.03',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.03',
   },
   {
     id: 'nv1',
@@ -1132,7 +1132,7 @@ export const PRODUCTS: Product[] = [
     name: 'NV1 — Needle Valve',
     modelCode: 'NV1',
     brandSlug: 'delta',
-    categorySlug: 'manifold-valves-accessories',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Needle valve, 2" size.',
     specifications: [
       { label: 'Material', value: 'AISI SS 316' },
@@ -1143,7 +1143,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-nv1.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.04',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.04',
   },
   {
     id: 'nv3',
@@ -1151,7 +1151,7 @@ export const PRODUCTS: Product[] = [
     name: 'NV3 — Needle Valve',
     modelCode: 'NV3',
     brandSlug: 'delta',
-    categorySlug: 'manifold-valves-accessories',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Needle valve, 1/8" to 1" sizes.',
     specifications: [
       { label: 'Material', value: 'AISI SS 316 / SS 316L / Monel' },
@@ -1162,7 +1162,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-nv3.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.04',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.04',
   },
   {
     id: '2vm',
@@ -1170,7 +1170,7 @@ export const PRODUCTS: Product[] = [
     name: '2VM — Two Valve Manifold',
     modelCode: '2VM',
     brandSlug: 'delta',
-    categorySlug: 'manifold-valves-accessories',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Two valve manifold for instrument isolation.',
     specifications: [
       { label: 'Material', value: 'AISI SS 316 / SS 316L / Monel' },
@@ -1183,7 +1183,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-2vm.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.04',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.04',
   },
   {
     id: '3vm',
@@ -1191,7 +1191,7 @@ export const PRODUCTS: Product[] = [
     name: '3VM — Three Valve Manifold',
     modelCode: '3VM',
     brandSlug: 'delta',
-    categorySlug: 'manifold-valves-accessories',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Three valve manifold for instrument isolation and equalization.',
     specifications: [
       { label: 'Material', value: 'AISI SS 316 / SS 316L / Monel' },
@@ -1204,7 +1204,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-3vm.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.04',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.04',
   },
   {
     id: '5vm',
@@ -1212,7 +1212,7 @@ export const PRODUCTS: Product[] = [
     name: '5VM — Five Valve Manifold',
     modelCode: '5VM',
     brandSlug: 'delta',
-    categorySlug: 'manifold-valves-accessories',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Five valve manifold for differential pressure instrument isolation and equalization.',
     specifications: [
       { label: 'Material', value: 'AISI SS 316 / SS 316L / Monel' },
@@ -1225,7 +1225,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-5vm.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.04',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.04',
   },
   {
     id: 'acc-ct',
@@ -1233,7 +1233,7 @@ export const PRODUCTS: Product[] = [
     name: 'CT — Cooling Tower',
     modelCode: 'CT',
     brandSlug: 'delta',
-    categorySlug: 'manifold-valves-accessories',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Cooling tower / siphon accessory for gauge protection.',
     specifications: [
       { label: 'Type', value: 'Perforated / FIN type / Capillary' },
@@ -1242,7 +1242,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-acc-ct.jpg',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.04',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.04',
   },
   {
     id: 'acc-gc',
@@ -1250,7 +1250,7 @@ export const PRODUCTS: Product[] = [
     name: 'GC — Gauge Cock',
     modelCode: 'GC',
     brandSlug: 'delta',
-    categorySlug: 'manifold-valves-accessories',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Gauge cock isolation valve for pressure gauges.',
     specifications: [
       { label: 'Material', value: 'AISI SS 316' },
@@ -1261,7 +1261,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-acc-gc.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.04',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.04',
   },
   {
     id: 'acc-op',
@@ -1269,7 +1269,7 @@ export const PRODUCTS: Product[] = [
     name: 'OP — Overload Protector',
     modelCode: 'OP',
     brandSlug: 'delta',
-    categorySlug: 'manifold-valves-accessories',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Overload protector to guard gauges against pressure spikes.',
     specifications: [
       { label: 'Setting range', value: '1.0 to 400 Bar' },
@@ -1281,7 +1281,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-acc-op.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.04',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.04',
   },
   {
     id: 'acc-fr',
@@ -1289,7 +1289,7 @@ export const PRODUCTS: Product[] = [
     name: 'FR — Flushing Ring',
     modelCode: 'FR',
     brandSlug: 'delta',
-    categorySlug: 'manifold-valves-accessories',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Flushing ring accessory for diaphragm seal flange assemblies.',
     specifications: [
       { label: 'Flange size', value: '2" to 5", as per ANSI B16.5' },
@@ -1301,7 +1301,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-acc-fr.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.04',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.04',
   },
   {
     id: 'acc-sn',
@@ -1309,7 +1309,7 @@ export const PRODUCTS: Product[] = [
     name: 'SN — Pulsation Dampener / Snubber',
     modelCode: 'SN',
     brandSlug: 'delta',
-    categorySlug: 'manifold-valves-accessories',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Pulsation dampener / snubber for gauge protection.',
     specifications: [
       { label: 'Working pressure', value: 'Up to 400 kg/cm²' },
@@ -1319,7 +1319,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-acc-sn.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.04',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.04',
   },
   {
     id: 'acc-sy',
@@ -1327,7 +1327,7 @@ export const PRODUCTS: Product[] = [
     name: 'SY — Syphon',
     modelCode: 'SY',
     brandSlug: 'delta',
-    categorySlug: 'manifold-valves-accessories',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Syphon for temperature protection of pressure gauges.',
     specifications: [
       { label: 'Type', value: 'Coil / Pigtail / U type' },
@@ -1337,7 +1337,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-acc-sy.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.04',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.04',
   },
   {
     id: 'rtd3',
@@ -1345,7 +1345,7 @@ export const PRODUCTS: Product[] = [
     name: 'RTD3 — RTD Assembly with Fixed Threaded Extension',
     modelCode: 'RTD 3',
     brandSlug: 'delta',
-    categorySlug: 'manifold-valves-accessories',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'RTD assembly with fixed threaded extension.',
     specifications: [
       { label: 'Sensor', value: 'PT100' },
@@ -1356,7 +1356,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-rtd3.jpg',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.05',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.05',
   },
   {
     id: 'rtd4',
@@ -1364,7 +1364,7 @@ export const PRODUCTS: Product[] = [
     name: 'RTD4 — RTD Assembly with Adjustable Threaded Extension',
     modelCode: 'RTD 4',
     brandSlug: 'delta',
-    categorySlug: 'manifold-valves-accessories',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'RTD assembly with adjustable threaded extension.',
     specifications: [
       { label: 'Sensor', value: 'PT100' },
@@ -1375,7 +1375,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-rtd4.jpg',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.05',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.05',
   },
   {
     id: 'rtd5',
@@ -1383,7 +1383,7 @@ export const PRODUCTS: Product[] = [
     name: 'RTD5 — RTD Insert with Threaded Pot & Lead Wires',
     modelCode: 'RTD 5',
     brandSlug: 'delta',
-    categorySlug: 'manifold-valves-accessories',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'RTD insert with threaded pot and lead wires.',
     specifications: [
       { label: 'Sensor', value: 'PT100' },
@@ -1393,7 +1393,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-rtd5.jpg',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.05',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.05',
   },
   {
     id: 'rtd8',
@@ -1401,7 +1401,7 @@ export const PRODUCTS: Product[] = [
     name: 'RTD8 — Bearing Temperature RTD',
     modelCode: 'RTD 8',
     brandSlug: 'delta',
-    categorySlug: 'manifold-valves-accessories',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'RTD for bearing temperature measurement.',
     specifications: [
       { label: 'Sensor', value: 'PT100' },
@@ -1411,7 +1411,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-rtd8.jpg',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.05',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.05',
   },
   {
     id: 'rtd11',
@@ -1419,7 +1419,7 @@ export const PRODUCTS: Product[] = [
     name: 'RTD11 — RTD Assembly with Protecting Tube (Flanged Connection)',
     modelCode: 'RTD 11',
     brandSlug: 'delta',
-    categorySlug: 'manifold-valves-accessories',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'RTD assembly with a protecting tube and flanged connection.',
     specifications: [
       { label: 'Sensor', value: 'PT100' },
@@ -1430,7 +1430,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-rtd11.jpg',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.05',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.05',
   },
   {
     id: 'rtd12',
@@ -1438,7 +1438,7 @@ export const PRODUCTS: Product[] = [
     name: 'RTD12 — RTD Assembly with Adjustable Tri-Clamp Connection',
     modelCode: 'RTD 12',
     brandSlug: 'delta',
-    categorySlug: 'manifold-valves-accessories',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'RTD assembly with adjustable tri-clamp connection.',
     specifications: [
       { label: 'Sensor', value: 'PT100' },
@@ -1449,7 +1449,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-rtd12.jpg',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.05',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.05',
   },
   {
     id: 'tc1',
@@ -1457,7 +1457,7 @@ export const PRODUCTS: Product[] = [
     name: 'TC1 — TC Assembly with Adjustable Threaded Connection',
     modelCode: 'TC 1',
     brandSlug: 'delta',
-    categorySlug: 'manifold-valves-accessories',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Thermocouple assembly with adjustable threaded connection.',
     specifications: [
       { label: 'Type', value: 'Chromel-Alumel' },
@@ -1468,7 +1468,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-tc1.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.05',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.05',
   },
   {
     id: 'tc2',
@@ -1476,7 +1476,7 @@ export const PRODUCTS: Product[] = [
     name: 'TC2 — TC Assembly with Protecting Tube (Flanged Connection)',
     modelCode: 'TC 2',
     brandSlug: 'delta',
-    categorySlug: 'manifold-valves-accessories',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Thermocouple assembly with a protecting tube and flanged connection.',
     specifications: [
       { label: 'Type', value: 'Chromel-Alumel' },
@@ -1487,7 +1487,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-tc2.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.05',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.05',
   },
   {
     id: 'tc4',
@@ -1495,7 +1495,7 @@ export const PRODUCTS: Product[] = [
     name: 'TC4 — TC Insert with Transition Joint',
     modelCode: 'TC 4',
     brandSlug: 'delta',
-    categorySlug: 'manifold-valves-accessories',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Thermocouple insert with transition joint.',
     specifications: [
       { label: 'Type', value: 'Chromel-Alumel' },
@@ -1505,7 +1505,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-tc4.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.05',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.05',
   },
   {
     id: 'tc5',
@@ -1513,7 +1513,7 @@ export const PRODUCTS: Product[] = [
     name: 'TC5 — TC Insert with Plug & Jack Connector',
     modelCode: 'TC 5',
     brandSlug: 'delta',
-    categorySlug: 'manifold-valves-accessories',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Thermocouple insert with plug and jack connector.',
     specifications: [
       { label: 'Type', value: 'Chromel-Alumel' },
@@ -1523,7 +1523,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/delta-tc5.png',
     ],
-    catalogueSource: 'FLYER_DELTA_INSTRUMENTS_compressed p.05',
+    catalogueSource: 'FLYER_DELTA_INSTRUMENTS p.05',
   },
   {
     id: 'hydroline-lg2',
@@ -2049,7 +2049,7 @@ export const PRODUCTS: Product[] = [
     name: 'Check Valve — Inline — CUT',
     modelCode: 'CUT',
     brandSlug: 'hydroline',
-    categorySlug: 'check-valves',
+    categorySlug: 'process-flow-control-valves',
     shortDescription: 'Inline check valve for one-directional flow control.',
     specifications: [],
     images: [
@@ -2063,7 +2063,7 @@ export const PRODUCTS: Product[] = [
     name: 'Lock Check Valve — DLVT / SLVT',
     modelCode: 'DLVT/SLVT',
     brandSlug: 'hydroline',
-    categorySlug: 'check-valves',
+    categorySlug: 'process-flow-control-valves',
     shortDescription: 'Lock check valve for load-holding applications.',
     specifications: [],
     images: [
@@ -2181,7 +2181,7 @@ export const PRODUCTS: Product[] = [
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/07/PVR-Series-Single-Vane-Pump.jpg',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-pvr-double',
@@ -2195,7 +2195,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/PVR-Series-Double-Vane-Pumps.jpg',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-pvm-single',
@@ -2209,7 +2209,7 @@ export const PRODUCTS: Product[] = [
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/07/PVM-Series-Single-Vane-Pumps.jpg',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-pvm-double',
@@ -2223,7 +2223,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/PVM-Series-Double-Vane-Pumps.jpg',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-pv2r-single',
@@ -2237,7 +2237,7 @@ export const PRODUCTS: Product[] = [
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/08/PV2R-Series-Single-Vane-Pumps.jpg',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-pv2r-double',
@@ -2251,7 +2251,7 @@ export const PRODUCTS: Product[] = [
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/08/PV2R-Series-Double-Vane-Pumps.jpg',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-svp-single',
@@ -2265,7 +2265,7 @@ export const PRODUCTS: Product[] = [
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/08/SVP-Series-Single-Vane-Pumps.jpg',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-svp-double',
@@ -2279,7 +2279,7 @@ export const PRODUCTS: Product[] = [
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/08/SVP-Series-Double-Vane-Pumps.jpg',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-hpv-single',
@@ -2293,7 +2293,7 @@ export const PRODUCTS: Product[] = [
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/08/HPV-Series-Single-Vane-Pumps.jpg',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-hpv-double',
@@ -2307,7 +2307,7 @@ export const PRODUCTS: Product[] = [
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/08/HPV-Series-Double-Vane-Pumps.jpg',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-pvv10',
@@ -2321,7 +2321,7 @@ export const PRODUCTS: Product[] = [
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/08/PVV-10-Series.jpg',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-rv20',
@@ -2335,7 +2335,7 @@ export const PRODUCTS: Product[] = [
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/08/RV-20-Series-1.jpg',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-pvv20',
@@ -2349,7 +2349,7 @@ export const PRODUCTS: Product[] = [
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2022/11/PVV20.jpg',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-pg0',
@@ -2363,7 +2363,7 @@ export const PRODUCTS: Product[] = [
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/08/PG0.jpg',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-pg00',
@@ -2377,7 +2377,7 @@ export const PRODUCTS: Product[] = [
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/08/PG00.jpg',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-pg1',
@@ -2391,7 +2391,7 @@ export const PRODUCTS: Product[] = [
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/08/PG1.jpg',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-pg2',
@@ -2405,7 +2405,7 @@ export const PRODUCTS: Product[] = [
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2024/12/g2-gears.png',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-pg3',
@@ -2419,7 +2419,7 @@ export const PRODUCTS: Product[] = [
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/08/PG3.jpg',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-relief-direct',
@@ -2427,13 +2427,13 @@ export const PRODUCTS: Product[] = [
     name: 'Direct Operated Relief Valve',
     modelCode: '',
     brandSlug: 'yuken',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Direct-operated relief valve for hydraulic pressure control.',
     specifications: [],
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/08/b5_redcd.png',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-relief-pilot',
@@ -2441,13 +2441,13 @@ export const PRODUCTS: Product[] = [
     name: 'Pilot Operated Relief Valve',
     modelCode: '',
     brandSlug: 'yuken',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Pilot-operated relief valve for hydraulic pressure control.',
     specifications: [],
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/08/Pilot-Operated-Relief-Valve.jpg',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-relief-unloading',
@@ -2455,13 +2455,13 @@ export const PRODUCTS: Product[] = [
     name: 'Unloading Relief Valve',
     modelCode: '',
     brandSlug: 'yuken',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Unloading relief valve for hydraulic pressure control.',
     specifications: [],
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/08/Unloading-Relief-Valves.jpg',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-pressure-reducing',
@@ -2469,13 +2469,13 @@ export const PRODUCTS: Product[] = [
     name: 'Pressure Reducing Valve',
     modelCode: '',
     brandSlug: 'yuken',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Pressure reducing valve for hydraulic circuits.',
     specifications: [],
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/08/Pressure-Reducing-Valve.jpg',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-h-hc-pressure-control',
@@ -2483,13 +2483,13 @@ export const PRODUCTS: Product[] = [
     name: 'H & HC Type Pressure Control Valve',
     modelCode: 'H / HC',
     brandSlug: 'yuken',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Pressure control valve, H and HC type.',
     specifications: [],
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/08/H-HC-type-pressure-control-valve.png',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-pressure-switch',
@@ -2497,13 +2497,13 @@ export const PRODUCTS: Product[] = [
     name: 'Pressure Switch',
     modelCode: '',
     brandSlug: 'yuken',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Hydraulic pressure switch.',
     specifications: [],
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/08/Pressure-Switch1.png',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-hydro-electric-pressure-switch',
@@ -2511,13 +2511,13 @@ export const PRODUCTS: Product[] = [
     name: 'Hydro-Electric Pressure Switch',
     modelCode: 'YSG-20D',
     brandSlug: 'yuken',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Hydro-electric pressure switch.',
     specifications: [],
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/09/Hydro-Electric-Pressure-Switch.jpg',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-ycb-relief',
@@ -2525,13 +2525,13 @@ export const PRODUCTS: Product[] = [
     name: 'YCB-06 / YCB-10 Direct Operated Pressure Relief Valve',
     modelCode: 'YCB-06 / YCB-10',
     brandSlug: 'yuken',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Direct-operated pressure relief valve.',
     specifications: [],
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2016/04/VSS_4004.jpg',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-yc00',
@@ -2539,13 +2539,13 @@ export const PRODUCTS: Product[] = [
     name: 'YC00 Load Holding Cartridge Valve',
     modelCode: 'YC00',
     brandSlug: 'yuken',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Screw-in cartridge load-holding (counterbalance) valve with internal/external pilot; 3:1 pilot ratio, adjustable setting. Maximum operating pressure 350 bar, maximum flow rate 60 lpm.',
     specifications: [],
     images: [
       '/assets/products/yuken-yc00.jpg',
     ],
-    catalogueSource: 'LOAD-HOLDING-CARTRIDGE-VALVES-YIL',
+    catalogueSource: 'LOAD-HOLDING-CARTRIDGE',
   },
   {
     id: 'yuken-yc04-sp',
@@ -2553,13 +2553,13 @@ export const PRODUCTS: Product[] = [
     name: 'YC04 SP Adjustable Load Holding Cartridge Valve',
     modelCode: 'YC04',
     brandSlug: 'yuken',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'SP-adjustable variant of the YC Series load-holding cartridge valve. Also available with valve body (YM-C04).',
     specifications: [],
     images: [
       '/assets/products/yuken-yc-cartridge-generic.jpg',
     ],
-    catalogueSource: 'LOAD-HOLDING-CARTRIDGE-VALVES-YIL',
+    catalogueSource: 'LOAD-HOLDING-CARTRIDGE',
   },
   {
     id: 'yuken-yc20',
@@ -2567,13 +2567,13 @@ export const PRODUCTS: Product[] = [
     name: 'YC20 Adjustable Load Holding Cartridge Valve',
     modelCode: 'YC20',
     brandSlug: 'yuken',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Adjustable load-holding cartridge valve, available in multiple port configurations. Also available with valve body (YM-C20).',
     specifications: [],
     images: [
       '/assets/products/yuken-yc20.jpg',
     ],
-    catalogueSource: 'LOAD-HOLDING-CARTRIDGE-VALVES-YIL',
+    catalogueSource: 'LOAD-HOLDING-CARTRIDGE',
   },
   {
     id: 'yuken-ycd4',
@@ -2581,13 +2581,13 @@ export const PRODUCTS: Product[] = [
     name: 'YCD4 Ultra Fine Control Load Holding Cartridge Valve',
     modelCode: 'YCD4',
     brandSlug: 'yuken',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Ultra fine control variant of the YC Series load-holding cartridge valve.',
     specifications: [],
     images: [
       '/assets/products/yuken-yc-cartridge-generic.jpg',
     ],
-    catalogueSource: 'LOAD-HOLDING-CARTRIDGE-VALVES-YIL',
+    catalogueSource: 'LOAD-HOLDING-CARTRIDGE',
   },
   {
     id: 'yuken-ycw4',
@@ -2595,13 +2595,13 @@ export const PRODUCTS: Product[] = [
     name: 'YCW4 Fine Control Load Holding Cartridge Valve',
     modelCode: 'YCW4',
     brandSlug: 'yuken',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Fine control variant of the YC Series load-holding cartridge valve. Also available with valve body (YM-CW4).',
     specifications: [],
     images: [
       '/assets/products/yuken-yc-cartridge-generic.jpg',
     ],
-    catalogueSource: 'LOAD-HOLDING-CARTRIDGE-VALVES-YIL',
+    catalogueSource: 'LOAD-HOLDING-CARTRIDGE',
   },
   {
     id: 'yuken-dsg01',
@@ -2609,13 +2609,13 @@ export const PRODUCTS: Product[] = [
     name: 'DSG01 Solenoid Operated Directional Valve',
     modelCode: 'DSG01',
     brandSlug: 'yuken',
-    categorySlug: 'directional-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Solenoid-operated directional control valve.',
     specifications: [],
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/09/DSG01_thmbpng.png',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-dsg03',
@@ -2623,13 +2623,13 @@ export const PRODUCTS: Product[] = [
     name: 'DSG03 Solenoid Operated Directional Valve',
     modelCode: 'DSG03',
     brandSlug: 'yuken',
-    categorySlug: 'directional-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Solenoid-operated directional control valve.',
     specifications: [],
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/09/DSG03_thmb.png',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-dshg',
@@ -2637,13 +2637,13 @@ export const PRODUCTS: Product[] = [
     name: 'Solenoid Controlled Pilot Operated Directional Valve',
     modelCode: 'DSHG',
     brandSlug: 'yuken',
-    categorySlug: 'directional-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Solenoid-controlled, pilot-operated directional valve.',
     specifications: [],
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/09/DSHG_thmba.png',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-dhg',
@@ -2651,13 +2651,13 @@ export const PRODUCTS: Product[] = [
     name: 'Pilot Operated Directional Valve',
     modelCode: 'DHG',
     brandSlug: 'yuken',
-    categorySlug: 'directional-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Pilot-operated directional valve.',
     specifications: [],
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/09/DHG_athmb.png',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-dmg03',
@@ -2665,13 +2665,13 @@ export const PRODUCTS: Product[] = [
     name: 'Manually Operated Directional Valve',
     modelCode: 'DMG03',
     brandSlug: 'yuken',
-    categorySlug: 'directional-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Manually operated directional valve.',
     specifications: [],
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/09/DMG03_Thmb.png',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-dcg',
@@ -2679,13 +2679,13 @@ export const PRODUCTS: Product[] = [
     name: 'Cam Operated Directional Valve',
     modelCode: 'DCG',
     brandSlug: 'yuken',
-    categorySlug: 'directional-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Cam-operated directional valve.',
     specifications: [],
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/09/DCG_thmba.png',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-cit',
@@ -2693,13 +2693,13 @@ export const PRODUCTS: Product[] = [
     name: 'In-Line Check Valve',
     modelCode: 'CIT',
     brandSlug: 'yuken',
-    categorySlug: 'directional-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'In-line check valve.',
     specifications: [],
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/09/CIT_thmb.png',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-cpdg',
@@ -2707,13 +2707,13 @@ export const PRODUCTS: Product[] = [
     name: 'Pilot Controlled Check Valve',
     modelCode: 'CPDG',
     brandSlug: 'yuken',
-    categorySlug: 'directional-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Pilot-controlled check valve.',
     specifications: [],
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/09/CPDG_thmb.png',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-sps01',
@@ -2721,13 +2721,13 @@ export const PRODUCTS: Product[] = [
     name: 'Power Saver Module for Solenoids',
     modelCode: 'SPS-01',
     brandSlug: 'yuken',
-    categorySlug: 'directional-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Power saver module for directional valve solenoids.',
     specifications: [],
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/05/SPS-01_website.jpg',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-ps-dsg',
@@ -2735,13 +2735,13 @@ export const PRODUCTS: Product[] = [
     name: 'Power Saving Valve',
     modelCode: 'PS-DSG',
     brandSlug: 'yuken',
-    categorySlug: 'directional-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Power-saving directional valve.',
     specifications: [],
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/05/Power-Saving-Valve.jpg',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-ck-08-10',
@@ -2749,13 +2749,13 @@ export const PRODUCTS: Product[] = [
     name: 'CK-08 & CK-10 Cartridge Check Valves',
     modelCode: 'CK-08 / CK-10',
     brandSlug: 'yuken',
-    categorySlug: 'directional-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Cartridge-style check valves.',
     specifications: [],
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2025/04/CK-08-10.png',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-fcg03',
@@ -2763,13 +2763,13 @@ export const PRODUCTS: Product[] = [
     name: 'Flow Control & Check Valve',
     modelCode: 'FCG-03',
     brandSlug: 'yuken',
-    categorySlug: 'flow-control-needle-valves',
+    categorySlug: 'process-flow-control-valves',
     shortDescription: 'Flow control valve combined with a check valve.',
     specifications: [],
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/09/FCG-03.png',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-throttle-check',
@@ -2777,13 +2777,13 @@ export const PRODUCTS: Product[] = [
     name: 'Throttle & Check Valve',
     modelCode: '',
     brandSlug: 'yuken',
-    categorySlug: 'flow-control-needle-valves',
+    categorySlug: 'process-flow-control-valves',
     shortDescription: 'Throttle valve combined with a check valve.',
     specifications: [],
     images: [
       '/assets/products/Throttle-Check-Valves1.png',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-deceleration-check',
@@ -2791,13 +2791,13 @@ export const PRODUCTS: Product[] = [
     name: 'Deceleration & Check Valve',
     modelCode: '',
     brandSlug: 'yuken',
-    categorySlug: 'flow-control-needle-valves',
+    categorySlug: 'process-flow-control-valves',
     shortDescription: 'Deceleration valve combined with a check valve.',
     specifications: [],
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/09/Decceleration-Valves.png',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-modular-01',
@@ -2805,13 +2805,13 @@ export const PRODUCTS: Product[] = [
     name: '01 Series Modular Valve',
     modelCode: '01',
     brandSlug: 'yuken',
-    categorySlug: 'manifold-valves-accessories',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Modular valve, 01 series.',
     specifications: [],
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/10/01-Series.png',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-modular-03',
@@ -2819,13 +2819,13 @@ export const PRODUCTS: Product[] = [
     name: '03 Series Modular Valve',
     modelCode: '03',
     brandSlug: 'yuken',
-    categorySlug: 'manifold-valves-accessories',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Modular valve, 03 series.',
     specifications: [],
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/10/03-series.png',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-modular-04',
@@ -2833,13 +2833,13 @@ export const PRODUCTS: Product[] = [
     name: '04 Series Modular Valve',
     modelCode: '04',
     brandSlug: 'yuken',
-    categorySlug: 'manifold-valves-accessories',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Modular valve, 04 series.',
     specifications: [],
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/10/04-Series-Generalized-Image.png',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'yuken-modular-06',
@@ -2847,13 +2847,13 @@ export const PRODUCTS: Product[] = [
     name: '06 Series Modular Valve',
     modelCode: '06',
     brandSlug: 'yuken',
-    categorySlug: 'manifold-valves-accessories',
+    categorySlug: 'instrumentation-gauges-accessories',
     shortDescription: 'Modular valve, 06 series.',
     specifications: [],
     images: [
       'https://www.yukenindia.com/wp-content/uploads/2021/10/06-Series-Generalized-Image.png',
     ],
-    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no locally hosted',
+    catalogueSource: 'Yuken India official product listing (yukenindia.com) — no loc',
   },
   {
     id: 'polyhydron-2cb06t03',
@@ -2861,7 +2861,7 @@ export const PRODUCTS: Product[] = [
     name: 'Duel Counter Balance Valve',
     modelCode: '2CB06T03',
     brandSlug: 'polyhydron',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Spool-type counter balance valve, internally pilot operated. Free flow from port V1 to C1, with piloted flow and an adjustable predetermined pressure setting in the opposite direction. Made for special-purpose applications.',
     specifications: [
       { label: 'Construction', value: 'Spool type, internally pilot operated' },
@@ -2873,7 +2873,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/polyhydron-2cb06t03.png',
     ],
-    catalogueSource: 'pressurecontrol.pdf (Polyhydron), Ref. No. D 28151',
+    catalogueSource: 'pres (Polyhydron), Ref. No. D 28151',
   },
   {
     id: 'polyhydron-cbs20',
@@ -2881,7 +2881,7 @@ export const PRODUCTS: Product[] = [
     name: 'Counter Balance Valve (30 Series)',
     modelCode: 'CBS20',
     brandSlug: 'polyhydron',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Seat-type counter balance valve. Free flow from port B to A, with leak-free closure in the opposite direction up to a predetermined, adjustable cracking pressure.',
     specifications: [
       { label: 'Construction', value: 'Direct acting, seat type' },
@@ -2892,7 +2892,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/polyhydron-cbs20.png',
     ],
-    catalogueSource: 'pressurecontrol.pdf (Polyhydron), Ref. No. D 03449',
+    catalogueSource: 'pres (Polyhydron), Ref. No. D 03449',
   },
   {
     id: 'polyhydron-cbst',
@@ -2900,7 +2900,7 @@ export const PRODUCTS: Product[] = [
     name: 'Counter Balance Valve (CBS T)',
     modelCode: 'CBS T',
     brandSlug: 'polyhydron',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Seat-type counter balance valve, internally pilot operated. Free flow from port B to A, with piloted flow and leak-free closure up to a predetermined, adjustable cracking pressure.',
     specifications: [
       { label: 'Construction', value: 'Direct acting, seat type, internally pilot operated' },
@@ -2911,7 +2911,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/polyhydron-cbst.png',
     ],
-    catalogueSource: 'pressurecontrol.pdf (Polyhydron), Ref. No. D 02241',
+    catalogueSource: 'pres (Polyhydron), Ref. No. D 02241',
   },
   {
     id: 'polyhydron-pcm3016',
@@ -2919,13 +2919,13 @@ export const PRODUCTS: Product[] = [
     name: 'Pressure Control Module PCM3016',
     modelCode: 'PCM3016',
     brandSlug: 'polyhydron',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Designed to control double pumps of a Hi-Low system. Unloads the low-pressure pump when system pressure rises above the unloader valve\'s set pressure, and relieves the high-pressure pump at the relief valve\'s set pressure. Optional solenoid unloading facility.',
     specifications: [],
     images: [
       '/assets/products/polyhydron-pcm3016.png',
     ],
-    catalogueSource: 'pressurecontrol.pdf (Polyhydron), Ref. No. D 04399',
+    catalogueSource: 'pres (Polyhydron), Ref. No. D 04399',
   },
   {
     id: 'polyhydron-pcm2016',
@@ -2933,13 +2933,13 @@ export const PRODUCTS: Product[] = [
     name: 'Pressure Control Module PCM20-16',
     modelCode: 'PCM20-16',
     brandSlug: 'polyhydron',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Designed to control double pumps of a Hi-Low system. Unloads the low-pressure pump when system pressure rises above the unloader valve\'s set pressure, and relieves the high-pressure pump at the relief valve\'s set pressure. Optional solenoid unloading facility.',
     specifications: [],
     images: [
       '/assets/products/polyhydron-pcm2016.png',
     ],
-    catalogueSource: 'pressurecontrol.pdf (Polyhydron), Ref. No. D 04902',
+    catalogueSource: 'pres (Polyhydron), Ref. No. D 04902',
   },
   {
     id: 'polyhydron-pcm20',
@@ -2947,13 +2947,13 @@ export const PRODUCTS: Product[] = [
     name: 'Pressure Control Module PCM20',
     modelCode: 'PCM20',
     brandSlug: 'polyhydron',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Designed to control double pumps of a Hi-Low system. Unloads the low-pressure pump when system pressure rises above the unloader valve\'s set pressure, and relieves the high-pressure pump at the relief valve\'s set pressure. Optional solenoid unloading facility.',
     specifications: [],
     images: [
       '/assets/products/polyhydron-pcm20.png',
     ],
-    catalogueSource: 'pressurecontrol.pdf (Polyhydron), Ref. No. D 06793',
+    catalogueSource: 'pres (Polyhydron), Ref. No. D 06793',
   },
   {
     id: 'polyhydron-pcm0606',
@@ -2961,13 +2961,13 @@ export const PRODUCTS: Product[] = [
     name: 'Pressure Control Module PCM06-06',
     modelCode: 'PCM06-06',
     brandSlug: 'polyhydron',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Designed to control double pumps of a Hi-Low system. Unloads the low-pressure pump when system pressure rises above the unloader valve\'s set pressure, and relieves the high-pressure pump at the relief valve\'s set pressure.',
     specifications: [],
     images: [
       '/assets/products/polyhydron-pcm0606.png',
     ],
-    catalogueSource: 'pressurecontrol.pdf (Polyhydron), Ref. No. D 03645',
+    catalogueSource: 'pres (Polyhydron), Ref. No. D 03645',
   },
   {
     id: 'polyhydron-ppm',
@@ -2975,7 +2975,7 @@ export const PRODUCTS: Product[] = [
     name: 'Pilot Operated Pressure Reducing Valve',
     modelCode: 'PPM',
     brandSlug: 'polyhydron',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Two-stage, pilot-operated, normally-open pressure reducing valve. Closes against the spring as pressure in the secondary port (port A) rises to the set pressure. Can be supplied with a modular check valve (ordered separately) for reverse free flow.',
     specifications: [
       { label: 'Construction', value: 'Two-stage pilot operated valve' },
@@ -2987,7 +2987,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/polyhydron-ppm.png',
     ],
-    catalogueSource: 'pressurecontrol.pdf (Polyhydron), Ref. No. D 06281',
+    catalogueSource: 'pres (Polyhydron), Ref. No. D 06281',
   },
   {
     id: 'polyhydron-ppru',
@@ -2995,13 +2995,13 @@ export const PRODUCTS: Product[] = [
     name: 'Pilot Operated Pressure Relief cum Unloading Valve',
     modelCode: 'PPRU',
     brandSlug: 'polyhydron',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Two-stage poppet-type relief-cum-unloading valve, with an optional solenoid unloading facility. Available in three standard sizes in sub-plate mounting and two sizes in threaded mounting.',
     specifications: [],
     images: [
       '/assets/products/polyhydron-ppru.png',
     ],
-    catalogueSource: 'pressurecontrol.pdf (Polyhydron), Ref. No. D 03600',
+    catalogueSource: 'pres (Polyhydron), Ref. No. D 03600',
   },
   {
     id: 'polyhydron-ppr',
@@ -3009,13 +3009,13 @@ export const PRODUCTS: Product[] = [
     name: 'Pilot Operated Pressure Relief Valve',
     modelCode: 'PPR',
     brandSlug: 'polyhydron',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Two-stage poppet-type relief valve, with optional solenoid unloading or proportional relieving and a vent connection for remote control. Two standard sizes in threaded construction, three in sub-plate mounting.',
     specifications: [],
     images: [
       '/assets/products/polyhydron-ppr.png',
     ],
-    catalogueSource: 'pressurecontrol.pdf (Polyhydron), Ref. No. D 04897',
+    catalogueSource: 'pres (Polyhydron), Ref. No. D 04897',
   },
   {
     id: 'polyhydron-mppr',
@@ -3023,7 +3023,7 @@ export const PRODUCTS: Product[] = [
     name: 'Modular Pilot Operated Pressure Relief Valve',
     modelCode: 'MPPR*06AB*01',
     brandSlug: 'polyhydron',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Pilot-operated pressure relief valve of modular construction for vertical stacking assemblies. Interface conforms to ISO 4401-AB-03-04-A, IS 10187, DIN 24340. Available in four models.',
     specifications: [
       { label: 'Construction', value: 'Pilot operated spool type' },
@@ -3035,7 +3035,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/polyhydron-mppr.png',
     ],
-    catalogueSource: 'pressurecontrol.pdf (Polyhydron), Ref. No. D 09252',
+    catalogueSource: 'pres (Polyhydron), Ref. No. D 09252',
   },
   {
     id: 'polyhydron-ppm-cartridge',
@@ -3043,7 +3043,7 @@ export const PRODUCTS: Product[] = [
     name: 'Pilot Operated Pressure Reducing Valve (Cartridge)',
     modelCode: 'PPM*06K*10',
     brandSlug: 'polyhydron',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Cartridge-mounting variant of the pilot-operated pressure reducing valve, in threaded cartridge form for compact installations.',
     specifications: [
       { label: 'Construction', value: 'Pilot operated spool type' },
@@ -3055,7 +3055,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/polyhydron-ppm-cartridge.png',
     ],
-    catalogueSource: 'pressurecontrol.pdf (Polyhydron), Ref. No. D 23100 B',
+    catalogueSource: 'pres (Polyhydron), Ref. No. D 23100 B',
   },
   {
     id: 'polyhydron-ppr-cartridge',
@@ -3063,7 +3063,7 @@ export const PRODUCTS: Product[] = [
     name: 'Pilot Operated Pressure Relief Valve (Cartridge)',
     modelCode: 'PPR*06K**10',
     brandSlug: 'polyhydron',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Cartridge-mounting variant of the pilot-operated pressure relief valve, in threaded cartridge form for compact installations.',
     specifications: [
       { label: 'Construction', value: 'Pilot operated spool type' },
@@ -3074,7 +3074,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/polyhydron-ppr-cartridge.png',
     ],
-    catalogueSource: 'pressurecontrol.pdf (Polyhydron), Ref. No. D 23100 A',
+    catalogueSource: 'pres (Polyhydron), Ref. No. D 23100 A',
   },
   {
     id: 'polyhydron-dps',
@@ -3082,7 +3082,7 @@ export const PRODUCTS: Product[] = [
     name: 'Direct Acting Pressure Sequence Valve',
     modelCode: 'DPS 06S',
     brandSlug: 'polyhydron',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Direct-acting, spool-type pressure sequence valve. Four pressure ratings (25, 50, 100, 200 bar) with a primary pressure rating up to 315 bar. Pressure setting by screw or hand-knob adjustment.',
     specifications: [
       { label: 'Construction', value: 'Direct acting spool type' },
@@ -3093,7 +3093,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/polyhydron-dps.png',
     ],
-    catalogueSource: 'pressurecontrol.pdf (Polyhydron), Ref. No. D 04505',
+    catalogueSource: 'pres (Polyhydron), Ref. No. D 04505',
   },
   {
     id: 'polyhydron-dpm',
@@ -3101,7 +3101,7 @@ export const PRODUCTS: Product[] = [
     name: 'Direct Acting Pressure Reducing Valve',
     modelCode: 'DPM 06S',
     brandSlug: 'polyhydron',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Direct-acting, spool-type pressure reducing valve, with control from either the secondary circuit (Model DPM*06SA) or a remote source (Model DPM*06SB). Four pressure ratings (25, 50, 100, 200 bar) with a primary rating up to 315 bar.',
     specifications: [
       { label: 'Construction', value: 'Direct acting spool type' },
@@ -3112,7 +3112,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/polyhydron-dpm.png',
     ],
-    catalogueSource: 'pressurecontrol.pdf (Polyhydron), Ref. No. D 04479',
+    catalogueSource: 'pres (Polyhydron), Ref. No. D 04479',
   },
   {
     id: 'polyhydron-dpr',
@@ -3120,7 +3120,7 @@ export const PRODUCTS: Product[] = [
     name: 'Direct Acting Pressure Relief Valve',
     modelCode: 'DPR',
     brandSlug: 'polyhydron',
-    categorySlug: 'pressure-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Direct-acting valve with guided poppet design and a cushion arrangement for stability and noise control. Three sizes (06, 10, 20) and three mounting styles: threaded cartridge, threaded port body, and subplate (factory and ISO standard).',
     specifications: [
       { label: 'Sizes', value: '06, 10, 20' },
@@ -3130,7 +3130,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/polyhydron-dpr.png',
     ],
-    catalogueSource: 'pressurecontrol.pdf (Polyhydron), Ref. No. D 04896',
+    catalogueSource: 'pres (Polyhydron), Ref. No. D 04896',
   },
   {
     id: 'polyhydron-4de10',
@@ -3138,7 +3138,7 @@ export const PRODUCTS: Product[] = [
     name: 'Solenoid Operated Directional Control Valve (4DE10)',
     modelCode: '4DE10',
     brandSlug: 'polyhydron',
-    categorySlug: 'directional-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: '4-port, spool-type, solenoid-operated directional control valve with wet armature AC or DC coils, and a wide variety of spool types in spring-centered and spring-offset arrangements.',
     specifications: [
       { label: 'Size', value: '10 (D 05)' },
@@ -3147,9 +3147,8 @@ export const PRODUCTS: Product[] = [
     ],
     images: [
       '/assets/products/polyhydron-4de10.png',
-      '/assets/products/polyhydron-4de10(1).png',
     ],
-    catalogueSource: 'directioncontrol.pdf (Polyhydron), Y02101/07.06',
+    catalogueSource: 'direc (Polyhydron), Y02101/07.06',
   },
   {
     id: 'polyhydron-dl06',
@@ -3157,7 +3156,7 @@ export const PRODUCTS: Product[] = [
     name: 'Lever Operated Direction Control Valve',
     modelCode: 'DL06*****11',
     brandSlug: 'polyhydron',
-    categorySlug: 'directional-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Lever-operated directional control valve with a completely encapsulated mechanism for protection against dirt. Five-chamber design for reduced dynamic force and longer valve life. Available as spring-centred, spring-offset, or detented.',
     specifications: [
       { label: 'Construction', value: 'Spool type' },
@@ -3167,7 +3166,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/polyhydron-dl06.png',
     ],
-    catalogueSource: 'directioncontrol.pdf (Polyhydron), Ref. No. D 09497',
+    catalogueSource: 'direc (Polyhydron), Ref. No. D 09497',
   },
   {
     id: 'polyhydron-de06',
@@ -3175,7 +3174,7 @@ export const PRODUCTS: Product[] = [
     name: 'Solenoid Operated Direction Control Valve',
     modelCode: 'DE06****07',
     brandSlug: 'polyhydron',
-    categorySlug: 'directional-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Direct solenoid-operated, spool-type directional control valve with a completely encapsulated mechanism for protection against dirt. Five-chamber design. Subplate body mounting, interface as per ISO 4401-03-02.',
     specifications: [
       { label: 'D.C. voltage', value: '12V and 24V' },
@@ -3186,7 +3185,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/polyhydron-de06.png',
     ],
-    catalogueSource: 'directioncontrol.pdf (Polyhydron), Ref. No. D 09321',
+    catalogueSource: 'direc (Polyhydron), Ref. No. D 09321',
   },
   {
     id: 'polyhydron-des',
@@ -3194,7 +3193,7 @@ export const PRODUCTS: Product[] = [
     name: 'Solenoid Operated Direction Control Valve (DES)',
     modelCode: 'DES',
     brandSlug: 'polyhydron',
-    categorySlug: 'directional-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Designed for operating single-acting up-stroking cylinders that hold pressure during the working cycle, with smooth decompression before return. Large return oil passage for rapid cylinder return; can operate multiple independent single-acting cylinders.',
     specifications: [
       { label: 'Construction', value: 'Spool with poppet' },
@@ -3205,7 +3204,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/polyhydron-des.png',
     ],
-    catalogueSource: 'directioncontrol.pdf (Polyhydron), Ref. No. D 06631',
+    catalogueSource: 'direc (Polyhydron), Ref. No. D 06631',
   },
   {
     id: 'polyhydron-dls',
@@ -3213,7 +3212,7 @@ export const PRODUCTS: Product[] = [
     name: 'Hand Lever Operated Direction Control Valve',
     modelCode: 'DLS',
     brandSlug: 'polyhydron',
-    categorySlug: 'directional-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Hand-lever-operated version for the same duty as the DES range — operating single-acting up-stroking cylinders that hold pressure during the working cycle, with smooth decompression before return.',
     specifications: [
       { label: 'Construction', value: 'Spool with poppet' },
@@ -3224,7 +3223,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/polyhydron-dls.png',
     ],
-    catalogueSource: 'directioncontrol.pdf (Polyhydron), Ref. No. D 09072',
+    catalogueSource: 'direc (Polyhydron), Ref. No. D 09072',
   },
   {
     id: 'polyhydron-4dp10',
@@ -3232,7 +3231,7 @@ export const PRODUCTS: Product[] = [
     name: 'Pilot Operated Direction Control Valve',
     modelCode: '4DP10*S*10',
     brandSlug: 'polyhydron',
-    categorySlug: 'directional-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Pilot-operated, spool-type directional control valve with a completely encapsulated mechanism for protection against dirt. Five-chamber design. Subplate body, spring-centred or spring-offset.',
     specifications: [
       { label: 'Construction', value: 'Spool type' },
@@ -3242,7 +3241,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/polyhydron-4dp10.png',
     ],
-    catalogueSource: 'directioncontrol.pdf (Polyhydron), Ref. No. D32200',
+    catalogueSource: 'direc (Polyhydron), Ref. No. D32200',
   },
   {
     id: 'polyhydron-4dl10',
@@ -3250,7 +3249,7 @@ export const PRODUCTS: Product[] = [
     name: 'Lever Operated Direction Control Valve (4DL10)',
     modelCode: '4DL10*****10',
     brandSlug: 'polyhydron',
-    categorySlug: 'directional-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Lever-operated, spool-type directional control valve with a completely encapsulated mechanism for protection against dirt. Five-chamber design, available in subplate and threaded body mounting.',
     specifications: [
       { label: 'Construction', value: 'Spool type' },
@@ -3260,7 +3259,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/polyhydron-4dl10.png',
     ],
-    catalogueSource: 'directioncontrol.pdf (Polyhydron), Ref. No. D04909',
+    catalogueSource: 'direc (Polyhydron), Ref. No. D04909',
   },
   {
     id: 'polyhydron-4rdl',
@@ -3268,7 +3267,7 @@ export const PRODUCTS: Product[] = [
     name: 'Rotary Directional Control Valve',
     modelCode: '4RDL',
     brandSlug: 'polyhydron',
-    categorySlug: 'directional-control-valves',
+    categorySlug: 'hydraulic-directional-pressure-valves',
     shortDescription: 'Hand-lever-operated rotary directional control valve for high-pressure applications needing negligible internal leakage and small flow handling. Available with open or closed crossover condition. Note: the integrated hand-pump variants (4RDL02HP**D-15 and 4RDL02HPT**D-15) are discontinued — refer to datasheets D10180 / D10100 in the pumps section for a rotary DCV with hand pump.',
     specifications: [
       { label: 'Construction', value: 'Rotary disc type' },
@@ -3279,7 +3278,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/polyhydron-4rdl.png',
     ],
-    catalogueSource: 'directioncontrol.pdf (Polyhydron), Ref. No. D 06429',
+    catalogueSource: 'direc (Polyhydron), Ref. No. D 06429',
   },
   {
     id: 'polyhydron-2tcl10',
@@ -3287,7 +3286,7 @@ export const PRODUCTS: Product[] = [
     name: 'Double Throttle Cum Check Valve',
     modelCode: '2TCL10',
     brandSlug: 'polyhydron',
-    categorySlug: 'flow-control-needle-valves',
+    categorySlug: 'process-flow-control-valves',
     shortDescription: 'Double throttle-check valve for controlling flow in one direction by simple throttling; reverse flow is free and independent of the throttle setting. Available with throttle-check on port A, port B, or both. Convertible between meter-in and meter-out by rotating the body 180°.',
     specifications: [
       { label: 'Construction', value: 'Threaded, spool type, non-pressure compensated' },
@@ -3297,7 +3296,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/polyhydron-2tcl10.png',
     ],
-    catalogueSource: 'flowcontrol.pdf (Polyhydron), Ref. No. D 04546 B',
+    catalogueSource: ' (Polyhydron), Ref. No. D 04546 B',
   },
   {
     id: 'polyhydron-tcm10',
@@ -3305,7 +3304,7 @@ export const PRODUCTS: Product[] = [
     name: 'Throttle Cum Check Valve (Modular), TCM10',
     modelCode: 'TCM10',
     brandSlug: 'polyhydron',
-    categorySlug: 'flow-control-needle-valves',
+    categorySlug: 'process-flow-control-valves',
     shortDescription: 'Modular throttle-check valve for controlling flow in one direction by simple throttling; reverse flow is free. Available with throttle-check facility on port A, port B, or both. Non-pressure compensated.',
     specifications: [
       { label: 'Construction', value: 'Modular, spool type, non-pressure compensated' },
@@ -3316,7 +3315,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/polyhydron-tcm10.png',
     ],
-    catalogueSource: 'flowcontrol.pdf (Polyhydron), Ref. No. D 04546 A',
+    catalogueSource: ' (Polyhydron), Ref. No. D 04546 A',
   },
   {
     id: 'polyhydron-tcm06',
@@ -3324,7 +3323,7 @@ export const PRODUCTS: Product[] = [
     name: 'Throttle Cum Check Valve (Modular), TCM06',
     modelCode: 'TCM06',
     brandSlug: 'polyhydron',
-    categorySlug: 'flow-control-needle-valves',
+    categorySlug: 'process-flow-control-valves',
     shortDescription: 'Modular throttle-check valve for controlling flow in one direction by simple throttling; reverse flow is free. Available with throttle-check facility on port A, port B, or both. Non-pressure compensated.',
     specifications: [
       { label: 'Construction', value: 'Modular, spool type, non-pressure compensated' },
@@ -3335,7 +3334,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/polyhydron-tcm06.png',
     ],
-    catalogueSource: 'flowcontrol.pdf (Polyhydron), Ref. No. D 05973',
+    catalogueSource: ' (Polyhydron), Ref. No. D 05973',
   },
   {
     id: 'polyhydron-fdta',
@@ -3343,7 +3342,7 @@ export const PRODUCTS: Product[] = [
     name: 'Flow Divider Valve',
     modelCode: 'FDTA',
     brandSlug: 'polyhydron',
-    categorySlug: 'flow-control-needle-valves',
+    categorySlug: 'process-flow-control-valves',
     shortDescription: 'Equally divides the flow supplied to inlet port P between outlet ports P1 and P2, irrespective of pressure variation at the outlet ports. Maximum variation between the divided flows is ±5%. Not a flow divider-combiner valve.',
     specifications: [
       { label: 'Construction', value: 'Pressure compensated spool type' },
@@ -3355,7 +3354,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/polyhydron-fdta.png',
     ],
-    catalogueSource: 'flowcontrol.pdf (Polyhydron), Ref. No. D 06727',
+    catalogueSource: ' (Polyhydron), Ref. No. D 06727',
   },
   {
     id: 'polyhydron-2pf10',
@@ -3363,7 +3362,7 @@ export const PRODUCTS: Product[] = [
     name: 'Pressure Compensated Flow Control Valve',
     modelCode: '2PF*10',
     brandSlug: 'polyhydron',
-    categorySlug: 'flow-control-needle-valves',
+    categorySlug: 'process-flow-control-valves',
     shortDescription: 'Pressure-compensated flow control from port A to port B, with an optional reverse-free check valve. Differential-piston, sharp-edge-orifice construction; seven rotations of the hand knob over the controlling range for easy setting.',
     specifications: [
       { label: 'Construction', value: 'Differential piston with sharp-edge orifice' },
@@ -3376,7 +3375,7 @@ export const PRODUCTS: Product[] = [
     images: [
       '/assets/products/polyhydron-2pf10.png',
     ],
-    catalogueSource: 'flowcontrol.pdf (Polyhydron), Ref. No. D 05083',
+    catalogueSource: ' (Polyhydron), Ref. No. D 05083',
   },
   {
     id: 'marine-container-40ft',
@@ -3392,18 +3391,17 @@ export const PRODUCTS: Product[] = [
       { label: 'Container Type', value: 'Dry Container' },
       { label: 'Condition', value: 'Refurbished' },
     ],
-    images: [
-      '/assets/products/marine-container.png',
-    ],
+    images: ['/assets/products/marine-container.png'],
     catalogueSource: 'Provided directly by Western Hardware Mart — not from an uploaded manufacturer catalogue',
   },
+  //TAPARIA
   {
     id: 'taparia-adjustable-wrenches',
     slug: 'taparia-adjustable-wrenches',
     name: 'Adjustable Wrenches',
     modelCode: '1170–1177 series',
     brandSlug: 'taparia',
-    categorySlug: 'adjustable-wrenches',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Phosphate-finish and chrome-plated adjustable wrenches across the full 150mm–750mm length range.',
     specifications: [
       { label: 'Standard', value: 'IS 6149-2025, Type A Grade II' },
@@ -3421,7 +3419,7 @@ export const PRODUCTS: Product[] = [
     name: 'Adjustable Spanners (with Soft Grip)',
     modelCode: '1170-S–1174-S series',
     brandSlug: 'taparia',
-    categorySlug: 'adjustable-wrenches',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Soft-grip adjustable spanners, phosphate finish or chrome plated.',
     specifications: [
       { label: 'Standard', value: 'IS 6149-2025, Type A Grade II' },
@@ -3439,7 +3437,7 @@ export const PRODUCTS: Product[] = [
     name: 'Combination Side Cutting Pliers',
     modelCode: '1621 series',
     brandSlug: 'taparia',
-    categorySlug: 'pliers-group',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Insulated combination side-cutting pliers with thick C.A. sleeve.',
     specifications: [
       { label: 'Standard', value: 'IS 3650-2026' },
@@ -3457,7 +3455,7 @@ export const PRODUCTS: Product[] = [
     name: 'Side Cutting Pliers',
     modelCode: '1121/1122/1101/1123 series',
     brandSlug: 'taparia',
-    categorySlug: 'pliers-group',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Insulated side-cutting pliers with thick C.A. sleeve, including an econ range and a high-leverage version.',
     specifications: [
       { label: 'Standard', value: 'IS 4378(I)-2017' },
@@ -3475,7 +3473,7 @@ export const PRODUCTS: Product[] = [
     name: 'Long Nose Pliers',
     modelCode: '1421/1430/1431/1420/LN-11 series',
     brandSlug: 'taparia',
-    categorySlug: 'pliers-group',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Insulated long nose, flat nose and round nose pliers, including an econ range.',
     specifications: [
       { label: 'Standard', value: 'IS 5658-1990' },
@@ -3493,7 +3491,7 @@ export const PRODUCTS: Product[] = [
     name: 'Bent Nose Pliers (Econ)',
     modelCode: 'BN series',
     brandSlug: 'taparia',
-    categorySlug: 'pliers-group',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Insulated bent-nose pliers, econ range.',
     specifications: [
       { label: 'Standard', value: 'IS 5658-1990' },
@@ -3511,7 +3509,7 @@ export const PRODUCTS: Product[] = [
     name: 'Circlip Pliers',
     modelCode: '1441/1442/1443/1444 series',
     brandSlug: 'taparia',
-    categorySlug: 'pliers-group',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Internal and external circlip pliers, straight and bent nose, available with thick C.A. sleeve or PVC deep-coated sleeve.',
     specifications: [
       { label: 'Standard', value: 'IS 7989-1976 (Int) / IS 7990-1976 (Ext)' },
@@ -3529,7 +3527,7 @@ export const PRODUCTS: Product[] = [
     name: 'Locking Pliers',
     modelCode: '1641/1642/1643/1644/1645 series',
     brandSlug: 'taparia',
-    categorySlug: 'pliers-group',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Curved-jaw and straight-jaw locking pliers, including long-jaw and clamp-type-with-swivel-pads variants.',
     specifications: [
       { label: 'Standard', value: 'IS 10372-1982' },
@@ -3547,7 +3545,7 @@ export const PRODUCTS: Product[] = [
     name: 'Mini Pliers',
     modelCode: '1401–1409 series',
     brandSlug: 'taparia',
-    categorySlug: 'pliers-group',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Two-colour dip-coated mini pliers — flat nose, round nose, long nose, bent nose, side cutting, end cutting, combination and long needle nose.',
     specifications: [
       { label: 'HSN Code', value: '82032000' },
@@ -3564,7 +3562,7 @@ export const PRODUCTS: Product[] = [
     name: 'Micro Jewellery Pliers',
     modelCode: '1411–1415 series',
     brandSlug: 'taparia',
-    categorySlug: 'pliers-group',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Miniature flat, round, long, bent nose and side-cutting pliers for precision work.',
     specifications: [
       { label: 'HSN Code', value: '82032000' },
@@ -3581,7 +3579,7 @@ export const PRODUCTS: Product[] = [
     name: 'Long Reach Mini Pliers',
     modelCode: '1453/1455',
     brandSlug: 'taparia',
-    categorySlug: 'pliers-group',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Long-reach long nose and side-cutting mini pliers.',
     specifications: [
       { label: 'HSN Code', value: '82032000' },
@@ -3598,7 +3596,7 @@ export const PRODUCTS: Product[] = [
     name: 'Pincers',
     modelCode: 'NP/MNP series',
     brandSlug: 'taparia',
-    categorySlug: 'pliers-group',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Standard carpenter pincers.',
     specifications: [
       { label: 'Standard', value: 'IS 4095-1991' },
@@ -3616,7 +3614,7 @@ export const PRODUCTS: Product[] = [
     name: 'Tower Pincer',
     modelCode: 'TP-9',
     brandSlug: 'taparia',
-    categorySlug: 'pliers-group',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Heavy-duty tower pincer.',
     specifications: [
       { label: 'Standard', value: 'IS 4095-1991' },
@@ -3634,7 +3632,7 @@ export const PRODUCTS: Product[] = [
     name: 'Water Pump Pliers',
     modelCode: '1223/1225/1226/WPB10 series',
     brandSlug: 'taparia',
-    categorySlug: 'pliers-group',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Water pump (multi-grip) pliers.',
     specifications: [
       { label: 'Standard', value: 'IS 6118-2017' },
@@ -3652,7 +3650,7 @@ export const PRODUCTS: Product[] = [
     name: 'Slip Joint Pliers',
     modelCode: '1221',
     brandSlug: 'taparia',
-    categorySlug: 'pliers-group',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Slip-joint pliers.',
     specifications: [
       { label: 'Standard', value: 'IS 13323-1992' },
@@ -3670,7 +3668,7 @@ export const PRODUCTS: Product[] = [
     name: 'Wire Stripping Pliers',
     modelCode: 'WS/EWS series',
     brandSlug: 'taparia',
-    categorySlug: 'pliers-group',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Manual wire-stripping pliers.',
     specifications: [
       { label: 'Standard', value: 'IS 5087-1969' },
@@ -3688,7 +3686,7 @@ export const PRODUCTS: Product[] = [
     name: 'Plastic Cutting Pliers',
     modelCode: 'PCP-06',
     brandSlug: 'taparia',
-    categorySlug: 'pliers-group',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Pliers for cutting plastic components.',
     specifications: [
       { label: 'HSN Code', value: '82032000' },
@@ -3705,7 +3703,7 @@ export const PRODUCTS: Product[] = [
     name: 'VDE Insulated Pliers Range',
     modelCode: 'VDECP/VDELN/VDESC/VDEWS series',
     brandSlug: 'taparia',
-    categorySlug: 'vde-pliers',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'VDE-rated (1000V insulated) combination pliers, long nose pliers, side cutting pliers and wire stripping pliers.',
     specifications: [
       { label: 'Standard', value: 'IEC 60900:2018' },
@@ -3723,7 +3721,7 @@ export const PRODUCTS: Product[] = [
     name: 'VDE Pliers Sets',
     modelCode: 'SVDE 01 / SVDE 02',
     brandSlug: 'taparia',
-    categorySlug: 'vde-pliers',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Boxed sets of VDE-insulated pliers.',
     specifications: [
       { label: 'Standard', value: 'IEC 60900:2018' },
@@ -3740,7 +3738,7 @@ export const PRODUCTS: Product[] = [
     name: 'Nippers',
     modelCode: 'NP04–NP45 series',
     brandSlug: 'taparia',
-    categorySlug: 'nippers-auto-wire-strippers',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'General-purpose nippers for wire and component work.',
     specifications: [
       { label: 'HSN Code', value: '82032000' },
@@ -3757,7 +3755,7 @@ export const PRODUCTS: Product[] = [
     name: 'Auto Wire Stripper & Cutter',
     modelCode: 'AWS 7 / AWS 8',
     brandSlug: 'taparia',
-    categorySlug: 'nippers-auto-wire-strippers',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Self-adjusting automatic wire stripper and cutter.',
     specifications: [
       { label: 'HSN Code', value: '82032000' },
@@ -3774,7 +3772,7 @@ export const PRODUCTS: Product[] = [
     name: 'Crimping Tools',
     modelCode: 'CTR06 / CTR16 / HCTR70',
     brandSlug: 'taparia',
-    categorySlug: 'crimping-tool',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Hand crimping tools for cable lugs and ferrules across three capacity ranges.',
     specifications: [
       { label: 'HSN Code', value: '82032000' },
@@ -3791,7 +3789,7 @@ export const PRODUCTS: Product[] = [
     name: 'PVC Insulation Tape',
     modelCode: 'IT17 series',
     brandSlug: 'taparia',
-    categorySlug: 'pvc-insulation-tape',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'PVC electrical insulation tape, 17mm width, in black, red, yellow, green and blue.',
     specifications: [
       { label: 'HSN Code', value: '85469090' },
@@ -3808,7 +3806,7 @@ export const PRODUCTS: Product[] = [
     name: 'Flat Screwdrivers',
     modelCode: '9xx/8xx/7xx series',
     brandSlug: 'taparia',
-    categorySlug: 'screw-drivers-group',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'Flat-tip screwdrivers across a wide range of blade lengths and tip widths.',
     specifications: [
       { label: 'Standard', value: 'IS 844-1979' },
@@ -3826,7 +3824,7 @@ export const PRODUCTS: Product[] = [
     name: 'Insulated Screwdrivers',
     modelCode: '8xx-I/9xx-I series',
     brandSlug: 'taparia',
-    categorySlug: 'screw-drivers-group',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'Insulated flat-tip screwdrivers.',
     specifications: [
       { label: 'HSN Code', value: '82054000' },
@@ -3843,7 +3841,7 @@ export const PRODUCTS: Product[] = [
     name: 'Phillips Screwdrivers',
     modelCode: 'P3–P8 (86x) series',
     brandSlug: 'taparia',
-    categorySlug: 'screw-drivers-group',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'Phillips-tip screwdrivers, tip sizes 0–4.',
     specifications: [
       { label: 'HSN Code', value: '82054000' },
@@ -3860,7 +3858,7 @@ export const PRODUCTS: Product[] = [
     name: 'Black Tip Phillips Screwdrivers',
     modelCode: '86x-BT series',
     brandSlug: 'taparia',
-    categorySlug: 'screw-drivers-group',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'Black-tip Phillips screwdrivers.',
     specifications: [
       { label: 'HSN Code', value: '82054000' },
@@ -3876,7 +3874,7 @@ export const PRODUCTS: Product[] = [
     name: 'Two-in-One Screwdrivers',
     modelCode: '80x/90x series',
     brandSlug: 'taparia',
-    categorySlug: 'screw-drivers-group',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'Combination flat/Phillips two-in-one screwdrivers, some insulated.',
     specifications: [
       { label: 'HSN Code', value: '82054000' },
@@ -3892,7 +3890,7 @@ export const PRODUCTS: Product[] = [
     name: 'Hexagonal Screwdrivers',
     modelCode: 'TT series',
     brandSlug: 'taparia',
-    categorySlug: 'screw-drivers-group',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'Hex-tip nut-driver screwdrivers, sizes T5–T30 equivalent.',
     specifications: [
       { label: 'HSN Code', value: '82054000' },
@@ -3909,7 +3907,7 @@ export const PRODUCTS: Product[] = [
     name: 'Hexagonal Screwdriver with Insulation (Two-in-One)',
     modelCode: 'OH903I / H903–H905',
     brandSlug: 'taparia',
-    categorySlug: 'screw-drivers-group',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'Insulated two-in-one hex screwdrivers.',
     specifications: [
       { label: 'HSN Code', value: '82054000' },
@@ -3925,7 +3923,7 @@ export const PRODUCTS: Product[] = [
     name: 'Torx Screwdrivers',
     modelCode: 'T-5–T-40 (L) series',
     brandSlug: 'taparia',
-    categorySlug: 'screw-drivers-group',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'Torx-tip screwdrivers, standard and long-blade.',
     specifications: [
       { label: 'HSN Code', value: '82054000' },
@@ -3942,7 +3940,7 @@ export const PRODUCTS: Product[] = [
     name: 'T-Handle Torx Keys',
     modelCode: 'OGS series',
     brandSlug: 'taparia',
-    categorySlug: 'screw-drivers-group',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'T-handle Torx keys.',
     specifications: [
       { label: 'HSN Code', value: '82054000' },
@@ -3958,7 +3956,7 @@ export const PRODUCTS: Product[] = [
     name: 'Striking Screwdrivers',
     modelCode: 'OB 665',
     brandSlug: 'taparia',
-    categorySlug: 'screw-drivers-group',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'Impact-rated striking screwdriver.',
     specifications: [
       { label: 'HSN Code', value: '82054000' },
@@ -3975,7 +3973,7 @@ export const PRODUCTS: Product[] = [
     name: 'Stubby Screwdrivers',
     modelCode: '855/871/974 series',
     brandSlug: 'taparia',
-    categorySlug: 'screw-drivers-group',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'Short-blade stubby screwdrivers, flat/Phillips/two-in-one.',
     specifications: [
       { label: 'HSN Code', value: '82054000' },
@@ -3991,7 +3989,7 @@ export const PRODUCTS: Product[] = [
     name: 'Poker Screwdriver',
     modelCode: 'square-drive poker type',
     brandSlug: 'taparia',
-    categorySlug: 'screw-drivers-group',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'Poker-type screwdriver for slotted screws.',
     specifications: [
       { label: 'HSN Code', value: '82054000' },
@@ -4007,7 +4005,7 @@ export const PRODUCTS: Product[] = [
     name: 'Precision Screwdriver Sets',
     modelCode: 'PSFP6 / PSF6 / PST6',
     brandSlug: 'taparia',
-    categorySlug: 'screw-drivers-group',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'Precision screwdriver sets — flat, Phillips and Torx tips.',
     specifications: [
       { label: 'HSN Code', value: '82054000' },
@@ -4024,7 +4022,7 @@ export const PRODUCTS: Product[] = [
     name: 'Screwdriver Sets',
     modelCode: '802/812/831/840/821 series',
     brandSlug: 'taparia',
-    categorySlug: 'screw-drivers-group',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'Multi-blade screwdriver sets with interchangeable/fixed tips.',
     specifications: [
       { label: 'HSN Code', value: '82054000' },
@@ -4040,7 +4038,7 @@ export const PRODUCTS: Product[] = [
     name: 'Line Testers',
     modelCode: '813–818 series',
     brandSlug: 'taparia',
-    categorySlug: 'screw-drivers-group',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'Neon-indicator line testers.',
     specifications: [
       { label: 'Standard', value: 'IS 5579-1985' },
@@ -4058,7 +4056,7 @@ export const PRODUCTS: Product[] = [
     name: 'Two-in-One Line Tester',
     modelCode: '819',
     brandSlug: 'taparia',
-    categorySlug: 'screw-drivers-group',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'Combination line tester.',
     specifications: [
       { label: 'HSN Code', value: '82054000' },
@@ -4075,7 +4073,7 @@ export const PRODUCTS: Product[] = [
     name: 'Digital Testers',
     modelCode: 'MDT-81 / MDTN-82',
     brandSlug: 'taparia',
-    categorySlug: 'screw-drivers-group',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'Digital voltage testers.',
     specifications: [
       { label: 'HSN Code', value: '82054000' },
@@ -4092,7 +4090,7 @@ export const PRODUCTS: Product[] = [
     name: 'Phillips Head Screwdriver Bits',
     modelCode: 'SBP series',
     brandSlug: 'taparia',
-    categorySlug: 'screw-driver-bits',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'Single and double-head Phillips bits.',
     specifications: [
       { label: 'Standard', value: 'IS 12168 Part II-1987' },
@@ -4110,7 +4108,7 @@ export const PRODUCTS: Product[] = [
     name: 'Hexagonal Head Bits',
     modelCode: 'SBH series',
     brandSlug: 'taparia',
-    categorySlug: 'screw-driver-bits',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'Hex bits, metric sizes.',
     specifications: [
       { label: 'Standard', value: 'IS 12481-1988' },
@@ -4128,7 +4126,7 @@ export const PRODUCTS: Product[] = [
     name: 'Torx Head Screwdriver Bits',
     modelCode: 'SBT series',
     brandSlug: 'taparia',
-    categorySlug: 'screw-driver-bits',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'Torx bits, T5–T45.',
     specifications: [
       { label: 'HSN Code', value: '82054000' },
@@ -4145,7 +4143,7 @@ export const PRODUCTS: Product[] = [
     name: 'Flat Head Bits',
     modelCode: 'SBF series',
     brandSlug: 'taparia',
-    categorySlug: 'screw-driver-bits',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'Flat-tip bits.',
     specifications: [
       { label: 'Standard', value: 'IS 12168 Part II-1987' },
@@ -4163,7 +4161,7 @@ export const PRODUCTS: Product[] = [
     name: 'Two-in-One Screwdriver Bits',
     modelCode: 'SBPF series',
     brandSlug: 'taparia',
-    categorySlug: 'screw-driver-bits',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'Combination Phillips/flat two-in-one bits.',
     specifications: [
       { label: 'HSN Code', value: '82054000' },
@@ -4179,7 +4177,7 @@ export const PRODUCTS: Product[] = [
     name: 'Screwdriver Bits (Pozidrive)',
     modelCode: 'SBPZ series',
     brandSlug: 'taparia',
-    categorySlug: 'screw-driver-bits',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'Pozidrive bits, PZ1/PZ2.',
     specifications: [
       { label: 'HSN Code', value: '82054000' },
@@ -4195,7 +4193,7 @@ export const PRODUCTS: Product[] = [
     name: 'Bit Driver',
     modelCode: 'BD series',
     brandSlug: 'taparia',
-    categorySlug: 'screw-driver-bits',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'Magnetic bit-holder driver.',
     specifications: [
       { label: 'HSN Code', value: '82054000' },
@@ -4212,7 +4210,7 @@ export const PRODUCTS: Product[] = [
     name: 'Bit Driver Sets',
     modelCode: 'BDS/BDST/BDSPF 125',
     brandSlug: 'taparia',
-    categorySlug: 'screw-driver-bits',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'Bit driver sets with Phillips, Torx or flat bit assortments.',
     specifications: [
       { label: 'HSN Code', value: '82054000' },
@@ -4228,7 +4226,7 @@ export const PRODUCTS: Product[] = [
     name: 'Power Tool Bits Set (32 pcs)',
     modelCode: 'PBS32',
     brandSlug: 'taparia',
-    categorySlug: 'screw-driver-bits',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'Mixed flat/Phillips/hex/pozidrive/Torx/triwing bit set with quick-release holder.',
     specifications: [
       { label: 'HSN Code', value: '82054000' },
@@ -4244,7 +4242,7 @@ export const PRODUCTS: Product[] = [
     name: 'Screwdriver Bits Set (80 pcs)',
     modelCode: 'BS 80',
     brandSlug: 'taparia',
-    categorySlug: 'screw-driver-bits',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: '25mm and 50mm hex/flat/Torx/Phillips bit set with adaptors and driver handle.',
     specifications: [
       { label: 'HSN Code', value: '82054000' },
@@ -4260,7 +4258,7 @@ export const PRODUCTS: Product[] = [
     name: 'Bit Driver Set',
     modelCode: 'BS 31',
     brandSlug: 'taparia',
-    categorySlug: 'screw-driver-bits',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'CRV bit driver with Phillips/flat/Torx/triwing/hex/square bits.',
     specifications: [
       { label: 'HSN Code', value: '82054000' },
@@ -4276,7 +4274,7 @@ export const PRODUCTS: Product[] = [
     name: 'Impact Driver Bit Set',
     modelCode: 'IDBS 4 / IDBS 6',
     brandSlug: 'taparia',
-    categorySlug: 'screw-driver-bits',
+    categorySlug: 'screwdrivers-bits',
     shortDescription: 'Impact-rated bit sets.',
     specifications: [
       { label: 'HSN Code', value: '82054000' },
@@ -4292,7 +4290,7 @@ export const PRODUCTS: Product[] = [
     name: '1/4" Square Drive Sockets (Flank Drive)',
     modelCode: 'A/AL series',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Hexagonal 1/4" square-drive sockets.',
     specifications: [
       { label: 'Standard', value: 'IS 7381-1986' },
@@ -4310,7 +4308,7 @@ export const PRODUCTS: Product[] = [
     name: '1/4" Square Drive Bit Sockets',
     modelCode: 'AH/AT/AF/APH/APZ series',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Hex, Torx, flat, Phillips and Pozidrive bit sockets for 1/4" drive.',
     specifications: [
       { label: 'HSN Code', value: '82042000' },
@@ -4326,7 +4324,7 @@ export const PRODUCTS: Product[] = [
     name: '1/4" Drive Socket Sets',
     modelCode: 'S1/4H, SA23, SA46 series',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Boxed 1/4" drive socket sets with accessories and bits.',
     specifications: [
       { label: 'HSN Code', value: '82042000' },
@@ -4342,7 +4340,7 @@ export const PRODUCTS: Product[] = [
     name: '1/4" Square Drive Deep Sockets',
     modelCode: 'AL..H series',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Deep sockets for 1/4" drive.',
     specifications: [
       { label: 'Standard', value: 'IS 7381-1986' },
@@ -4360,7 +4358,7 @@ export const PRODUCTS: Product[] = [
     name: '1/4" Drive Accessories',
     modelCode: 'A7xx series',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Ratchet handles, extension bars, universal joints and spinner handles for 1/4" drive.',
     specifications: [
       { label: 'Standard', value: 'IS 7975 Part II-2018 / IS 7991-2016' },
@@ -4377,7 +4375,7 @@ export const PRODUCTS: Product[] = [
     name: '3/8" Square Drive Sockets (Flank Drive)',
     modelCode: 'B series',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Hexagonal 3/8" square-drive sockets.',
     specifications: [
       { label: 'Standard', value: 'IS 7381-1986' },
@@ -4395,7 +4393,7 @@ export const PRODUCTS: Product[] = [
     name: '3/8" Drive Socket Sets',
     modelCode: 'S3/8H, SB20',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Boxed 3/8" drive socket sets with spark-plug socket and accessories.',
     specifications: [
       { label: 'HSN Code', value: '82042000' },
@@ -4411,7 +4409,7 @@ export const PRODUCTS: Product[] = [
     name: '3/8" Drive Accessories',
     modelCode: 'B7xx series',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Ratchet, flexible and T-handles, extension bars and universal joints for 3/8" drive.',
     specifications: [
       { label: 'Standard', value: 'IS 7975 Part II-2018 / IS 7991-2016' },
@@ -4428,7 +4426,7 @@ export const PRODUCTS: Product[] = [
     name: '1/2" Square Drive Sockets (Flank Drive, Bi-hexagonal & Hexagonal)',
     modelCode: 'L series',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Hexagonal and bi-hexagonal 1/2" square-drive sockets.',
     specifications: [
       { label: 'Standard', value: 'IS 6131-1980 / IS 7381-1986' },
@@ -4446,7 +4444,7 @@ export const PRODUCTS: Product[] = [
     name: '1/2" Drive Deep Sockets',
     modelCode: 'L..H series',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Deep sockets for 1/2" drive.',
     specifications: [
       { label: 'HSN Code', value: '82042000' },
@@ -4463,7 +4461,7 @@ export const PRODUCTS: Product[] = [
     name: '1/2" Drive Deep Socket Set (11 pcs)',
     modelCode: 'SLHS11',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: '11-piece deep socket set, 8mm–24mm.',
     specifications: [
       { label: 'HSN Code', value: '82042000' },
@@ -4479,7 +4477,7 @@ export const PRODUCTS: Product[] = [
     name: 'Extra Long Socket – 1/2" Square Drive',
     modelCode: 'EL 10',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Extra-long 1/2" drive socket.',
     specifications: [
       { label: 'HSN Code', value: '82042000' },
@@ -4496,7 +4494,7 @@ export const PRODUCTS: Product[] = [
     name: 'T Socket Wrenches',
     modelCode: 'TSW series',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'T-handle socket wrenches.',
     specifications: [
       { label: 'HSN Code', value: '82042000' },
@@ -4513,7 +4511,7 @@ export const PRODUCTS: Product[] = [
     name: 'Sockets – 1/2" Square Drive: Spark Plug (C.R.V.)',
     modelCode: 'SP 16 / SP 21',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Spark-plug sockets.',
     specifications: [
       { label: 'HSN Code', value: '82042000' },
@@ -4530,7 +4528,7 @@ export const PRODUCTS: Product[] = [
     name: 'Impact Sockets – 1/2" Square Drive (Hexagonal)',
     modelCode: 'IM series',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Impact-rated hexagonal sockets.',
     specifications: [
       { label: 'Standard', value: 'IS 7993-1988' },
@@ -4548,7 +4546,7 @@ export const PRODUCTS: Product[] = [
     name: 'Deep Impact Sockets – 1/2" Square Drive',
     modelCode: 'IML..H series',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Deep impact sockets.',
     specifications: [
       { label: 'HSN Code', value: '82042000' },
@@ -4565,7 +4563,7 @@ export const PRODUCTS: Product[] = [
     name: 'Torx Bit Sockets – 1/2" Square Drive',
     modelCode: 'BST series',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Torx bit sockets and sets for 1/2" drive.',
     specifications: [
       { label: 'HSN Code', value: '82042000' },
@@ -4582,7 +4580,7 @@ export const PRODUCTS: Product[] = [
     name: 'E-Sockets – 1/2" Square Drive',
     modelCode: 'E series',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'External Torx (E-type) sockets and sets.',
     specifications: [
       { label: 'HSN Code', value: '82042000' },
@@ -4599,7 +4597,7 @@ export const PRODUCTS: Product[] = [
     name: 'Hex Bit Sockets – 1/2" Square Drive',
     modelCode: 'BSH series',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Hex bit sockets and an 8-piece set.',
     specifications: [
       { label: 'HSN Code', value: '82042000' },
@@ -4616,7 +4614,7 @@ export const PRODUCTS: Product[] = [
     name: '1/2" Drive Socket Accessories',
     modelCode: '17xx/27xx series',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Extension bars, universal joints, T-handles, angle handles, nut spinners and adaptors for 1/2" drive.',
     specifications: [
       { label: 'Standard', value: 'IS 7991-2016 / IS 7975 Part II-2018' },
@@ -4633,7 +4631,7 @@ export const PRODUCTS: Product[] = [
     name: '1/2" Drive Socket Sets (Bi-hexagonal & Hexagonal)',
     modelCode: 'S-xxMXL/HXL series',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Boxed 1/2" drive socket sets, 14–22 sockets plus accessories.',
     specifications: [
       { label: 'HSN Code', value: '82042000' },
@@ -4649,7 +4647,7 @@ export const PRODUCTS: Product[] = [
     name: 'Wheel Sockets – 1/2" Square Drive',
     modelCode: 'WHS series / WHSS 3',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Loose wheel sockets and a boxed set.',
     specifications: [
       { label: 'HSN Code', value: '82042000' },
@@ -4666,7 +4664,7 @@ export const PRODUCTS: Product[] = [
     name: '3/4" Square Drive Sockets (Flank Drive, Bi-hexagonal & Hexagonal)',
     modelCode: 'C series',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Hexagonal and bi-hexagonal 3/4" square-drive sockets.',
     specifications: [
       { label: 'Standard', value: 'IS 6131-1980 / IS 7381-1986' },
@@ -4684,7 +4682,7 @@ export const PRODUCTS: Product[] = [
     name: 'Impact Sockets – 3/4" Square Drive (Hexagonal)',
     modelCode: 'IMC series',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Impact-rated 3/4" drive sockets.',
     specifications: [
       { label: 'Standard', value: 'IS 7993-1988' },
@@ -4702,7 +4700,7 @@ export const PRODUCTS: Product[] = [
     name: '3/4" Drive Socket Accessories',
     modelCode: '37xx series',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Ratchet handle, T-handle and extension bars for 3/4" drive.',
     specifications: [
       { label: 'Standard', value: 'IS 7975 Part II-2018 / IS 7991-2016' },
@@ -4719,7 +4717,7 @@ export const PRODUCTS: Product[] = [
     name: '3/4" Drive Socket Sets (Bi-hexagonal & Hexagonal)',
     modelCode: 'S 3/4 BH / S 3/4 H',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Boxed 3/4" drive socket sets.',
     specifications: [
       { label: 'HSN Code', value: '82042000' },
@@ -4735,7 +4733,7 @@ export const PRODUCTS: Product[] = [
     name: '1" Square Drive Sockets (Bi-hexagonal)',
     modelCode: 'D series',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Bi-hexagonal 1" square-drive sockets.',
     specifications: [
       { label: 'Standard', value: 'IS 7381-1986' },
@@ -4753,7 +4751,7 @@ export const PRODUCTS: Product[] = [
     name: 'Impact Sockets – 1" Square Drive (Hexagonal)',
     modelCode: 'IMD series',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Impact-rated 1" drive sockets.',
     specifications: [
       { label: 'Standard', value: 'IS 7993-1988' },
@@ -4771,7 +4769,7 @@ export const PRODUCTS: Product[] = [
     name: '1" Drive Socket Accessories',
     modelCode: '37xx series',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Ratchet handle, T-handle, extension bars and adaptors for 1" drive.',
     specifications: [
       { label: 'Standard', value: 'IS 7975 Part II-2018 / IS 7991-201' },
@@ -4788,7 +4786,7 @@ export const PRODUCTS: Product[] = [
     name: 'Bi-Hexagonal Socket Set – 1" Square Drive',
     modelCode: 'S1BH',
     brandSlug: 'taparia',
-    categorySlug: 'sockets-accessories-sets',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: '10-socket set (36mm–80mm) with accessories.',
     specifications: [
       { label: 'HSN Code', value: '82042000' },
@@ -4804,7 +4802,7 @@ export const PRODUCTS: Product[] = [
     name: 'T Socket Wrenches',
     modelCode: 'TSW7–TSW19',
     brandSlug: 'taparia',
-    categorySlug: 't-socket-wrench',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'T-handle socket wrenches, sizes 7mm to 19mm.',
     specifications: [
       { label: 'HSN Code', value: '82042000' },
@@ -4821,7 +4819,7 @@ export const PRODUCTS: Product[] = [
     name: 'Double Side Socket Wrenches',
     modelCode: 'DSRW series',
     brandSlug: 'taparia',
-    categorySlug: 'double-side-socket-wrench',
+    categorySlug: 'sockets-socket-sets',
     shortDescription: 'Double-ended ring socket wrenches.',
     specifications: [
       { label: 'HSN Code', value: '82042000' },
@@ -4838,7 +4836,7 @@ export const PRODUCTS: Product[] = [
     name: 'Torque Wrenches — Standard Type',
     modelCode: 'TW series',
     brandSlug: 'taparia',
-    categorySlug: 'torque-wrench-group',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Standard-type torque wrenches across multiple Nm ranges.',
     specifications: [
       { label: 'HSN Code', value: '82041220' },
@@ -4855,7 +4853,7 @@ export const PRODUCTS: Product[] = [
     name: 'Torque Wrenches — Ratchet Type (Professional Range)',
     modelCode: 'TPWR series',
     brandSlug: 'taparia',
-    categorySlug: 'torque-wrench-group',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Ratchet-type professional-range torque wrenches.',
     specifications: [
       { label: 'HSN Code', value: '82041220' },
@@ -4872,7 +4870,7 @@ export const PRODUCTS: Product[] = [
     name: 'General Purpose Pipe Wrenches',
     modelCode: '1271–1277 series',
     brandSlug: 'taparia',
-    categorySlug: 'pipe-wrench-group',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Cast general-purpose pipe wrenches for pipe sizes 6mm–95mm.',
     specifications: [
       { label: 'Standard', value: 'IS 4003(I)-2026' },
@@ -4890,7 +4888,7 @@ export const PRODUCTS: Product[] = [
     name: 'Heavy Duty Pipe Wrenches',
     modelCode: 'HPW series',
     brandSlug: 'taparia',
-    categorySlug: 'pipe-wrench-group',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Heavy-duty pipe wrenches for pipe sizes 10mm–166mm.',
     specifications: [
       { label: 'Standard', value: 'IS 6546-1989' },
@@ -4908,7 +4906,7 @@ export const PRODUCTS: Product[] = [
     name: 'Aluminium Handle Pipe Wrenches',
     modelCode: 'APW series',
     brandSlug: 'taparia',
-    categorySlug: 'aluminium-chain-pipe-wrench',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Lightweight aluminium-handle pipe wrenches.',
     specifications: [
       { label: 'Standard', value: 'IS 4003(II)-2026' },
@@ -4926,7 +4924,7 @@ export const PRODUCTS: Product[] = [
     name: 'Chain Pipe Wrenches',
     modelCode: 'CPW series',
     brandSlug: 'taparia',
-    categorySlug: 'aluminium-chain-pipe-wrench',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Chain-type pipe wrenches for large-diameter pipe.',
     specifications: [
       { label: 'Standard', value: 'IS 4123-1998' },
@@ -4944,7 +4942,7 @@ export const PRODUCTS: Product[] = [
     name: 'Spares for Chain Pipe Wrenches',
     modelCode: 'CPW..C series',
     brandSlug: 'taparia',
-    categorySlug: 'aluminium-chain-pipe-wrench',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Replacement chain-with-link spares for chain pipe wrenches.',
     specifications: [
       { label: 'HSN Code', value: '82041220' },
@@ -4960,7 +4958,7 @@ export const PRODUCTS: Product[] = [
     name: 'Hammer with Handle (Ball Pein & Cross Pein)',
     modelCode: 'WH series',
     brandSlug: 'taparia',
-    categorySlug: 'hammer-group',
+    categorySlug: 'hammers-punches-chisels',
     shortDescription: 'Ball-pein and cross-pein hammers with handle.',
     specifications: [
       { label: 'Standard', value: 'IS 841-1983' },
@@ -4978,7 +4976,7 @@ export const PRODUCTS: Product[] = [
     name: 'Claw Hammer with Handle',
     modelCode: 'CH/CLH series',
     brandSlug: 'taparia',
-    categorySlug: 'hammer-group',
+    categorySlug: 'hammers-punches-chisels',
     shortDescription: 'Claw hammers with handle.',
     specifications: [
       { label: 'Standard', value: 'IS 841-1983' },
@@ -4996,7 +4994,7 @@ export const PRODUCTS: Product[] = [
     name: 'Club Hammer with Handle',
     modelCode: 'GH series',
     brandSlug: 'taparia',
-    categorySlug: 'hammer-group',
+    categorySlug: 'hammers-punches-chisels',
     shortDescription: 'Club hammers with handle.',
     specifications: [
       { label: 'Standard', value: 'IS 841-1983' },
@@ -5014,7 +5012,7 @@ export const PRODUCTS: Product[] = [
     name: 'Machinist Hammer with Handle',
     modelCode: 'MH series',
     brandSlug: 'taparia',
-    categorySlug: 'hammer-group',
+    categorySlug: 'hammers-punches-chisels',
     shortDescription: 'Machinist hammers with handle.',
     specifications: [
       { label: 'Standard', value: 'IS 841-1983' },
@@ -5032,7 +5030,7 @@ export const PRODUCTS: Product[] = [
     name: 'Sledge Hammer with Hickory Wood Handle',
     modelCode: 'SHHW series',
     brandSlug: 'taparia',
-    categorySlug: 'hammer-group',
+    categorySlug: 'hammers-punches-chisels',
     shortDescription: 'Sledge hammers with hickory wood handle.',
     specifications: [
       { label: 'Standard', value: 'IS 841-1983' },
@@ -5050,7 +5048,7 @@ export const PRODUCTS: Product[] = [
     name: 'Sledge Hammer Head Only',
     modelCode: 'SHH series',
     brandSlug: 'taparia',
-    categorySlug: 'hammer-group',
+    categorySlug: 'hammers-punches-chisels',
     shortDescription: 'Sledge hammer heads without handle.',
     specifications: [
       { label: 'Standard', value: 'IS 841-1983' },
@@ -5068,7 +5066,7 @@ export const PRODUCTS: Product[] = [
     name: 'Electrician Hammer',
     modelCode: 'SQ 15',
     brandSlug: 'taparia',
-    categorySlug: 'hammer-group',
+    categorySlug: 'hammers-punches-chisels',
     shortDescription: 'Insulated electrician hammer.',
     specifications: [
       { label: 'HSN Code', value: '82052000' },
@@ -5084,7 +5082,7 @@ export const PRODUCTS: Product[] = [
     name: 'Soft Faced Hammer with Handle',
     modelCode: 'SFH series',
     brandSlug: 'taparia',
-    categorySlug: 'hammer-group',
+    categorySlug: 'hammers-punches-chisels',
     shortDescription: 'Soft-faced (nylon/rubber) hammers with handle.',
     specifications: [
       { label: 'Standard', value: 'IS 10838-1984' },
@@ -5102,7 +5100,7 @@ export const PRODUCTS: Product[] = [
     name: 'Soft Faced Hammer Spares',
     modelCode: 'SFH..S series',
     brandSlug: 'taparia',
-    categorySlug: 'hammer-group',
+    categorySlug: 'hammers-punches-chisels',
     shortDescription: 'Replacement faces for soft-faced hammers.',
     specifications: [
       { label: 'Standard', value: 'IS 10838-1984' },
@@ -5119,7 +5117,7 @@ export const PRODUCTS: Product[] = [
     name: 'Fiberglass Handle Hammers',
     modelCode: 'FH/FCH/FSH series',
     brandSlug: 'taparia',
-    categorySlug: 'fiberglass-hammer-handle',
+    categorySlug: 'hammers-punches-chisels',
     shortDescription: 'Ball-pein, claw, cross-pein and sledge hammers with fiberglass handles.',
     specifications: [
       { label: 'Standard', value: 'IS 841-1983' },
@@ -5137,7 +5135,7 @@ export const PRODUCTS: Product[] = [
     name: 'C-Clamps',
     modelCode: 'C1259–C1266 series',
     brandSlug: 'taparia',
-    categorySlug: 'c-f-clamps',
+    categorySlug: 'workshop-equipment-jacks-vices',
     shortDescription: 'Malleable-iron C-clamps.',
     specifications: [
       { label: 'HSN Code', value: '82057000' },
@@ -5154,7 +5152,7 @@ export const PRODUCTS: Product[] = [
     name: 'F-Clamps (Light Duty)',
     modelCode: 'FC15/FC22 series',
     brandSlug: 'taparia',
-    categorySlug: 'c-f-clamps',
+    categorySlug: 'workshop-equipment-jacks-vices',
     shortDescription: 'Light-duty F-clamps.',
     specifications: [
       { label: 'HSN Code', value: '82057000' },
@@ -5171,7 +5169,7 @@ export const PRODUCTS: Product[] = [
     name: 'F-Clamps (Heavy Duty)',
     modelCode: 'FC29 series',
     brandSlug: 'taparia',
-    categorySlug: 'c-f-clamps',
+    categorySlug: 'workshop-equipment-jacks-vices',
     shortDescription: 'Heavy-duty F-clamps.',
     specifications: [
       { label: 'HSN Code', value: '82057000' },
@@ -5188,7 +5186,7 @@ export const PRODUCTS: Product[] = [
     name: 'Pipe Vices',
     modelCode: 'PV 01–PV 04',
     brandSlug: 'taparia',
-    categorySlug: 'pipe-vices',
+    categorySlug: 'workshop-equipment-jacks-vices',
     shortDescription: 'Chain-type pipe vices for bench mounting.',
     specifications: [
       { label: 'Standard', value: 'IS 6007-1971' },
@@ -5206,7 +5204,7 @@ export const PRODUCTS: Product[] = [
     name: 'L Spanners',
     modelCode: '1535–1537 series',
     brandSlug: 'taparia',
-    categorySlug: 'l-spanner-box-spanner',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'L-shaped hex-head spanners.',
     specifications: [
       { label: 'Standard', value: 'IS 2030-1989' },
@@ -5224,7 +5222,7 @@ export const PRODUCTS: Product[] = [
     name: 'L Spanners with Jack Hole',
     modelCode: '1536-H/1536-SH/1537-H',
     brandSlug: 'taparia',
-    categorySlug: 'l-spanner-box-spanner',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'L spanners with jack hole for wheel-nut applications.',
     specifications: [
       { label: 'Standard', value: 'IS 2030-1989' },
@@ -5242,7 +5240,7 @@ export const PRODUCTS: Product[] = [
     name: 'Box Spanners',
     modelCode: 'DEP series',
     brandSlug: 'taparia',
-    categorySlug: 'l-spanner-box-spanner',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Double-ended box spanners.',
     specifications: [
       { label: 'Standard', value: 'IS 2030-1989' },
@@ -5260,7 +5258,7 @@ export const PRODUCTS: Product[] = [
     name: 'Tubular Box Spanners',
     modelCode: 'TS series',
     brandSlug: 'taparia',
-    categorySlug: 'tubular-spanner-half-moon-spanner',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Tubular box spanners.',
     specifications: [
       { label: 'Standard', value: 'IS 2030-1989' },
@@ -5278,7 +5276,7 @@ export const PRODUCTS: Product[] = [
     name: 'Tubular Spanner Sets (with Tommy Bar)',
     modelCode: 'TS 08P / TS 12P',
     brandSlug: 'taparia',
-    categorySlug: 'tubular-spanner-half-moon-spanner',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: '8- and 12-piece tubular spanner sets with tommy bars.',
     specifications: [
       { label: 'Standard', value: 'IS 2030-1989' },
@@ -5295,7 +5293,7 @@ export const PRODUCTS: Product[] = [
     name: 'Cross Rim Wrenches',
     modelCode: 'CW series',
     brandSlug: 'taparia',
-    categorySlug: 'tubular-spanner-half-moon-spanner',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Cross-type wheel-rim wrenches.',
     specifications: [
       { label: 'Standard', value: 'IS 12521-1988' },
@@ -5313,7 +5311,7 @@ export const PRODUCTS: Product[] = [
     name: 'Half Moon Spanner',
     modelCode: '18.(E) series',
     brandSlug: 'taparia',
-    categorySlug: 'tubular-spanner-half-moon-spanner',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Half-moon profile spanner.',
     specifications: [
       { label: 'Standard', value: 'IS 4508-1992' },
@@ -5330,7 +5328,7 @@ export const PRODUCTS: Product[] = [
     name: 'Double Ended Open Jaw Spanners — General Purpose',
     modelCode: 'DEP series',
     brandSlug: 'taparia',
-    categorySlug: 'spanners-group',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Chrome-plated double-ended open-jaw spanners.',
     specifications: [
       { label: 'Standard', value: 'IS 2028-2026' },
@@ -5348,7 +5346,7 @@ export const PRODUCTS: Product[] = [
     name: 'Double Ended Open Jaw Spanners — Ribbed',
     modelCode: 'DER series',
     brandSlug: 'taparia',
-    categorySlug: 'spanners-group',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Ribbed double-ended open-jaw spanners, chrome plated and phosphated.',
     specifications: [
       { label: 'HSN Code', value: '82041110' },
@@ -5365,7 +5363,7 @@ export const PRODUCTS: Product[] = [
     name: 'Double Ended Open Jaw Spanner Sets',
     modelCode: 'DEP0x/DW/DEPW/1806-18010 series',
     brandSlug: 'taparia',
-    categorySlug: 'spanners-group',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Boxed and hanger-pack sets of double-ended open-jaw spanners.',
     specifications: [
       { label: 'HSN Code', value: '82041110' },
@@ -5381,7 +5379,7 @@ export const PRODUCTS: Product[] = [
     name: 'Ring Spanners',
     modelCode: '18/16 series',
     brandSlug: 'taparia',
-    categorySlug: 'spanners-group',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Chrome-plated and phosphated ring spanners.',
     specifications: [
       { label: 'Standard', value: 'IS 2029-2026' },
@@ -5399,7 +5397,7 @@ export const PRODUCTS: Product[] = [
     name: 'Ring Spanner Sets',
     modelCode: 'RW06 / RW09 / 1806-18012',
     brandSlug: 'taparia',
-    categorySlug: 'spanners-group',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Boxed sets of ring spanners.',
     specifications: [
       { label: 'HSN Code', value: '82041110' },
@@ -5415,7 +5413,7 @@ export const PRODUCTS: Product[] = [
     name: 'Single Ended Open Jaw Spanners',
     modelCode: 'SER series',
     brandSlug: 'taparia',
-    categorySlug: 'spanners-group',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Single-ended open-jaw spanners.',
     specifications: [
       { label: 'HSN Code', value: '82041110' },
@@ -5432,7 +5430,7 @@ export const PRODUCTS: Product[] = [
     name: 'Combination Spanners (Chrome Plated)',
     modelCode: 'CS series',
     brandSlug: 'taparia',
-    categorySlug: 'spanners-group',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Chrome-plated combination spanners.',
     specifications: [
       { label: 'Standard', value: 'IS 6389-1998' },
@@ -5450,7 +5448,7 @@ export const PRODUCTS: Product[] = [
     name: 'Combination Spanner Sets',
     modelCode: 'CSS series',
     brandSlug: 'taparia',
-    categorySlug: 'spanners-group',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: '6- to 25-piece combination spanner sets.',
     specifications: [
       { label: 'Standard', value: 'IS 6389-1998' },
@@ -5467,7 +5465,7 @@ export const PRODUCTS: Product[] = [
     name: 'Combination Spanners (Mirror Finish)',
     modelCode: 'CS 33–CS 50',
     brandSlug: 'taparia',
-    categorySlug: 'spanners-group',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Mirror-finish chrome-plated combination spanners for larger sizes.',
     specifications: [
       { label: 'HSN Code', value: '82041110' },
@@ -5484,7 +5482,7 @@ export const PRODUCTS: Product[] = [
     name: 'Gear Wrench Combination Spanners',
     modelCode: 'GWCS series',
     brandSlug: 'taparia',
-    categorySlug: 'spanners-group',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Ratcheting gear-wrench combination spanners.',
     specifications: [
       { label: 'HSN Code', value: '82041110' },
@@ -5501,7 +5499,7 @@ export const PRODUCTS: Product[] = [
     name: 'Half Moon Spanner',
     modelCode: 'HM series',
     brandSlug: 'taparia',
-    categorySlug: 'spanners-group',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Half-moon profile double-ended spanners.',
     specifications: [
       { label: 'HSN Code', value: '82041110' },
@@ -5518,7 +5516,7 @@ export const PRODUCTS: Product[] = [
     name: 'Slugging Open Ended Spanners',
     modelCode: 'SSO series',
     brandSlug: 'taparia',
-    categorySlug: 'slogging-spanners',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Heavy-duty slugging open-ended spanners.',
     specifications: [
       { label: 'Standard', value: 'IS 4508-1992' },
@@ -5536,7 +5534,7 @@ export const PRODUCTS: Product[] = [
     name: 'Slugging Ring Spanners',
     modelCode: 'SSR series',
     brandSlug: 'taparia',
-    categorySlug: 'slogging-spanners',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Slugging ring spanners.',
     specifications: [
       { label: 'Standard', value: 'IS 4509-1992' },
@@ -5554,7 +5552,7 @@ export const PRODUCTS: Product[] = [
     name: 'Slugging Ring Offset Spanner with Box Handle',
     modelCode: 'SSROB series',
     brandSlug: 'taparia',
-    categorySlug: 'slogging-spanners',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Offset slugging ring spanners with box handle.',
     specifications: [
       { label: 'HSN Code', value: '82041110' },
@@ -5571,7 +5569,7 @@ export const PRODUCTS: Product[] = [
     name: 'Slugging Ring Offset Spanner with Round Handle',
     modelCode: 'SSROR series',
     brandSlug: 'taparia',
-    categorySlug: 'slogging-spanners',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Offset slugging ring spanners with round handle.',
     specifications: [
       { label: 'HSN Code', value: '82041110' },
@@ -5588,7 +5586,7 @@ export const PRODUCTS: Product[] = [
     name: 'Octagonal Chisels',
     modelCode: '101–107 series',
     brandSlug: 'taparia',
-    categorySlug: 'chisels-group',
+    categorySlug: 'hammers-punches-chisels',
     shortDescription: 'Octagonal-body cold chisels.',
     specifications: [
       { label: 'Standard', value: 'IS 402-1990' },
@@ -5606,7 +5604,7 @@ export const PRODUCTS: Product[] = [
     name: 'Flat Chisels',
     modelCode: '1046/1048/1059 series',
     brandSlug: 'taparia',
-    categorySlug: 'chisels-group',
+    categorySlug: 'hammers-punches-chisels',
     shortDescription: 'Flat cold chisels.',
     specifications: [
       { label: 'HSN Code', value: '82053000' },
@@ -5623,7 +5621,7 @@ export const PRODUCTS: Product[] = [
     name: 'Chisels with Rubber Grip',
     modelCode: '1059R/106R/107R',
     brandSlug: 'taparia',
-    categorySlug: 'chisels-group',
+    categorySlug: 'hammers-punches-chisels',
     shortDescription: 'Rubber-gripped cold chisels.',
     specifications: [
       { label: 'HSN Code', value: '82053000' },
@@ -5640,7 +5638,7 @@ export const PRODUCTS: Product[] = [
     name: 'Pneumatic Chisels',
     modelCode: 'ATS10/ATL10/ATR10',
     brandSlug: 'taparia',
-    categorySlug: 'chisels-group',
+    categorySlug: 'hammers-punches-chisels',
     shortDescription: '19mm A/F octagonal-body pneumatic chisels, straight/left/right nose.',
     specifications: [
       { label: 'Standard', value: 'IS 7446-1987' },
@@ -5658,7 +5656,7 @@ export const PRODUCTS: Product[] = [
     name: 'SDS Chisels',
     modelCode: 'ECB14250 / ECF20250',
     brandSlug: 'taparia',
-    categorySlug: 'chisels-group',
+    categorySlug: 'hammers-punches-chisels',
     shortDescription: 'SDS-shank pointed and flat chisels.',
     specifications: [
       { label: 'HSN Code', value: '82053000' },
@@ -5675,7 +5673,7 @@ export const PRODUCTS: Product[] = [
     name: 'Center Punches & Drift Punches',
     modelCode: '1884/1984/1985/1986/1004',
     brandSlug: 'taparia',
-    categorySlug: 'punches-sets',
+    categorySlug: 'hammers-punches-chisels',
     shortDescription: 'Center punches and drift punches.',
     specifications: [
       { label: 'Standard', value: 'IS 7177-1999' },
@@ -5693,7 +5691,7 @@ export const PRODUCTS: Product[] = [
     name: 'Leather Punches',
     modelCode: 'LP series',
     brandSlug: 'taparia',
-    categorySlug: 'punches-sets',
+    categorySlug: 'hammers-punches-chisels',
     shortDescription: 'Revolving-head leather punches, hole sizes 3mm–25mm.',
     specifications: [
       { label: 'HSN Code', value: '82034010' },
@@ -5710,7 +5708,7 @@ export const PRODUCTS: Product[] = [
     name: 'Drift, Center & Leather Punch Set',
     modelCode: 'DCLP7 / LPS12',
     brandSlug: 'taparia',
-    categorySlug: 'punches-sets',
+    categorySlug: 'hammers-punches-chisels',
     shortDescription: '7- and 12-piece punch sets.',
     specifications: [
       { label: 'HSN Code', value: '82034010' },
@@ -5726,7 +5724,7 @@ export const PRODUCTS: Product[] = [
     name: 'Bolt Cutters',
     modelCode: 'BC series',
     brandSlug: 'taparia',
-    categorySlug: 'bolt-cable-tin-cutter',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Bolt cutters, cutting capacity 4mm–21mm.',
     specifications: [
       { label: 'Standard', value: 'IS 5200-1998' },
@@ -5744,7 +5742,7 @@ export const PRODUCTS: Product[] = [
     name: 'Spare Blade Set for Bolt Cutters',
     modelCode: 'BCB series',
     brandSlug: 'taparia',
-    categorySlug: 'bolt-cable-tin-cutter',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Replacement blade sets for bolt cutters.',
     specifications: [
       { label: 'HSN Code', value: '82034090, 82033000' },
@@ -5760,7 +5758,7 @@ export const PRODUCTS: Product[] = [
     name: 'Aviation Tin Cutter',
     modelCode: 'ATS/ATL/ATR 10',
     brandSlug: 'taparia',
-    categorySlug: 'bolt-cable-tin-cutter',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Aviation-type straight, left and right cut tin snips.',
     specifications: [
       { label: 'HSN Code', value: '82034090, 82033000' },
@@ -5777,7 +5775,7 @@ export const PRODUCTS: Product[] = [
     name: 'Cable Cutters',
     modelCode: 'CC/CCS series',
     brandSlug: 'taparia',
-    categorySlug: 'bolt-cable-tin-cutter',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Cable cutters, cutting capacity up to 40mm OD.',
     specifications: [
       { label: 'Standard', value: 'IS 6087-1971' },
@@ -5795,7 +5793,7 @@ export const PRODUCTS: Product[] = [
     name: 'Tin Cutters with Spring',
     modelCode: 'TCS series',
     brandSlug: 'taparia',
-    categorySlug: 'bolt-cable-tin-cutter',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Spring-loaded tin cutters.',
     specifications: [
       { label: 'Standard', value: 'IS 6087-1971' },
@@ -5813,7 +5811,7 @@ export const PRODUCTS: Product[] = [
     name: 'Wire Rope Cutters',
     modelCode: 'WRC series',
     brandSlug: 'taparia',
-    categorySlug: 'bolt-cable-tin-cutter',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Wire rope cutters, cutting capacity 10mm–18mm.',
     specifications: [
       { label: 'HSN Code', value: '82034090, 82033000' },
@@ -5830,7 +5828,7 @@ export const PRODUCTS: Product[] = [
     name: 'Magnetic Products',
     modelCode: 'MB 6201',
     brandSlug: 'taparia',
-    categorySlug: 'bolt-cable-tin-cutter',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Magnetic bar.',
     specifications: [
       { label: 'HSN Code', value: '82034090, 82033000' },
@@ -5847,7 +5845,7 @@ export const PRODUCTS: Product[] = [
     name: 'Pruning Shear',
     modelCode: 'PS 9 / PS 10',
     brandSlug: 'taparia',
-    categorySlug: 'pruning-shear-fiberglass-steel-axe',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Pruning shears for stems up to 25mm.',
     specifications: [
       { label: 'HSN Code', value: '82014000' },
@@ -5864,7 +5862,7 @@ export const PRODUCTS: Product[] = [
     name: 'Fiberglass Handle Steel Axe',
     modelCode: 'FHSA series',
     brandSlug: 'taparia',
-    categorySlug: 'pruning-shear-fiberglass-steel-axe',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Fiberglass-handled steel axes.',
     specifications: [
       { label: 'Standard', value: 'IS 703:1999 & IS 2891:1975' },
@@ -5882,7 +5880,7 @@ export const PRODUCTS: Product[] = [
     name: 'PVC Plastic Pipe Cutter',
     modelCode: 'SK-1',
     brandSlug: 'taparia',
-    categorySlug: 'pvc-pipe-cutter-snap-off-cutter',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Plastic pipe cutter.',
     specifications: [
       { label: 'HSN Code', value: '82034010, 82119390' },
@@ -5899,7 +5897,7 @@ export const PRODUCTS: Product[] = [
     name: 'Snap Off Cutter',
     modelCode: 'SKE/SKB series',
     brandSlug: 'taparia',
-    categorySlug: 'pvc-pipe-cutter-snap-off-cutter',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Snap-off utility cutters and spare blades.',
     specifications: [
       { label: 'HSN Code', value: '82034010, 82119390' },
@@ -5916,7 +5914,7 @@ export const PRODUCTS: Product[] = [
     name: 'Utility Knife & Spare Blade',
     modelCode: 'UK-3 / UB-10',
     brandSlug: 'taparia',
-    categorySlug: 'pvc-pipe-cutter-snap-off-cutter',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Retractable utility knife with spare blade pack.',
     specifications: [
       { label: 'HSN Code', value: '82034010, 82119390' },
@@ -5933,7 +5931,7 @@ export const PRODUCTS: Product[] = [
     name: 'Hacksaw Frames',
     modelCode: 'HFSA/HFEP/HFW/HFJP/HJHW 12/6"',
     brandSlug: 'taparia',
-    categorySlug: 'hacksaw-frames-blades',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Hacksaw frames — square M.S. pipe, oval M.S. pipe, wooden handle, pistol grip and handy wire saw variants.',
     specifications: [
       { label: 'HSN Code', value: '82029120, 82099120' },
@@ -5950,7 +5948,7 @@ export const PRODUCTS: Product[] = [
     name: 'Hacksaw Blades — Carbon Steel All Hard',
     modelCode: 'HBHC series',
     brandSlug: 'taparia',
-    categorySlug: 'hacksaw-frames-blades',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'All-hard carbon steel hacksaw blades.',
     specifications: [
       { label: 'HSN Code', value: '82029120, 82099120' },
@@ -5967,7 +5965,7 @@ export const PRODUCTS: Product[] = [
     name: 'Flexible Hacksaw Blades (Carbon Steel)',
     modelCode: 'PC 42 / PCHL 42',
     brandSlug: 'taparia',
-    categorySlug: 'hacksaw-frames-blades',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Flexible carbon-steel hacksaw blades.',
     specifications: [
       { label: 'HSN Code', value: '82029120, 82099120' },
@@ -5984,7 +5982,7 @@ export const PRODUCTS: Product[] = [
     name: 'Hacksaw Blades — Carbon Steel (Double Side Cutting)',
     modelCode: 'HBCD series',
     brandSlug: 'taparia',
-    categorySlug: 'hacksaw-frames-blades',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Double-side-cutting carbon steel blades.',
     specifications: [
       { label: 'HSN Code', value: '82029120, 82099120' },
@@ -6001,7 +5999,7 @@ export const PRODUCTS: Product[] = [
     name: 'Hacksaw Blades — Bi-Metal',
     modelCode: 'HBB series',
     brandSlug: 'taparia',
-    categorySlug: 'hacksaw-frames-blades',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'HSS bi-metal hacksaw blades.',
     specifications: [
       { label: 'HSN Code', value: '82029120, 82099120' },
@@ -6018,7 +6016,7 @@ export const PRODUCTS: Product[] = [
     name: 'Bearing Pullers',
     modelCode: 'BP 303–BP 308',
     brandSlug: 'taparia',
-    categorySlug: 'bearing-puller',
+    categorySlug: 'workshop-equipment-jacks-vices',
     shortDescription: '3-leg bearing pullers.',
     specifications: [
       { label: 'Standard', value: 'IS 9193-1988' },
@@ -6036,7 +6034,7 @@ export const PRODUCTS: Product[] = [
     name: 'Allen Keys — Brown Finish (Metric & Inch)',
     modelCode: 'AK series',
     brandSlug: 'taparia',
-    categorySlug: 'allen-keys-sets',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Standard brown-finish hex Allen keys, metric and inch series.',
     specifications: [
       { label: 'Standard', value: 'IS 3082-2008' },
@@ -6054,7 +6052,7 @@ export const PRODUCTS: Product[] = [
     name: 'Allen Keys — Black Finish (Metric & Inch)',
     modelCode: 'K series',
     brandSlug: 'taparia',
-    categorySlug: 'allen-keys-sets',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Black-finish hex Allen keys, metric and inch series.',
     specifications: [
       { label: 'Standard', value: 'IS 3082-2008' },
@@ -6072,7 +6070,7 @@ export const PRODUCTS: Product[] = [
     name: 'Allen Key Sets — Brown & Black Finish',
     modelCode: 'AKM/AKI/KM/KI series',
     brandSlug: 'taparia',
-    categorySlug: 'allen-keys-sets',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Boxed and hanger-pack Allen key sets.',
     specifications: [
       { label: 'Standard', value: 'IS 3082-2008' },
@@ -6090,7 +6088,7 @@ export const PRODUCTS: Product[] = [
     name: 'Allen Keys — Long & Extra Long Ball Point',
     modelCode: 'KB..L / KB..X series',
     brandSlug: 'taparia',
-    categorySlug: 'allen-keys-sets',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Ball-point hex keys in long and extra-long reach.',
     specifications: [
       { label: 'Standard', value: 'IS 3082-2008' },
@@ -6108,7 +6106,7 @@ export const PRODUCTS: Product[] = [
     name: 'Allen Key Sets — Long & Extra Long Ball Point',
     modelCode: 'KBHM/KBHI series',
     brandSlug: 'taparia',
-    categorySlug: 'allen-keys-sets',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Ball-point Allen key sets, hanger pack.',
     specifications: [
       { label: 'HSN Code', value: '82041120' },
@@ -6124,7 +6122,7 @@ export const PRODUCTS: Product[] = [
     name: 'Torx Keys (Short Series) & Sets',
     modelCode: 'KT series / KTH series',
     brandSlug: 'taparia',
-    categorySlug: 'allen-keys-sets',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Torx L-keys and boxed sets.',
     specifications: [
       { label: 'HSN Code', value: '82041120' },
@@ -6141,7 +6139,7 @@ export const PRODUCTS: Product[] = [
     name: 'Folding Type Key Sets',
     modelCode: 'KFM8 / KFI9 / KFT8',
     brandSlug: 'taparia',
-    categorySlug: 'allen-keys-sets',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'Folding hex, inch and Torx key sets.',
     specifications: [
       { label: 'HSN Code', value: '82041120' },
@@ -6157,7 +6155,7 @@ export const PRODUCTS: Product[] = [
     name: 'T-Handle Hex Keys & Sets',
     modelCode: 'TAK series / TAKM9',
     brandSlug: 'taparia',
-    categorySlug: 'allen-keys-sets',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'T-handle hex keys, metric and inch, loose and boxed sets.',
     specifications: [
       { label: 'HSN Code', value: '82041120' },
@@ -6174,7 +6172,7 @@ export const PRODUCTS: Product[] = [
     name: 'T-Handle Ball Point Allen Keys & Sets',
     modelCode: 'TKB series / TKBXM9',
     brandSlug: 'taparia',
-    categorySlug: 'allen-keys-sets',
+    categorySlug: 'wrenches-spanners-allen-keys',
     shortDescription: 'T-handle ball-point Allen keys and a 9-piece metal-stand set.',
     specifications: [
       { label: 'HSN Code', value: '82041120' },
@@ -6191,7 +6189,7 @@ export const PRODUCTS: Product[] = [
     name: 'Tool Bags',
     modelCode: 'TB 10–TB 26',
     brandSlug: 'taparia',
-    categorySlug: 'tool-bags',
+    categorySlug: 'tool-storage-kits',
     shortDescription: 'General-purpose tool bags.',
     specifications: [
       { label: 'HSN Code', value: '42022210' },
@@ -6208,7 +6206,7 @@ export const PRODUCTS: Product[] = [
     name: 'Silver Series Tool Bags',
     modelCode: 'SSTB series',
     brandSlug: 'taparia',
-    categorySlug: 'tool-bags',
+    categorySlug: 'tool-storage-kits',
     shortDescription: 'Silver-series tool bags.',
     specifications: [
       { label: 'HSN Code', value: '42022210' },
@@ -6225,7 +6223,7 @@ export const PRODUCTS: Product[] = [
     name: 'Backpack Tool Bag',
     modelCode: 'BPTB 18',
     brandSlug: 'taparia',
-    categorySlug: 'tool-bags',
+    categorySlug: 'tool-storage-kits',
     shortDescription: 'Backpack-style tool bag.',
     specifications: [
       { label: 'HSN Code', value: '42022210' },
@@ -6242,7 +6240,7 @@ export const PRODUCTS: Product[] = [
     name: 'Professional Tool Kit',
     modelCode: '1022',
     brandSlug: 'taparia',
-    categorySlug: 'two-wheeler-plumber-mini-tool-kits',
+    categorySlug: 'tool-storage-kits',
     shortDescription: 'Kit combining screwdrivers, wire stripping plier, combination plier, water pump plier, ball-pein hammer and adjustable spanner.',
     specifications: [
       { label: 'HSN Code', value: '82060090' },
@@ -6258,7 +6256,7 @@ export const PRODUCTS: Product[] = [
     name: 'Two Wheeler Tool Kit',
     modelCode: '9222',
     brandSlug: 'taparia',
-    categorySlug: 'two-wheeler-plumber-mini-tool-kits',
+    categorySlug: 'tool-storage-kits',
     shortDescription: 'Compact tool kit for two-wheeler roadside use.',
     specifications: [
       { label: 'HSN Code', value: '82060090' },
@@ -6274,7 +6272,7 @@ export const PRODUCTS: Product[] = [
     name: 'Plumber Tool Kit',
     modelCode: '2597 / 3604',
     brandSlug: 'taparia',
-    categorySlug: 'two-wheeler-plumber-mini-tool-kits',
+    categorySlug: 'tool-storage-kits',
     shortDescription: 'Tool kit assembled for plumbing tasks.',
     specifications: [
       { label: 'HSN Code', value: '82060090' },
@@ -6290,7 +6288,7 @@ export const PRODUCTS: Product[] = [
     name: 'Universal Sets',
     modelCode: '1001 / 1005',
     brandSlug: 'taparia',
-    categorySlug: 'professional-universal-tool-kits',
+    categorySlug: 'tool-storage-kits',
     shortDescription: 'Sets combining a screwdriver set, insulated plier and adjustable spanner.',
     specifications: [
       { label: 'HSN Code', value: '82060090' },
@@ -6306,7 +6304,7 @@ export const PRODUCTS: Product[] = [
     name: 'Cantilever Tool Box (3 & 5 Compartments)',
     modelCode: 'CTB series',
     brandSlug: 'taparia',
-    categorySlug: 'cantilever-tool-box',
+    categorySlug: 'tool-storage-kits',
     shortDescription: 'Steel cantilever tool boxes, 3- and 5-compartment.',
     specifications: [
       { label: 'HSN Code', value: '73102910' },
@@ -6322,7 +6320,7 @@ export const PRODUCTS: Product[] = [
     name: 'Plastic Tool Box with Organizer',
     modelCode: 'PTB series',
     brandSlug: 'taparia',
-    categorySlug: 'plastic-tool-box',
+    categorySlug: 'tool-storage-kits',
     shortDescription: 'Plastic tool boxes with lid organiser tray.',
     specifications: [
       { label: 'HSN Code', value: '39231090' },
@@ -6338,7 +6336,7 @@ export const PRODUCTS: Product[] = [
     name: 'Tools Trolley',
     modelCode: 'TTB5 / TTB7',
     brandSlug: 'taparia',
-    categorySlug: 'tools-trolley',
+    categorySlug: 'tool-storage-kits',
     shortDescription: '5-drawer and 7-drawer rolling tool trolleys.',
     specifications: [
       { label: 'HSN Code', value: '94038900' },
@@ -6354,7 +6352,7 @@ export const PRODUCTS: Product[] = [
     name: 'Tools Trolley Spares',
     modelCode: 'TTBW / TTBH',
     brandSlug: 'taparia',
-    categorySlug: 'tools-trolley',
+    categorySlug: 'tool-storage-kits',
     shortDescription: 'Replacement wheel set and handle for the tools trolley.',
     specifications: [
       { label: 'HSN Code', value: '94038900' },
@@ -6370,7 +6368,7 @@ export const PRODUCTS: Product[] = [
     name: 'Strap Filter Wrench',
     modelCode: 'SFW 12',
     brandSlug: 'taparia',
-    categorySlug: 'strap-filter-wrench-oil-can-grease-gun',
+    categorySlug: 'workshop-equipment-jacks-vices',
     shortDescription: 'Strap-type oil filter wrench, grip capacity up to 200mm.',
     specifications: [
       { label: 'HSN Code', value: 'Same as the equivalent regular (non-spark-resistant) hand tool — see Taparia\'s own catalogue note' },
@@ -6387,7 +6385,7 @@ export const PRODUCTS: Product[] = [
     name: 'Hand Oil Pump',
     modelCode: 'OC series',
     brandSlug: 'taparia',
-    categorySlug: 'strap-filter-wrench-oil-can-grease-gun',
+    categorySlug: 'workshop-equipment-jacks-vices',
     shortDescription: 'Hand-operated oil pumps.',
     specifications: [
       { label: 'HSN Code', value: 'Same as the equivalent regular (non-spark-resistant) hand tool — see Taparia\'s own catalogue note' },
@@ -6404,7 +6402,7 @@ export const PRODUCTS: Product[] = [
     name: 'Grease Gun (Lever Type)',
     modelCode: 'GGL series',
     brandSlug: 'taparia',
-    categorySlug: 'strap-filter-wrench-oil-can-grease-gun',
+    categorySlug: 'workshop-equipment-jacks-vices',
     shortDescription: 'Lever-type grease guns.',
     specifications: [
       { label: 'HSN Code', value: 'Same as the equivalent regular (non-spark-resistant) hand tool — see Taparia\'s own catalogue note' },
@@ -6421,7 +6419,7 @@ export const PRODUCTS: Product[] = [
     name: 'Bucket Grease Pump',
     modelCode: 'BGP/BGPT series',
     brandSlug: 'taparia',
-    categorySlug: 'bucket-grease-pump-rotary-barrel-pump',
+    categorySlug: 'workshop-equipment-jacks-vices',
     shortDescription: 'Bucket grease pumps, with and without trolley.',
     specifications: [
       { label: 'HSN Code', value: '84131910, 84139130' },
@@ -6438,7 +6436,7 @@ export const PRODUCTS: Product[] = [
     name: 'Rotary Barrel Pump',
     modelCode: 'RBP 90',
     brandSlug: 'taparia',
-    categorySlug: 'bucket-grease-pump-rotary-barrel-pump',
+    categorySlug: 'workshop-equipment-jacks-vices',
     shortDescription: 'Rotary barrel pump.',
     specifications: [
       { label: 'HSN Code', value: '84131910, 84139130' },
@@ -6455,7 +6453,7 @@ export const PRODUCTS: Product[] = [
     name: 'Spares for Bucket Grease Pump',
     modelCode: 'BGPSK/BGPDP/BGPHPS',
     brandSlug: 'taparia',
-    categorySlug: 'bucket-grease-pump-rotary-barrel-pump',
+    categorySlug: 'workshop-equipment-jacks-vices',
     shortDescription: 'Spare kit, disc plate and hose pipe set.',
     specifications: [
       { label: 'HSN Code', value: '84131910, 84139130' },
@@ -6471,7 +6469,7 @@ export const PRODUCTS: Product[] = [
     name: 'Hydraulic Bottle Jack',
     modelCode: 'HBJ series',
     brandSlug: 'taparia',
-    categorySlug: 'hydraulic-bottle-jack-spare-kit',
+    categorySlug: 'workshop-equipment-jacks-vices',
     shortDescription: 'Hydraulic bottle jacks, 2 to 50 ton capacity.',
     specifications: [
       { label: 'HSN Code', value: '84254200, 40169390' },
@@ -6488,7 +6486,7 @@ export const PRODUCTS: Product[] = [
     name: 'Spare Kit for Hydraulic Bottle Jack',
     modelCode: 'HBJ..S series',
     brandSlug: 'taparia',
-    categorySlug: 'hydraulic-bottle-jack-spare-kit',
+    categorySlug: 'workshop-equipment-jacks-vices',
     shortDescription: 'Replacement seal kits for hydraulic bottle jacks.',
     specifications: [
       { label: 'HSN Code', value: '84254200, 40169390' },
@@ -6504,7 +6502,7 @@ export const PRODUCTS: Product[] = [
     name: 'Hydraulic Trolley Jack',
     modelCode: 'HTJ 1.5 / HTJ 2 / HTJ 3',
     brandSlug: 'taparia',
-    categorySlug: 'hydraulic-trolley-jack-jack-stand-spare-kit',
+    categorySlug: 'workshop-equipment-jacks-vices',
     shortDescription: 'Hydraulic trolley jacks.',
     specifications: [
       { label: 'HSN Code', value: '84254200, 40169390' },
@@ -6521,7 +6519,7 @@ export const PRODUCTS: Product[] = [
     name: 'Spare Kit for Hydraulic Trolley Jack',
     modelCode: 'HTJ..S series',
     brandSlug: 'taparia',
-    categorySlug: 'hydraulic-trolley-jack-jack-stand-spare-kit',
+    categorySlug: 'workshop-equipment-jacks-vices',
     shortDescription: 'Replacement seal kits for hydraulic trolley jacks.',
     specifications: [
       { label: 'HSN Code', value: '84254200, 40169390' },
@@ -6537,7 +6535,7 @@ export const PRODUCTS: Product[] = [
     name: 'Jack Stand',
     modelCode: 'JS 3',
     brandSlug: 'taparia',
-    categorySlug: 'hydraulic-trolley-jack-jack-stand-spare-kit',
+    categorySlug: 'workshop-equipment-jacks-vices',
     shortDescription: 'Jack stand, sold as a pair.',
     specifications: [
       { label: 'HSN Code', value: '84254200, 40169390' },
@@ -6554,7 +6552,7 @@ export const PRODUCTS: Product[] = [
     name: 'Jack Plane',
     modelCode: 'CSP/CJP/CFP series',
     brandSlug: 'taparia',
-    categorySlug: 'carpenter-tools',
+    categorySlug: 'measuring-marking-carpentry-tools',
     shortDescription: 'Jack planes with 45mm–60mm blade.',
     specifications: [
       { label: 'HSN Code', value: '82053000' },
@@ -6571,7 +6569,7 @@ export const PRODUCTS: Product[] = [
     name: 'Jack Plane Spare Blades',
     modelCode: 'CSPB/CFPB series',
     brandSlug: 'taparia',
-    categorySlug: 'carpenter-tools',
+    categorySlug: 'measuring-marking-carpentry-tools',
     shortDescription: 'Replacement blades for jack planes.',
     specifications: [
       { label: 'HSN Code', value: '82053000' },
@@ -6587,7 +6585,7 @@ export const PRODUCTS: Product[] = [
     name: 'Block Plane',
     modelCode: 'CBP series',
     brandSlug: 'taparia',
-    categorySlug: 'carpenter-tools',
+    categorySlug: 'measuring-marking-carpentry-tools',
     shortDescription: 'Block planes with 35mm–42mm blade.',
     specifications: [
       { label: 'HSN Code', value: '82053000' },
@@ -6604,7 +6602,7 @@ export const PRODUCTS: Product[] = [
     name: 'Block Plane Spare Blades',
     modelCode: 'CBPB series',
     brandSlug: 'taparia',
-    categorySlug: 'carpenter-tools',
+    categorySlug: 'measuring-marking-carpentry-tools',
     shortDescription: 'Replacement blades for block planes.',
     specifications: [
       { label: 'HSN Code', value: '82053000' },
@@ -6620,7 +6618,7 @@ export const PRODUCTS: Product[] = [
     name: 'Spoke Shave',
     modelCode: 'SPS 151',
     brandSlug: 'taparia',
-    categorySlug: 'carpenter-tools',
+    categorySlug: 'measuring-marking-carpentry-tools',
     shortDescription: 'Spoke shave with 55mm blade.',
     specifications: [
       { label: 'HSN Code', value: '82053000' },
@@ -6637,7 +6635,7 @@ export const PRODUCTS: Product[] = [
     name: 'Spoke Shave Spare Blade',
     modelCode: 'SPSB 151',
     brandSlug: 'taparia',
-    categorySlug: 'carpenter-tools',
+    categorySlug: 'measuring-marking-carpentry-tools',
     shortDescription: 'Replacement blade for spoke shave.',
     specifications: [
       { label: 'HSN Code', value: '82053000' },
@@ -6653,7 +6651,7 @@ export const PRODUCTS: Product[] = [
     name: 'Beveled Edge Chisels',
     modelCode: 'WCB series',
     brandSlug: 'taparia',
-    categorySlug: 'carpenter-tools',
+    categorySlug: 'measuring-marking-carpentry-tools',
     shortDescription: 'Beveled-edge wood chisels.',
     specifications: [
       { label: 'HSN Code', value: '82053000' },
@@ -6670,7 +6668,7 @@ export const PRODUCTS: Product[] = [
     name: 'Wood Working Chisel Set',
     modelCode: 'WCBS 5',
     brandSlug: 'taparia',
-    categorySlug: 'carpenter-tools',
+    categorySlug: 'measuring-marking-carpentry-tools',
     shortDescription: '5-piece wood-working chisel set.',
     specifications: [
       { label: 'HSN Code', value: '82053000' },
@@ -6686,7 +6684,7 @@ export const PRODUCTS: Product[] = [
     name: 'Inside & Outside Calipers',
     modelCode: 'CI/CO series',
     brandSlug: 'taparia',
-    categorySlug: 'calipers-spring-dividers',
+    categorySlug: 'measuring-marking-carpentry-tools',
     shortDescription: 'Inside and outside calipers.',
     specifications: [
       { label: 'HSN Code', value: '82053000' },
@@ -6703,7 +6701,7 @@ export const PRODUCTS: Product[] = [
     name: 'Spring Dividers',
     modelCode: 'SD series',
     brandSlug: 'taparia',
-    categorySlug: 'calipers-spring-dividers',
+    categorySlug: 'measuring-marking-carpentry-tools',
     shortDescription: 'Spring dividers.',
     specifications: [
       { label: 'HSN Code', value: '82053000' },
@@ -6720,7 +6718,7 @@ export const PRODUCTS: Product[] = [
     name: 'Hand Riveters',
     modelCode: 'HR 105 / PHR 10 / RHR 11',
     brandSlug: 'taparia',
-    categorySlug: 'hand-riveter',
+    categorySlug: 'pliers-cutters-crimping-tools',
     shortDescription: 'Standard, professional and rotating hand riveters.',
     specifications: [
       { label: 'HSN Code', value: '82055990' },
@@ -6737,7 +6735,7 @@ export const PRODUCTS: Product[] = [
     name: 'Spirit Level (1.0mm Accuracy, without Magnet)',
     modelCode: 'SL 10 series',
     brandSlug: 'taparia',
-    categorySlug: 'spirit-levels',
+    categorySlug: 'measuring-marking-carpentry-tools',
     shortDescription: 'Spirit levels, 1.0mm accuracy, no magnet.',
     specifications: [
       { label: 'Standard', value: 'IS 1930-2003' },
@@ -6755,7 +6753,7 @@ export const PRODUCTS: Product[] = [
     name: 'Spirit Level (1.0mm Accuracy, with Magnet)',
     modelCode: 'SLM 10 series',
     brandSlug: 'taparia',
-    categorySlug: 'spirit-levels',
+    categorySlug: 'measuring-marking-carpentry-tools',
     shortDescription: 'Spirit levels, 1.0mm accuracy, with magnet.',
     specifications: [
       { label: 'HSN Code', value: '90153010' },
@@ -6772,7 +6770,7 @@ export const PRODUCTS: Product[] = [
     name: 'Spirit Level (0.50mm Accuracy, without Magnet)',
     modelCode: 'SL 05 series',
     brandSlug: 'taparia',
-    categorySlug: 'spirit-levels',
+    categorySlug: 'measuring-marking-carpentry-tools',
     shortDescription: 'Spirit levels, 0.50mm accuracy, no magnet.',
     specifications: [
       { label: 'HSN Code', value: '90153010' },
@@ -6789,7 +6787,7 @@ export const PRODUCTS: Product[] = [
     name: 'Spirit Level (0.50mm Accuracy, with Magnet)',
     modelCode: 'SLM05 series',
     brandSlug: 'taparia',
-    categorySlug: 'spirit-levels',
+    categorySlug: 'measuring-marking-carpentry-tools',
     shortDescription: 'Spirit levels, 0.50mm accuracy, with magnet.',
     specifications: [
       { label: 'HSN Code', value: '90153010' },
@@ -6806,7 +6804,7 @@ export const PRODUCTS: Product[] = [
     name: 'Bench Vice, Fixed Base',
     modelCode: 'BVSGM series',
     brandSlug: 'taparia',
-    categorySlug: 'bench-vice',
+    categorySlug: 'workshop-equipment-jacks-vices',
     shortDescription: 'Fixed-base bench vices.',
     specifications: [
       { label: 'HSN Code', value: '82057000' },
@@ -6823,7 +6821,7 @@ export const PRODUCTS: Product[] = [
     name: 'Diamond Cutting Blades',
     modelCode: 'DBS/DBC/DBT series',
     brandSlug: 'taparia',
-    categorySlug: 'diamond-tile-wood-cutting-blades-cup-wheels',
+    categorySlug: 'abrasives-drill-bits-hole-saws',
     shortDescription: 'Segmented, continuous and turbo-cut diamond blades.',
     specifications: [
       { label: 'HSN Code', value: '82023900, 82082000' },
@@ -6840,7 +6838,7 @@ export const PRODUCTS: Product[] = [
     name: 'Tile Cutter Blades',
     modelCode: 'TBS/TBT/TBTG series',
     brandSlug: 'taparia',
-    categorySlug: 'diamond-tile-wood-cutting-blades-cup-wheels',
+    categorySlug: 'abrasives-drill-bits-hole-saws',
     shortDescription: 'Continuous, turbo and gold-series turbo-cut tile blades.',
     specifications: [
       { label: 'HSN Code', value: '82023900, 82082000' },
@@ -6857,7 +6855,7 @@ export const PRODUCTS: Product[] = [
     name: 'Granite Cutting Blades',
     modelCode: 'GBS series',
     brandSlug: 'taparia',
-    categorySlug: 'diamond-tile-wood-cutting-blades-cup-wheels',
+    categorySlug: 'abrasives-drill-bits-hole-saws',
     shortDescription: 'Segmented-cut granite cutting blades.',
     specifications: [
       { label: 'HSN Code', value: '82023900, 82082000' },
@@ -6874,7 +6872,7 @@ export const PRODUCTS: Product[] = [
     name: 'Cup Wheels',
     modelCode: 'CWS/CWT/CWC series',
     brandSlug: 'taparia',
-    categorySlug: 'diamond-tile-wood-cutting-blades-cup-wheels',
+    categorySlug: 'abrasives-drill-bits-hole-saws',
     shortDescription: 'Segmented, turbo and continuous-rim cup wheels.',
     specifications: [
       { label: 'HSN Code', value: '82023900, 82082000' },
@@ -6891,7 +6889,7 @@ export const PRODUCTS: Product[] = [
     name: 'TCT Wood Cutting Blade (Silver Series)',
     modelCode: 'TCTS series / TBC 4',
     brandSlug: 'taparia',
-    categorySlug: 'diamond-tile-wood-cutting-blades-cup-wheels',
+    categorySlug: 'abrasives-drill-bits-hole-saws',
     shortDescription: 'Tungsten-carbide-tipped wood cutting blades.',
     specifications: [
       { label: 'HSN Code', value: '82023900, 82082000' },
@@ -6908,7 +6906,7 @@ export const PRODUCTS: Product[] = [
     name: 'Cut Off Wheels — Gold Series',
     modelCode: 'COWG series',
     brandSlug: 'taparia',
-    categorySlug: 'cut-off-wheels-gold-silver-series',
+    categorySlug: 'abrasives-drill-bits-hole-saws',
     shortDescription: 'Gold-series abrasive cut-off wheels.',
     specifications: [
       { label: 'HSN Code', value: '68042310' },
@@ -6925,7 +6923,7 @@ export const PRODUCTS: Product[] = [
     name: 'Cut Off Wheels — Silver Series',
     modelCode: 'COWS series',
     brandSlug: 'taparia',
-    categorySlug: 'cut-off-wheels-gold-silver-series',
+    categorySlug: 'abrasives-drill-bits-hole-saws',
     shortDescription: 'Silver-series abrasive cut-off wheels.',
     specifications: [
       { label: 'HSN Code', value: '68042310' },
@@ -6942,7 +6940,7 @@ export const PRODUCTS: Product[] = [
     name: 'Abrasive Latex Paper (Silicon Carbide, Waterproof)',
     modelCode: 'ALP series',
     brandSlug: 'taparia',
-    categorySlug: 'abrasive-paper-velcro-disc-gold-series',
+    categorySlug: 'abrasives-drill-bits-hole-saws',
     shortDescription: 'Wet-and-dry waterproof abrasive latex paper.',
     specifications: [
       { label: 'HSN Code', value: '68052010' },
@@ -6959,7 +6957,7 @@ export const PRODUCTS: Product[] = [
     name: 'Velcro Disc — Gold Series',
     modelCode: 'VDG series',
     brandSlug: 'taparia',
-    categorySlug: 'abrasive-paper-velcro-disc-gold-series',
+    categorySlug: 'abrasives-drill-bits-hole-saws',
     shortDescription: 'Hook-and-loop backed sanding discs, gold series.',
     specifications: [
       { label: 'HSN Code', value: '68052010' },
@@ -6976,7 +6974,7 @@ export const PRODUCTS: Product[] = [
     name: 'Bi-Metal Mini Hole Saw (with Arbor)',
     modelCode: 'HSM series',
     brandSlug: 'taparia',
-    categorySlug: 'bimetal-hole-saw-deep-hole-saw',
+    categorySlug: 'abrasives-drill-bits-hole-saws',
     shortDescription: 'Mini bi-metal hole saws with arbor.',
     specifications: [
       { label: 'HSN Code', value: '82075000' },
@@ -6993,7 +6991,7 @@ export const PRODUCTS: Product[] = [
     name: 'Deep Hole Saw & Arbors',
     modelCode: 'HSBM series / HSA arbors',
     brandSlug: 'taparia',
-    categorySlug: 'bimetal-hole-saw-deep-hole-saw',
+    categorySlug: 'abrasives-drill-bits-hole-saws',
     shortDescription: 'Deep bi-metal hole saws and matching arbors.',
     specifications: [
       { label: 'HSN Code', value: '82075000' },
@@ -7010,7 +7008,7 @@ export const PRODUCTS: Product[] = [
     name: 'Tungsten Carbide Tip Hole Saw',
     modelCode: 'TCTHS series',
     brandSlug: 'taparia',
-    categorySlug: 'carbide-tip-hole-saw',
+    categorySlug: 'abrasives-drill-bits-hole-saws',
     shortDescription: 'Carbide-tipped hole saws.',
     specifications: [
       { label: 'HSN Code', value: '82075000' },
@@ -7027,7 +7025,7 @@ export const PRODUCTS: Product[] = [
     name: 'Chalk Line Reel Set',
     modelCode: 'CLRS',
     brandSlug: 'taparia',
-    categorySlug: 'chalk-line-reel-set',
+    categorySlug: 'measuring-marking-carpentry-tools',
     shortDescription: 'Quick-release chalk line reel with chalk powder container and mini line-level indicator.',
     specifications: [
       { label: 'HSN Code', value: '90172090' },
@@ -7043,7 +7041,7 @@ export const PRODUCTS: Product[] = [
     name: 'Masonry Drill Bits',
     modelCode: 'MD series',
     brandSlug: 'taparia',
-    categorySlug: 'masonry-drill-bits-hss-drills-jobbers-series',
+    categorySlug: 'abrasives-drill-bits-hole-saws',
     shortDescription: 'Carbide-tipped masonry drill bits.',
     specifications: [
       { label: 'HSN Code', value: '82075000' },
@@ -7060,7 +7058,7 @@ export const PRODUCTS: Product[] = [
     name: 'Masonry Drill Sets',
     modelCode: 'MDS 3 / MDS 5 / MDS 8',
     brandSlug: 'taparia',
-    categorySlug: 'masonry-drill-bits-hss-drills-jobbers-series',
+    categorySlug: 'abrasives-drill-bits-hole-saws',
     shortDescription: '3-, 5- and 8-piece masonry drill sets.',
     specifications: [
       { label: 'HSN Code', value: '82075000' },
@@ -7076,7 +7074,7 @@ export const PRODUCTS: Product[] = [
     name: 'HSS Drills — Jobbers Series (mm)',
     modelCode: 'JD (metric) series',
     brandSlug: 'taparia',
-    categorySlug: 'masonry-drill-bits-hss-drills-jobbers-series',
+    categorySlug: 'abrasives-drill-bits-hole-saws',
     shortDescription: 'Metric jobber-series HSS twist drills.',
     specifications: [
       { label: 'HSN Code', value: '82075000' },
@@ -7093,7 +7091,7 @@ export const PRODUCTS: Product[] = [
     name: 'HSS Drills — Jobbers Series (Inch)',
     modelCode: 'JD (inch-decimal) series',
     brandSlug: 'taparia',
-    categorySlug: 'masonry-drill-bits-hss-drills-jobbers-series',
+    categorySlug: 'abrasives-drill-bits-hole-saws',
     shortDescription: 'Inch jobber-series HSS twist drills.',
     specifications: [
       { label: 'HSN Code', value: '82075000' },
@@ -7110,7 +7108,7 @@ export const PRODUCTS: Product[] = [
     name: 'Heavy Duty SDS Hammer Drills',
     modelCode: 'HHDC series',
     brandSlug: 'taparia',
-    categorySlug: 'plus-hammer-drills',
+    categorySlug: 'abrasives-drill-bits-hole-saws',
     shortDescription: 'SDS hammer drills for concrete and rebar cutting.',
     specifications: [
       { label: 'HSN Code', value: '82075000' },
@@ -7127,7 +7125,7 @@ export const PRODUCTS: Product[] = [
     name: 'Plus Hammer Drill Bits — Flat Tip',
     modelCode: 'HDF series',
     brandSlug: 'taparia',
-    categorySlug: 'plus-hammer-drills',
+    categorySlug: 'abrasives-drill-bits-hole-saws',
     shortDescription: 'Flat-tip plus-shank hammer drill bits.',
     specifications: [
       { label: 'HSN Code', value: '82075000' },
@@ -7144,7 +7142,7 @@ export const PRODUCTS: Product[] = [
     name: 'Plus Hammer Drill Bits — Cross Tip',
     modelCode: 'HDC series',
     brandSlug: 'taparia',
-    categorySlug: 'plus-hammer-drills',
+    categorySlug: 'abrasives-drill-bits-hole-saws',
     shortDescription: 'Cross-tip plus-shank hammer drill bits, including extra-long lengths.',
     specifications: [
       { label: 'HSN Code', value: '82075000' },
@@ -7161,7 +7159,7 @@ export const PRODUCTS: Product[] = [
     name: 'Flat Files',
     modelCode: 'FL series',
     brandSlug: 'taparia',
-    categorySlug: 'steel-files-needle-files',
+    categorySlug: 'files-finishing-tools',
     shortDescription: 'Machinist flat files — bastard, second-cut and smooth.',
     specifications: [
       { label: 'Standard', value: 'IS 1931-2000' },
@@ -7179,7 +7177,7 @@ export const PRODUCTS: Product[] = [
     name: 'Hand Files',
     modelCode: 'HF series',
     brandSlug: 'taparia',
-    categorySlug: 'steel-files-needle-files',
+    categorySlug: 'files-finishing-tools',
     shortDescription: 'Machinist hand files — bastard, second-cut and smooth.',
     specifications: [
       { label: 'Standard', value: 'IS 1931-2000' },
@@ -7197,7 +7195,7 @@ export const PRODUCTS: Product[] = [
     name: 'Round Files',
     modelCode: 'RD series',
     brandSlug: 'taparia',
-    categorySlug: 'steel-files-needle-files',
+    categorySlug: 'files-finishing-tools',
     shortDescription: 'Machinist round files — bastard, second-cut and smooth.',
     specifications: [
       { label: 'Standard', value: 'IS 1931-2000' },
@@ -7215,7 +7213,7 @@ export const PRODUCTS: Product[] = [
     name: 'Half Round Files',
     modelCode: 'HR series',
     brandSlug: 'taparia',
-    categorySlug: 'steel-files-needle-files',
+    categorySlug: 'files-finishing-tools',
     shortDescription: 'Machinist half-round files — bastard, second-cut and smooth.',
     specifications: [
       { label: 'Standard', value: 'IS 1931-2000' },
@@ -7233,7 +7231,7 @@ export const PRODUCTS: Product[] = [
     name: 'Three Square Files',
     modelCode: '3SQ series',
     brandSlug: 'taparia',
-    categorySlug: 'steel-files-needle-files',
+    categorySlug: 'files-finishing-tools',
     shortDescription: 'Machinist three-square (triangular) files.',
     specifications: [
       { label: 'Standard', value: 'IS 1931-2000' },
@@ -7251,7 +7249,7 @@ export const PRODUCTS: Product[] = [
     name: 'Square Files',
     modelCode: 'SQ series',
     brandSlug: 'taparia',
-    categorySlug: 'steel-files-needle-files',
+    categorySlug: 'files-finishing-tools',
     shortDescription: 'Machinist square files.',
     specifications: [
       { label: 'Standard', value: 'IS 1931-2000' },
@@ -7269,7 +7267,7 @@ export const PRODUCTS: Product[] = [
     name: 'Knife Files',
     modelCode: 'KF series',
     brandSlug: 'taparia',
-    categorySlug: 'steel-files-needle-files',
+    categorySlug: 'files-finishing-tools',
     shortDescription: 'Knife-edge profile files.',
     specifications: [
       { label: 'HSN Code', value: '82031000' },
@@ -7286,7 +7284,7 @@ export const PRODUCTS: Product[] = [
     name: 'Pillar Narrow Files',
     modelCode: 'PN series',
     brandSlug: 'taparia',
-    categorySlug: 'steel-files-needle-files',
+    categorySlug: 'files-finishing-tools',
     shortDescription: 'Narrow pillar files.',
     specifications: [
       { label: 'HSN Code', value: '82031000' },
@@ -7303,7 +7301,7 @@ export const PRODUCTS: Product[] = [
     name: 'Flat Handle Files',
     modelCode: 'FLH series',
     brandSlug: 'taparia',
-    categorySlug: 'steel-files-needle-files',
+    categorySlug: 'files-finishing-tools',
     shortDescription: 'Flat files with fitted handle.',
     specifications: [
       { label: 'HSN Code', value: '82031000' },
@@ -7320,7 +7318,7 @@ export const PRODUCTS: Product[] = [
     name: 'Warding Files',
     modelCode: 'WD series',
     brandSlug: 'taparia',
-    categorySlug: 'steel-files-needle-files',
+    categorySlug: 'files-finishing-tools',
     shortDescription: 'Warding (thin flat) files.',
     specifications: [
       { label: 'HSN Code', value: '82031000' },
@@ -7337,7 +7335,7 @@ export const PRODUCTS: Product[] = [
     name: 'Flat Super Light Files',
     modelCode: 'FLSL series',
     brandSlug: 'taparia',
-    categorySlug: 'steel-files-needle-files',
+    categorySlug: 'files-finishing-tools',
     shortDescription: 'Lightweight flat files.',
     specifications: [
       { label: 'HSN Code', value: '82031000' },
@@ -7354,7 +7352,7 @@ export const PRODUCTS: Product[] = [
     name: 'Feather Edge Files',
     modelCode: 'FE series',
     brandSlug: 'taparia',
-    categorySlug: 'steel-files-needle-files',
+    categorySlug: 'files-finishing-tools',
     shortDescription: 'Feather-edge profile files.',
     specifications: [
       { label: 'HSN Code', value: '82031000' },
@@ -7371,7 +7369,7 @@ export const PRODUCTS: Product[] = [
     name: 'Pit Saw File',
     modelCode: 'PS 1102',
     brandSlug: 'taparia',
-    categorySlug: 'steel-files-needle-files',
+    categorySlug: 'files-finishing-tools',
     shortDescription: 'Pit-saw sharpening file.',
     specifications: [
       { label: 'HSN Code', value: '82031000' },
@@ -7387,7 +7385,7 @@ export const PRODUCTS: Product[] = [
     name: 'Wood Rasp Files (Flat & Half Round)',
     modelCode: 'FLRP/HRRP series',
     brandSlug: 'taparia',
-    categorySlug: 'steel-files-needle-files',
+    categorySlug: 'files-finishing-tools',
     shortDescription: 'Flat and half-round wood rasp files.',
     specifications: [
       { label: 'HSN Code', value: '82031000' },
@@ -7404,7 +7402,7 @@ export const PRODUCTS: Product[] = [
     name: 'Saw Files',
     modelCode: 'ST/RT/HT series',
     brandSlug: 'taparia',
-    categorySlug: 'steel-files-needle-files',
+    categorySlug: 'files-finishing-tools',
     shortDescription: 'Slim, regular and heavy taper saw files.',
     specifications: [
       { label: 'HSN Code', value: '82031000' },
@@ -7421,7 +7419,7 @@ export const PRODUCTS: Product[] = [
     name: 'Mill Files',
     modelCode: 'MF series',
     brandSlug: 'taparia',
-    categorySlug: 'steel-files-needle-files',
+    categorySlug: 'files-finishing-tools',
     shortDescription: 'Mill files.',
     specifications: [
       { label: 'HSN Code', value: '82031000' },
@@ -7438,7 +7436,7 @@ export const PRODUCTS: Product[] = [
     name: 'Combination Wood Rasp/File Set (Flat, Round, Half Round, Square, Three Square, Knife)',
     modelCode: 'FL10/RD10/HR10/SQ10/3SQ10/KF10 (1400/1600)',
     brandSlug: 'taparia',
-    categorySlug: 'steel-files-needle-files',
+    categorySlug: 'files-finishing-tools',
     shortDescription: 'Combination wood rasp/file sets covering six profiles.',
     specifications: [
       { label: 'HSN Code', value: '82031000' },
@@ -7455,7 +7453,7 @@ export const PRODUCTS: Product[] = [
     name: 'Needle Files',
     modelCode: 'various profiles',
     brandSlug: 'taparia',
-    categorySlug: 'steel-files-needle-files',
+    categorySlug: 'files-finishing-tools',
     shortDescription: 'Fine needle files across the standard profile range.',
     specifications: [
       { label: 'HSN Code', value: '82031000' },
@@ -7472,7 +7470,7 @@ export const PRODUCTS: Product[] = [
     name: 'Needle File Sets',
     modelCode: 'NFS 121400 / NFS 121600',
     brandSlug: 'taparia',
-    categorySlug: 'steel-files-needle-files',
+    categorySlug: 'files-finishing-tools',
     shortDescription: '12-piece needle file sets.',
     specifications: [
       { label: 'HSN Code', value: '82031000' },
@@ -7488,7 +7486,7 @@ export const PRODUCTS: Product[] = [
     name: 'Non-Sparking Adjustable Wrenches',
     modelCode: '256-1002/1004',
     brandSlug: 'taparia',
-    categorySlug: 'non-sparking-tools',
+    categorySlug: 'non-sparking-safety-tools',
     shortDescription: 'Beryllium-copper and aluminium-bronze adjustable wrenches for hazardous-area use.',
     specifications: [
       { label: 'HSN Code', value: 'Same as the equivalent regular (non-spark-resistant) hand tool — see Taparia\'s own catalogue note' },
@@ -7505,7 +7503,7 @@ export const PRODUCTS: Product[] = [
     name: 'Non-Sparking Cutting, Lineman, Long Nose & Diagonal Cutting Pliers',
     modelCode: '247/246/146/248 series',
     brandSlug: 'taparia',
-    categorySlug: 'non-sparking-tools',
+    categorySlug: 'non-sparking-safety-tools',
     shortDescription: 'Spark-resistant pliers ranges in Be-Cu and Al-Br.',
     specifications: [
       { label: 'HSN Code', value: 'Same as the equivalent regular (non-spark-resistant) hand tool — see Taparia\'s own catalogue note' },
@@ -7522,7 +7520,7 @@ export const PRODUCTS: Product[] = [
     name: 'Non-Sparking Snap Ring Pliers (Internal & External)',
     modelCode: '256/257-1002/1004',
     brandSlug: 'taparia',
-    categorySlug: 'non-sparking-tools',
+    categorySlug: 'non-sparking-safety-tools',
     shortDescription: 'Spark-resistant internal and external snap-ring pliers.',
     specifications: [
       { label: 'HSN Code', value: 'Same as the equivalent regular (non-spark-resistant) hand tool — see Taparia\'s own catalogue note' },
@@ -7539,7 +7537,7 @@ export const PRODUCTS: Product[] = [
     name: 'Non-Sparking Hammer with Handle (Ball Pein)',
     modelCode: '187 series',
     brandSlug: 'taparia',
-    categorySlug: 'non-sparking-tools',
+    categorySlug: 'non-sparking-safety-tools',
     shortDescription: 'Spark-resistant ball-pein hammers with handle.',
     specifications: [
       { label: 'HSN Code', value: 'Same as the equivalent regular (non-spark-resistant) hand tool — see Taparia\'s own catalogue note' },
@@ -7556,7 +7554,7 @@ export const PRODUCTS: Product[] = [
     name: 'Non-Sparking Double Ended Open Jaw Spanners & Sets',
     modelCode: '254/146/147 series',
     brandSlug: 'taparia',
-    categorySlug: 'non-sparking-tools',
+    categorySlug: 'non-sparking-safety-tools',
     shortDescription: 'Spark-resistant open-jaw spanners, metric and Whitworth, loose and boxed sets.',
     specifications: [
       { label: 'Standard', value: 'IS 4595-1969' },
@@ -7574,7 +7572,7 @@ export const PRODUCTS: Product[] = [
     name: 'Non-Sparking Ring Spanners & Sets',
     modelCode: '151/153/136 series',
     brandSlug: 'taparia',
-    categorySlug: 'non-sparking-tools',
+    categorySlug: 'non-sparking-safety-tools',
     shortDescription: 'Spark-resistant ring spanners, metric and Whitworth, loose and boxed sets.',
     specifications: [
       { label: 'HSN Code', value: 'Same as the equivalent regular (non-spark-resistant) hand tool — see Taparia\'s own catalogue note' },
@@ -7591,7 +7589,7 @@ export const PRODUCTS: Product[] = [
     name: 'Non-Sparking Single Ended Open Jaw Spanners',
     modelCode: '140 series',
     brandSlug: 'taparia',
-    categorySlug: 'non-sparking-tools',
+    categorySlug: 'non-sparking-safety-tools',
     shortDescription: 'Spark-resistant single-ended open-jaw spanners.',
     specifications: [
       { label: 'HSN Code', value: 'Same as the equivalent regular (non-spark-resistant) hand tool — see Taparia\'s own catalogue note' },
@@ -7608,7 +7606,7 @@ export const PRODUCTS: Product[] = [
     name: 'Non-Sparking Combination Spanners',
     modelCode: '141A/136 series',
     brandSlug: 'taparia',
-    categorySlug: 'non-sparking-tools',
+    categorySlug: 'non-sparking-safety-tools',
     shortDescription: 'Spark-resistant combination spanners.',
     specifications: [
       { label: 'HSN Code', value: 'Same as the equivalent regular (non-spark-resistant) hand tool — see Taparia\'s own catalogue note' },
@@ -7625,7 +7623,7 @@ export const PRODUCTS: Product[] = [
     name: 'Non-Sparking Slugging Ring & Open Ended Spanners',
     modelCode: '160A/141A series',
     brandSlug: 'taparia',
-    categorySlug: 'non-sparking-tools',
+    categorySlug: 'non-sparking-safety-tools',
     shortDescription: 'Spark-resistant slugging ring and open-ended spanners.',
     specifications: [
       { label: 'HSN Code', value: 'Same as the equivalent regular (non-spark-resistant) hand tool — see Taparia\'s own catalogue note' },
@@ -7642,7 +7640,7 @@ export const PRODUCTS: Product[] = [
     name: 'Non-Sparking Slotted Screwdrivers',
     modelCode: '260 series',
     brandSlug: 'taparia',
-    categorySlug: 'non-sparking-tools',
+    categorySlug: 'non-sparking-safety-tools',
     shortDescription: 'Spark-resistant slotted screwdrivers.',
     specifications: [
       { label: 'HSN Code', value: 'Same as the equivalent regular (non-spark-resistant) hand tool — see Taparia\'s own catalogue note' },
@@ -7659,7 +7657,7 @@ export const PRODUCTS: Product[] = [
     name: 'Non-Sparking Allen Keys',
     modelCode: '166 series',
     brandSlug: 'taparia',
-    categorySlug: 'non-sparking-tools',
+    categorySlug: 'non-sparking-safety-tools',
     shortDescription: 'Spark-resistant hex Allen keys.',
     specifications: [
       { label: 'HSN Code', value: 'Same as the equivalent regular (non-spark-resistant) hand tool — see Taparia\'s own catalogue note' },
@@ -7676,7 +7674,7 @@ export const PRODUCTS: Product[] = [
     name: 'Non-Sparking Pipe Wrench',
     modelCode: '130 series',
     brandSlug: 'taparia',
-    categorySlug: 'non-sparking-tools',
+    categorySlug: 'non-sparking-safety-tools',
     shortDescription: 'Spark-resistant pipe wrenches.',
     specifications: [
       { label: 'HSN Code', value: 'Same as the equivalent regular (non-spark-resistant) hand tool — see Taparia\'s own catalogue note' },
@@ -7693,7 +7691,7 @@ export const PRODUCTS: Product[] = [
     name: 'Non-Sparking Hacksaw Frame',
     modelCode: '270-1002',
     brandSlug: 'taparia',
-    categorySlug: 'non-sparking-tools',
+    categorySlug: 'non-sparking-safety-tools',
     shortDescription: 'Spark-resistant hacksaw frame.',
     specifications: [
       { label: 'HSN Code', value: 'Same as the equivalent regular (non-spark-resistant) hand tool — see Taparia\'s own catalogue note' },
@@ -7710,7 +7708,7 @@ export const PRODUCTS: Product[] = [
     name: 'Non-Sparking Square Drive Sockets (3/8", 1/2", 3/4", 1")',
     modelCode: '105/120/270 series',
     brandSlug: 'taparia',
-    categorySlug: 'non-sparking-tools',
+    categorySlug: 'non-sparking-safety-tools',
     shortDescription: 'Spark-resistant square-drive sockets across four drive sizes.',
     specifications: [
       { label: 'HSN Code', value: 'Same as the equivalent regular (non-spark-resistant) hand tool — see Taparia\'s own catalogue note' },
@@ -7727,7 +7725,7 @@ export const PRODUCTS: Product[] = [
     name: 'Non-Sparking Socket Accessories (Ratchet Handles)',
     modelCode: '120/105 series',
     brandSlug: 'taparia',
-    categorySlug: 'non-sparking-tools',
+    categorySlug: 'non-sparking-safety-tools',
     shortDescription: 'Spark-resistant ratchet handles for square-drive sockets.',
     specifications: [
       { label: 'HSN Code', value: 'Same as the equivalent regular (non-spark-resistant) hand tool — see Taparia\'s own catalogue note' },
@@ -7744,7 +7742,7 @@ export const PRODUCTS: Product[] = [
     name: 'Non-Sparking Flat & Round Files',
     modelCode: '217/219 series',
     brandSlug: 'taparia',
-    categorySlug: 'non-sparking-tools',
+    categorySlug: 'non-sparking-safety-tools',
     shortDescription: 'Spark-resistant machinist files.',
     specifications: [
       { label: 'HSN Code', value: 'Same as the equivalent regular (non-spark-resistant) hand tool — see Taparia\'s own catalogue note' },
@@ -7754,5 +7752,1111 @@ export const PRODUCTS: Product[] = [
     sizeRange: '150mm–250mm',
     images: [],
     catalogueSource: 'Taparia Tools Ltd. Price List, effective 27th April 2026 — pages 34–40',
+  },
+  {
+    id: 'heavy-duty-chain-pulley-block',
+    slug: 'heavy-duty-chain-pulley-block',
+    name: 'Heavy Duty Chain Pulley Block',
+    modelCode: 'CBST series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'manual-hoists-pulley-blocks',
+    shortDescription: 'Hand chain pulley block with surface-hardened gears, double ratchet pawl, heavy duty load chain wheel and anti-corrosive powder-coated steel body.',
+    specifications: [
+      { label: 'Standard', value: 'IS 3832' },
+      { label: 'Capacity / Size Range', value: '0.5 - 50 Tonnes' },
+      { label: 'Item Code Prefix', value: 'CBST series' },
+      { label: 'Category', value: 'Heavy Duty Chain Pulley Block' }
+    ],
+    sizeRange: '0.5 - 50 Tonnes',
+    images: ['/assets/products/lift-heavy-duty-chain-pulley-block.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 1',
+  },
+  {
+    id: 'chain-pulley-block-360-rotating',
+    slug: 'chain-pulley-block-360-rotating',
+    name: 'Chain Pulley Block — 360° Rotating Head',
+    modelCode: 'CBRL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'manual-hoists-pulley-blocks',
+    shortDescription: 'Hand chain hoist with a 360° rotating hand-chain guide allowing operation from various angles, sealed roller bearings and an enclosed, lubrication-free brake housing for outdoor use.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '1 - 10 Tonnes' },
+      { label: 'Item Code Prefix', value: 'CBRL series' },
+      { label: 'Category', value: 'Chain Pulley Block — 360° Rotating Head' }
+    ],
+    sizeRange: '1 - 10 Tonnes',
+    images: ['/assets/products/lift-chain-pulley-block-360-rotating.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 3',
+  },
+  {
+    id: 'chain-pulley-block-compact-series',
+    slug: 'chain-pulley-block-compact-series',
+    name: 'Chain Pulley Block — Compact Series',
+    modelCode: 'CBRL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'manual-hoists-pulley-blocks',
+    shortDescription: 'Compact and lightweight hand chain hoist with surface-hardened gears, double ratchet pawl, smooth hand-chain operation and a 1-year warranty against manufacturing defects.',
+    specifications: [
+      { label: 'Standard', value: 'CE Certified' },
+      { label: 'Capacity / Size Range', value: '1 - 20 Tonnes' },
+      { label: 'Item Code Prefix', value: 'CBRL series' },
+      { label: 'Category', value: 'Chain Pulley Block — Compact Series' }
+    ],
+    sizeRange: '1 - 20 Tonnes',
+    images: ['/assets/products/lift-chain-pulley-block-compact-series.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 4',
+  },
+  {
+    id: 'ratchet-lever-hoist',
+    slug: 'ratchet-lever-hoist',
+    name: 'Ratchet Lever Hoist',
+    modelCode: 'RLSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'manual-hoists-pulley-blocks',
+    shortDescription: 'Compact ratchet lever hoist with Grade 80 alloy steel chain, safety latch hooks, asbestos-free brake and a 1.5 m standard lift.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '0.25 - 9 Tonnes' },
+      { label: 'Item Code Prefix', value: 'RLSL series' },
+      { label: 'Category', value: 'Ratchet Lever Hoist' }
+    ],
+    sizeRange: '0.25 - 9 Tonnes',
+    images: ['/assets/products/lift-ratchet-lever-hoist.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 5',
+  },
+  {
+    id: 'gear-trolley',
+    slug: 'gear-trolley',
+    name: 'Gear Trolley',
+    modelCode: 'GTSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'manual-hoists-pulley-blocks',
+    shortDescription: 'Geared push trolley for I-beam mounting, adjustable to various rail widths (90-210mm), with anti-corrosive powder-coated finish and high quality bearings.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '1 - 20 Tonnes' },
+      { label: 'Item Code Prefix', value: 'GTSL series' },
+      { label: 'Category', value: 'Gear Trolley' }
+    ],
+    sizeRange: '1 - 20 Tonnes',
+    images: ['/assets/products/lift-gear-trolley.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 6',
+  },
+  {
+    id: 'pulling-lifting-machine-heavy-duty',
+    slug: 'pulling-lifting-machine-heavy-duty',
+    name: 'Pulling & Lifting Machine (Heavy Duty)',
+    modelCode: 'PMIP series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'manual-hoists-pulley-blocks',
+    shortDescription: 'Hand-operated wire-rope pulling and lifting machine with high-strength cast aluminium alloy body, spare shear pins, built-in shearing pin overload protection and anchor bolt, supplied with a tested galvanised steel wire rope.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '0.8 - 5.4 Tonnes' },
+      { label: 'Item Code Prefix', value: 'PMIP series' },
+      { label: 'Category', value: 'Pulling & Lifting Machine (Heavy Duty)' }
+    ],
+    sizeRange: '0.8 - 5.4 Tonnes',
+    images: ['/assets/products/lift-pulling-lifting-machine-heavy-duty.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 7',
+  },
+  {
+    id: 'heavy-duty-electric-chain-hoist',
+    slug: 'heavy-duty-electric-chain-hoist',
+    name: 'Heavy Duty Electric Chain Hoist',
+    modelCode: '',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'electric-chain-hoists-trolleys',
+    shortDescription: 'Enclosed-shell electric chain hoist with a side magnetic braking device, 24V/36V transformer control circuit, Grade 80 ultra heat-treated load chain, electromagnetic contactor and an upper/lower limit switch.',
+    specifications: [
+      { label: 'Standard', value: 'IP55' },
+      { label: 'Category', value: 'Heavy Duty Electric Chain Hoist' }
+    ],
+    images: ['/assets/products/lift-heavy-duty-electric-chain-hoist.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 8',
+  },
+  {
+    id: 'electric-chain-hoist-single-speed',
+    slug: 'electric-chain-hoist-single-speed',
+    name: 'Electric Chain Hoist — Single Speed',
+    modelCode: 'MHSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'electric-chain-hoists-trolleys',
+    shortDescription: 'Single-speed electric chain hoist, 3-phase 220V-690V power supply with 24V/36V/48V control voltage.',
+    specifications: [
+      { label: 'Standard', value: 'Insulation Class F' },
+      { label: 'Capacity / Size Range', value: '0.5 - 10 Tonnes' },
+      { label: 'Item Code Prefix', value: 'MHSL series' },
+      { label: 'Category', value: 'Electric Chain Hoist — Single Speed' }
+    ],
+    sizeRange: '0.5 - 10 Tonnes',
+    images: ['/assets/products/lift-electric-chain-hoist-single-speed.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 9',
+  },
+  {
+    id: 'electric-chain-hoist-dual-speed',
+    slug: 'electric-chain-hoist-dual-speed',
+    name: 'Electric Chain Hoist — Dual Speed',
+    modelCode: 'DSEH series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'electric-chain-hoists-trolleys',
+    shortDescription: 'Dual-speed electric chain hoist with inverter variable-speed lifting motor, 3-phase 220V-690V power supply with 24V/36V/48V control voltage.',
+    specifications: [
+      { label: 'Standard', value: 'Insulation Class F' },
+      { label: 'Capacity / Size Range', value: '0.3 - 5 Tonnes' },
+      { label: 'Item Code Prefix', value: 'DSEH series' },
+      { label: 'Category', value: 'Electric Chain Hoist — Dual Speed' }
+    ],
+    sizeRange: '0.3 - 5 Tonnes',
+    images: ['/assets/products/lift-electric-chain-hoist-dual-speed.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 10',
+  },
+  {
+    id: 'electric-trolley',
+    slug: 'electric-trolley',
+    name: 'Electric Trolley',
+    modelCode: 'ETSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'electric-chain-hoists-trolleys',
+    shortDescription: 'Motorised electric trolley for mounting and travelling a chain hoist on an I-beam, adjustable to beam width.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '0.5 - 10 Tonnes' },
+      { label: 'Item Code Prefix', value: 'ETSL series' },
+      { label: 'Category', value: 'Electric Trolley' }
+    ],
+    sizeRange: '0.5 - 10 Tonnes',
+    images: ['/assets/products/lift-electric-trolley.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 11',
+  },
+  {
+    id: 'polyester-duplex-webbing-sling',
+    slug: 'polyester-duplex-webbing-sling',
+    name: 'Polyester Duplex Webbing Sling',
+    modelCode: '',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'slings-chains-lashing',
+    shortDescription: 'Duplex (two-ply) polyester webbing sling, colour-coded by working load limit to international standard, with optional anti-abrasion and anti-cutting protection sleeves.',
+    specifications: [
+      { label: 'Standard', value: 'EN 1492-1, ASME B30.9, IS 15041' },
+      { label: 'Capacity / Size Range', value: '25 - 300 mm width' },
+      { label: 'Category', value: 'Polyester Duplex Webbing Sling' }
+    ],
+    sizeRange: '25 - 300 mm width',
+    images: ['/assets/products/lift-polyester-duplex-webbing-sling.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 12',
+  },
+  {
+    id: 'polyester-round-sling',
+    slug: 'polyester-round-sling',
+    name: 'Polyester Round Sling',
+    modelCode: '',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'slings-chains-lashing',
+    shortDescription: 'Endless polyester round sling for vertical, choked and basket-hitch lifting, colour-coded by working load limit.',
+    specifications: [
+      { label: 'Category', value: 'Polyester Round Sling' }
+    ],
+    images: ['/assets/products/lift-polyester-round-sling.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 13',
+  },
+  {
+    id: 'cargo-lashing-ratchet',
+    slug: 'cargo-lashing-ratchet',
+    name: 'Cargo Lashing Ratchet',
+    modelCode: '',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'slings-chains-lashing',
+    shortDescription: 'Ratchet tie-down lashing strap for securing cargo while transporting, shifting or moving storage, with a tensioning ratchet device.',
+    specifications: [
+      { label: 'Standard', value: 'BS 5759 & EN 12195-2:2000' },
+      { label: 'Capacity / Size Range', value: '25 - 100 mm webbing width' },
+      { label: 'Category', value: 'Cargo Lashing Ratchet' }
+    ],
+    sizeRange: '25 - 100 mm webbing width',
+    images: ['/assets/products/lift-cargo-lashing-ratchet.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 15',
+  },
+  {
+    id: 'g80-alloy-steel-chain',
+    slug: 'g80-alloy-steel-chain',
+    name: 'G80 Alloy Steel Chain',
+    modelCode: 'LCSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'slings-chains-lashing',
+    shortDescription: 'Grade 80 alloy steel load chain for 1, 2, 3 and 4-leg chain slings, with working load limits to EN 1677.',
+    specifications: [
+      { label: 'Standard', value: 'EN 1677' },
+      { label: 'Capacity / Size Range', value: '6 - 32 mm chain dia' },
+      { label: 'Item Code Prefix', value: 'LCSL series' },
+      { label: 'Category', value: 'G80 Alloy Steel Chain' }
+    ],
+    sizeRange: '6 - 32 mm chain dia',
+    images: ['/assets/products/lift-g80-alloy-steel-chain.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 16',
+  },
+  {
+    id: 'screw-pin-dee-shackle',
+    slug: 'screw-pin-dee-shackle',
+    name: 'Screw Pin Dee Shackle',
+    modelCode: 'DSSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Galvanised, drop-forged dee shackle with a screw pin; working load limit is permanently marked on every shackle.',
+    specifications: [
+      { label: 'Standard', value: 'Federal Spec. RR-C-271F, Type IVA, Grade 2, Class 2' },
+      { label: 'Capacity / Size Range', value: '0.5 - 55 t WLL' },
+      { label: 'Item Code Prefix', value: 'DSSL series' },
+      { label: 'Category', value: 'Screw Pin Dee Shackle' }
+    ],
+    sizeRange: '0.5 - 55 t WLL',
+    images: ['/assets/products/lift-screw-pin-dee-shackle.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 17',
+  },
+  {
+    id: 'nut-bolt-dee-shackle',
+    slug: 'nut-bolt-dee-shackle',
+    name: 'Nut Bolt Dee Shackle',
+    modelCode: 'DNSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Galvanised, drop-forged dee shackle secured with a nut, bolt and cotter pin for applications prone to pin rotation.',
+    specifications: [
+      { label: 'Standard', value: 'Federal Spec. RR-C-271F, Type IVA, Grade 2, Class 2' },
+      { label: 'Capacity / Size Range', value: '1 - 55 t WLL' },
+      { label: 'Item Code Prefix', value: 'DNSL series' },
+      { label: 'Category', value: 'Nut Bolt Dee Shackle' }
+    ],
+    sizeRange: '1 - 55 t WLL',
+    images: ['/assets/products/lift-nut-bolt-dee-shackle.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 18',
+  },
+  {
+    id: 'screw-pin-bow-shackles',
+    slug: 'screw-pin-bow-shackles',
+    name: 'Screw Pin Bow Shackle',
+    modelCode: 'BSSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Galvanised, drop-forged bow shackle with a screw pin; working load limit is permanently marked on every shackle.',
+    specifications: [
+      { label: 'Standard', value: 'Federal Spec. RR-C-271F, Type IVA, Grade 2, Class 2' },
+      { label: 'Capacity / Size Range', value: '1 - 55 t WLL' },
+      { label: 'Item Code Prefix', value: 'BSSL series' },
+      { label: 'Category', value: 'Screw Pin Bow Shackle' }
+    ],
+    sizeRange: '1 - 55 t WLL',
+    images: ['/assets/products/lift-screw-pin-bow-shackles.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 19',
+  },
+  {
+    id: 'nut-bolt-bow-shackles',
+    slug: 'nut-bolt-bow-shackles',
+    name: 'Nut Bolt Bow Shackle',
+    modelCode: 'BNSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Galvanised, drop-forged bow shackle secured with a nut, bolt and cotter pin, available up to 150 tonnes WLL.',
+    specifications: [
+      { label: 'Standard', value: 'Federal Spec. RR-C-271F, Type IVA, Grade 2, Class 2' },
+      { label: 'Capacity / Size Range', value: '1 - 150 t WLL' },
+      { label: 'Item Code Prefix', value: 'BNSL series' },
+      { label: 'Category', value: 'Nut Bolt Bow Shackle' }
+    ],
+    sizeRange: '1 - 150 t WLL',
+    images: ['/assets/products/lift-nut-bolt-bow-shackles.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 20',
+  },
+  {
+    id: 'g100-shortening-hook-assembly',
+    slug: 'g100-shortening-hook-assembly',
+    name: 'G100 Shortening Hook Assembly',
+    modelCode: 'ML series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Integrated shortening hook assembly with master link, forged super alloy steel, available in 2-leg and 4-leg configurations with sampling break test per lot.',
+    specifications: [
+      { label: 'Standard', value: 'Suitable for G100 chain' },
+      { label: 'Capacity / Size Range', value: '2 - 21.2 t WLL' },
+      { label: 'Item Code Prefix', value: 'ML series' },
+      { label: 'Category', value: 'G100 Shortening Hook Assembly' }
+    ],
+    sizeRange: '2 - 21.2 t WLL',
+    images: ['/assets/products/lift-g100-shortening-hook-assembly.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 21',
+  },
+  {
+    id: 'g100-sling-hooks',
+    slug: 'g100-sling-hooks',
+    name: 'G100 Sling Hooks',
+    modelCode: 'WSHS / CHSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Forged super alloy steel sling hooks (webbing sling hook and clevis sling hook with latch), quenched and tempered, individually proof tested.',
+    specifications: [
+      { label: 'Standard', value: '25% stronger than G80' },
+      { label: 'Item Code Prefix', value: 'WSHS / CHSL series' },
+      { label: 'Category', value: 'G100 Sling Hooks' }
+    ],
+    images: ['/assets/products/lift-g100-sling-hooks.jpg', '/assets/products/lift-g100-sling-hooks-alt1.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 22',
+  },
+  {
+    id: 'g80-eye-sling-hook',
+    slug: 'g80-eye-sling-hook',
+    name: 'G80 Eye Sling Hook',
+    modelCode: 'EHSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Forged super alloy steel eye sling hook, 100% magnaflux crack detected, proof tested at 2.5x WLL.',
+    specifications: [
+      { label: 'Standard', value: 'EN 818-8, Grade 80' },
+      { label: 'Capacity / Size Range', value: '1.12 - 31.5 t WLL' },
+      { label: 'Item Code Prefix', value: 'EHSL series' },
+      { label: 'Category', value: 'G80 Eye Sling Hook' }
+    ],
+    sizeRange: '1.12 - 31.5 t WLL',
+    images: ['/assets/products/lift-g80-eye-sling-hook.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 23',
+  },
+  {
+    id: 'g80-clevis-sling-hook',
+    slug: 'g80-clevis-sling-hook',
+    name: 'G80 Clevis Sling Hook',
+    modelCode: 'CHSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Forged super alloy steel clevis sling hook, 100% magnaflux crack detected, proof tested at 2.5x WLL.',
+    specifications: [
+      { label: 'Standard', value: 'EN 818-8, Grade 80' },
+      { label: 'Capacity / Size Range', value: '1.12 - 15 t WLL' },
+      { label: 'Item Code Prefix', value: 'CHSL series' },
+      { label: 'Category', value: 'G80 Clevis Sling Hook' }
+    ],
+    sizeRange: '1.12 - 15 t WLL',
+    images: ['/assets/products/lift-g80-clevis-sling-hook.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 24',
+  },
+  {
+    id: 'g80-eye-self-locking-hook',
+    slug: 'g80-eye-self-locking-hook',
+    name: 'G80 Eye Self Locking Hook',
+    modelCode: 'SLHSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Forged super alloy steel self-locking eye hook, 100% magnaflux crack detected, fatigue tested at 1.5x WLL for 20000 cycles.',
+    specifications: [
+      { label: 'Standard', value: 'EN 818-8, Grade 80' },
+      { label: 'Capacity / Size Range', value: '1.12 - 21.2 t WLL' },
+      { label: 'Item Code Prefix', value: 'SLHSL series' },
+      { label: 'Category', value: 'G80 Eye Self Locking Hook' }
+    ],
+    sizeRange: '1.12 - 21.2 t WLL',
+    images: ['/assets/products/lift-g80-eye-self-locking-hook.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 25',
+  },
+  {
+    id: 'g80-clevis-self-locking-hook',
+    slug: 'g80-clevis-self-locking-hook',
+    name: 'G80 Clevis Self Locking Hook',
+    modelCode: 'CSHSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Forged super alloy steel self-locking clevis hook; pins are 100% eddy-current flaw detected.',
+    specifications: [
+      { label: 'Standard', value: 'EN 818-8, Grade 80' },
+      { label: 'Capacity / Size Range', value: '1.12 - 22 t WLL' },
+      { label: 'Item Code Prefix', value: 'CSHSL series' },
+      { label: 'Category', value: 'G80 Clevis Self Locking Hook' }
+    ],
+    sizeRange: '1.12 - 22 t WLL',
+    images: ['/assets/products/lift-g80-clevis-self-locking-hook.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 26',
+  },
+  {
+    id: 'g80-swivel-self-locking-hook',
+    slug: 'g80-swivel-self-locking-hook',
+    name: 'G80 Swivel Self Locking Hook',
+    modelCode: 'SSHSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Forged super alloy steel swivel self-locking hook, 100% magnaflux crack detected, fatigue tested at 1.5x WLL for 20000 cycles.',
+    specifications: [
+      { label: 'Standard', value: 'EN 818-8, Grade 80' },
+      { label: 'Capacity / Size Range', value: '1 - 20 t WLL' },
+      { label: 'Item Code Prefix', value: 'SSHSL series' },
+      { label: 'Category', value: 'G80 Swivel Self Locking Hook' }
+    ],
+    sizeRange: '1 - 20 t WLL',
+    images: ['/assets/products/lift-g80-swivel-self-locking-hook.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 27',
+  },
+  {
+    id: 'g80-swivel-eye-hook',
+    slug: 'g80-swivel-eye-hook',
+    name: 'G80 Swivel Eye Hook',
+    modelCode: 'SEHSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Forged super alloy steel swivel eye hook, 100% magnaflux crack detected, fatigue tested at 1.5x WLL for 20000 cycles.',
+    specifications: [
+      { label: 'Standard', value: 'EN 818-8, Grade 80' },
+      { label: 'Capacity / Size Range', value: '1 - 11 t WLL' },
+      { label: 'Item Code Prefix', value: 'SEHSL series' },
+      { label: 'Category', value: 'G80 Swivel Eye Hook' }
+    ],
+    sizeRange: '1 - 11 t WLL',
+    images: ['/assets/products/lift-g80-swivel-eye-hook.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 28',
+  },
+  {
+    id: 'g80-eye-grab-hook',
+    slug: 'g80-eye-grab-hook',
+    name: 'G80 Eye Grab Hook',
+    modelCode: 'GHSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Forged super alloy steel eye grab hook, 100% magnaflux crack detected, proof tested at 2.5x WLL.',
+    specifications: [
+      { label: 'Standard', value: 'EN 818-8, Grade 80' },
+      { label: 'Capacity / Size Range', value: '1.12 - 15 t WLL' },
+      { label: 'Item Code Prefix', value: 'GHSL series' },
+      { label: 'Category', value: 'G80 Eye Grab Hook' }
+    ],
+    sizeRange: '1.12 - 15 t WLL',
+    images: ['/assets/products/lift-g80-eye-grab-hook.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 29',
+  },
+  {
+    id: 'g80-clevis-shortening-grab-hook',
+    slug: 'g80-clevis-shortening-grab-hook',
+    name: 'G80 Clevis Shortening Grab Hook',
+    modelCode: 'GHSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Forged super alloy steel clevis shortening grab hook; pins are 100% eddy-current flaw detected.',
+    specifications: [
+      { label: 'Standard', value: 'EN 818-2, Grade 80' },
+      { label: 'Capacity / Size Range', value: '1.12 - 21.2 t WLL' },
+      { label: 'Item Code Prefix', value: 'GHSL series' },
+      { label: 'Category', value: 'G80 Clevis Shortening Grab Hook' }
+    ],
+    sizeRange: '1.12 - 21.2 t WLL',
+    images: ['/assets/products/lift-g80-clevis-shortening-grab-hook.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 30',
+  },
+  {
+    id: 'g80-foundry-hook',
+    slug: 'g80-foundry-hook',
+    name: 'G80 Foundry Hook',
+    modelCode: 'FHSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Forged super alloy steel foundry hook, 100% magnaflux crack detected, proof tested at 2.5x WLL.',
+    specifications: [
+      { label: 'Standard', value: 'EN 818-8, Grade 80' },
+      { label: 'Capacity / Size Range', value: '2 - 12.5 t WLL' },
+      { label: 'Item Code Prefix', value: 'FHSL series' },
+      { label: 'Category', value: 'G80 Foundry Hook' }
+    ],
+    sizeRange: '2 - 12.5 t WLL',
+    images: ['/assets/products/lift-g80-foundry-hook.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 31',
+  },
+  {
+    id: 'g80-master-link',
+    slug: 'g80-master-link',
+    name: 'G80 Master Link',
+    modelCode: 'MLSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Forged super alloy steel oval master link, 100% magnaflux crack detected, suitable for 1 and 2-leg Grade 80 chain slings.',
+    specifications: [
+      { label: 'Standard', value: 'EN 1677-4' },
+      { label: 'Capacity / Size Range', value: '1.6 - 45 t WLL' },
+      { label: 'Item Code Prefix', value: 'MLSL series' },
+      { label: 'Category', value: 'G80 Master Link' }
+    ],
+    sizeRange: '1.6 - 45 t WLL',
+    images: ['/assets/products/lift-g80-master-link.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 32',
+  },
+  {
+    id: 'g80-master-link-assembly',
+    slug: 'g80-master-link-assembly',
+    name: 'G80 Master Link Assembly',
+    modelCode: 'MLASL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Forged super alloy steel master link assembly with sub-links, suitable for 1 and 2-leg Grade 80 chain slings.',
+    specifications: [
+      { label: 'Standard', value: 'EN 1677-4' },
+      { label: 'Capacity / Size Range', value: '3.5 - 50 t WLL' },
+      { label: 'Item Code Prefix', value: 'MLASL series' },
+      { label: 'Category', value: 'G80 Master Link Assembly' }
+    ],
+    sizeRange: '3.5 - 50 t WLL',
+    images: ['/assets/products/lift-g80-master-link-assembly.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 33',
+  },
+  {
+    id: 'g80-master-link-assembly-enlarged-sublinks',
+    slug: 'g80-master-link-assembly-enlarged-sublinks',
+    name: 'G80 Master Link Assembly (Enlarged Sublinks)',
+    modelCode: 'MLASL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Forged super alloy steel master link assembly with enlarged sub-links for easier leg attachment.',
+    specifications: [
+      { label: 'Standard', value: 'EN 1677-4' },
+      { label: 'Capacity / Size Range', value: '4.25 - 31.5 t WLL' },
+      { label: 'Item Code Prefix', value: 'MLASL series' },
+      { label: 'Category', value: 'G80 Master Link Assembly (Enlarged Sublinks)' }
+    ],
+    sizeRange: '4.25 - 31.5 t WLL',
+    images: ['/assets/products/lift-g80-master-link-assembly-enlarged-sublinks.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 34',
+  },
+  {
+    id: 'g80-connecting-links',
+    slug: 'g80-connecting-links',
+    name: 'G80 Connecting Links',
+    modelCode: 'CLSL / WSCLSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Forged super alloy steel connecting links (chain connecting link and webbing connecting link); pins are 100% eddy-current flaw detected.',
+    specifications: [
+      { label: 'Standard', value: 'EN 818-2' },
+      { label: 'Item Code Prefix', value: 'CLSL / WSCLSL series' },
+      { label: 'Category', value: 'G80 Connecting Links' }
+    ],
+    images: ['/assets/products/lift-g80-connecting-links.jpg', '/assets/products/lift-g80-connecting-links-alt1.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 35',
+  },
+  {
+    id: 'g80-chain-shortener-regular-swivel',
+    slug: 'g80-chain-shortener-regular-swivel',
+    name: 'G80 Chain Shortener & Regular Swivel',
+    modelCode: 'CSSL / RSWIVEL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Forged super alloy steel chain shortener clevis and regular swivel; pins are 100% eddy-current flaw detected.',
+    specifications: [
+      { label: 'Standard', value: 'EN 818-2' },
+      { label: 'Item Code Prefix', value: 'CSSL / RSWIVEL series' },
+      { label: 'Category', value: 'G80 Chain Shortener & Regular Swivel' }
+    ],
+    images: ['/assets/products/lift-g80-chain-shortener-regular-swivel.jpg', '/assets/products/lift-g80-chain-shortener-regular-swivel-alt1.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 36',
+  },
+  {
+    id: 'weld-on-ring-hook',
+    slug: 'weld-on-ring-hook',
+    name: 'Weld-On Ring & Weld-On Hook',
+    modelCode: 'WRSL / WHSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Forged super alloy steel weld-on ring and weld-on hook; pins and components are 100% eddy-current flaw detected.',
+    specifications: [
+      { label: 'Standard', value: 'Ultimate break load tested' },
+      { label: 'Capacity / Size Range', value: '1 - 20 t WLL' },
+      { label: 'Item Code Prefix', value: 'WRSL / WHSL series' },
+      { label: 'Category', value: 'Weld-On Ring & Weld-On Hook' }
+    ],
+    sizeRange: '1 - 20 t WLL',
+    images: ['/assets/products/lift-weld-on-ring-hook.jpg', '/assets/products/lift-weld-on-ring-hook-alt1.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 37',
+  },
+  {
+    id: 'galv-wire-rope-clamp',
+    slug: 'galv-wire-rope-clamp',
+    name: 'Galvanised Heavy Duty Wire Rope Clamp',
+    modelCode: 'UBSLG series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Galvanised heavy duty U-bolt wire rope clamp for terminating wire rope.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '6 - 50 mm wire rope dia' },
+      { label: 'Item Code Prefix', value: 'UBSLG series' },
+      { label: 'Category', value: 'Galvanised Heavy Duty Wire Rope Clamp' }
+    ],
+    sizeRange: '6 - 50 mm wire rope dia',
+    images: ['/assets/products/lift-galv-wire-rope-clamp.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 38',
+  },
+  {
+    id: 'eye-bolt-din-580',
+    slug: 'eye-bolt-din-580',
+    name: 'Eye Bolt — DIN 580 Galvanised',
+    modelCode: 'EBSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Forged carbon steel lifting eye bolt, galvanised, to DIN 580.',
+    specifications: [
+      { label: 'Standard', value: 'DIN 580' },
+      { label: 'Capacity / Size Range', value: 'M6 - M64' },
+      { label: 'Item Code Prefix', value: 'EBSL series' },
+      { label: 'Category', value: 'Eye Bolt — DIN 580 Galvanised' }
+    ],
+    sizeRange: 'M6 - M64',
+    images: ['/assets/products/lift-eye-bolt-din-580.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 39',
+  },
+  {
+    id: 'g80-rotating-lifting-eye-bolt',
+    slug: 'g80-rotating-lifting-eye-bolt',
+    name: 'G80 Rotating Lifting Eye Bolt',
+    modelCode: 'RBSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Forged super alloy steel rotating (swivelling) lifting eye bolt; pins are 100% eddy-current flaw detected.',
+    specifications: [
+      { label: 'Standard', value: 'EN 818-2, Grade 80' },
+      { label: 'Capacity / Size Range', value: 'M8 - M64' },
+      { label: 'Item Code Prefix', value: 'RBSL series' },
+      { label: 'Category', value: 'G80 Rotating Lifting Eye Bolt' }
+    ],
+    sizeRange: 'M8 - M64',
+    images: ['/assets/products/lift-g80-rotating-lifting-eye-bolt.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 40',
+  },
+  {
+    id: 'turnbuckle-jaw-jaw',
+    slug: 'turnbuckle-jaw-jaw',
+    name: 'Drop Forged Heavy Duty Galvanized Turnbuckle (Jaw & Jaw)',
+    modelCode: 'TBJJ series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Drop forged, galvanised jaw-and-jaw turnbuckle for rigging tension adjustment.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '3/8" - 1.5" dia' },
+      { label: 'Item Code Prefix', value: 'TBJJ series' },
+      { label: 'Category', value: 'Drop Forged Heavy Duty Galvanized Turnbuckle (Jaw & Jaw)' }
+    ],
+    sizeRange: '3/8" - 1.5" dia',
+    images: ['/assets/products/lift-turnbuckle-jaw-jaw.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 41',
+  },
+  {
+    id: 'g80-container-lifting-hook',
+    slug: 'g80-container-lifting-hook',
+    name: 'G80 Container Lifting Hook',
+    modelCode: 'CLHSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Forged super alloy steel container lifting hook, quenched and tempered, available in left, right and straight type; 100% magnaflux crack detected.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '12.5 t WLL' },
+      { label: 'Item Code Prefix', value: 'CLHSL series' },
+      { label: 'Category', value: 'G80 Container Lifting Hook' }
+    ],
+    sizeRange: '12.5 t WLL',
+    images: ['/assets/products/lift-g80-container-lifting-hook.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 42',
+  },
+  {
+    id: 'wire-rope-edge-protector',
+    slug: 'wire-rope-edge-protector',
+    name: 'Wire Rope Edge Protector with Magnet',
+    modelCode: 'WREP series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'rigging-hardware-shackles-hooks-links',
+    shortDescription: 'Magnetic wire rope edge protector that attaches to the steel object being lifted, absorbing sharp or angular contact while the load is handled.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: 'up to 60 mm wire rope dia' },
+      { label: 'Item Code Prefix', value: 'WREP series' },
+      { label: 'Category', value: 'Wire Rope Edge Protector with Magnet' }
+    ],
+    sizeRange: 'up to 60 mm wire rope dia',
+    images: ['/assets/products/lift-wire-rope-edge-protector.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 42',
+  },
+  {
+    id: 'drum-lifter',
+    slug: 'drum-lifter',
+    name: 'Drum Lifter',
+    modelCode: 'DLSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'material-handling-trucks-trolleys',
+    shortDescription: 'Chain sling drum lifter with automatic locking mechanism; clamps can be used singly or in pairs, avoiding snatch or shock loading.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '400 kg' },
+      { label: 'Item Code Prefix', value: 'DLSL series' },
+      { label: 'Category', value: 'Drum Lifter' }
+    ],
+    sizeRange: '400 kg',
+    images: ['/assets/products/lift-drum-lifter.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 43',
+  },
+  {
+    id: 'cable-puller',
+    slug: 'cable-puller',
+    name: 'Cable Puller',
+    modelCode: 'CPSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'specialty-lifting-equipment',
+    shortDescription: 'Hand-operated ratchet cable puller with cast aluminium alloy drum and ratchet wheel, galvanised steel hand and frame, spring-loaded ratchet control lever.',
+    specifications: [
+      { label: 'Standard', value: 'CE safety standard' },
+      { label: 'Capacity / Size Range', value: '1 - 4 Tonnes' },
+      { label: 'Item Code Prefix', value: 'CPSL series' },
+      { label: 'Category', value: 'Cable Puller' }
+    ],
+    sizeRange: '1 - 4 Tonnes',
+    images: ['/assets/products/lift-cable-puller.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 43',
+  },
+  {
+    id: 'permanent-magnet-lifter',
+    slug: 'permanent-magnet-lifter',
+    name: 'Permanent Magnet Lifter',
+    modelCode: 'MAGSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'specialty-lifting-equipment',
+    shortDescription: 'Permanent magnetic lifter with a strong, stable magnetic circuit and high pull-off strength for lifting steel plate.',
+    specifications: [
+      { label: 'Standard', value: 'Safety factor 3:1' },
+      { label: 'Capacity / Size Range', value: '100 - 5000 kg' },
+      { label: 'Item Code Prefix', value: 'MAGSL series' },
+      { label: 'Category', value: 'Permanent Magnet Lifter' }
+    ],
+    sizeRange: '100 - 5000 kg',
+    images: ['/assets/products/lift-permanent-magnet-lifter.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 44',
+  },
+  {
+    id: 'industrial-skates',
+    slug: 'industrial-skates',
+    name: 'Industrial Skates',
+    modelCode: 'SKSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'specialty-lifting-equipment',
+    shortDescription: 'Load-moving industrial skate with a wheeled steel platform and long tow handle.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '6 - 18 Tonnes' },
+      { label: 'Item Code Prefix', value: 'SKSL series' },
+      { label: 'Category', value: 'Industrial Skates' }
+    ],
+    sizeRange: '6 - 18 Tonnes',
+    images: ['/assets/products/lift-industrial-skates.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 44',
+  },
+  {
+    id: 'spring-balancer',
+    slug: 'spring-balancer',
+    name: 'Spring Balancer',
+    modelCode: 'SB series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'specialty-lifting-equipment',
+    shortDescription: 'Spring balancer with ratchet device, worm-gear governor, spring-back protection and a cydariform locking device.',
+    specifications: [
+      { label: 'Standard', value: 'CE Certified' },
+      { label: 'Capacity / Size Range', value: '1 - 30 kg' },
+      { label: 'Item Code Prefix', value: 'SB series' },
+      { label: 'Category', value: 'Spring Balancer' }
+    ],
+    sizeRange: '1 - 30 kg',
+    images: ['/assets/products/lift-spring-balancer.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 45',
+  },
+  {
+    id: 'ratchet-load-binder',
+    slug: 'ratchet-load-binder',
+    name: 'Ratchet Load Binder',
+    modelCode: 'RBSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'specialty-lifting-equipment',
+    shortDescription: 'Ratchet load binder with a one-piece forged handle, upgraded for use with Grade 70, 80 and 100 chain; each binder individually proof tested.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '3/8" - 1/2" chain' },
+      { label: 'Item Code Prefix', value: 'RBSL series' },
+      { label: 'Category', value: 'Ratchet Load Binder' }
+    ],
+    sizeRange: '3/8" - 1/2" chain',
+    images: ['/assets/products/lift-ratchet-load-binder.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 46',
+  },
+  {
+    id: 'wire-rope-pulley-block',
+    slug: 'wire-rope-pulley-block',
+    name: 'Wire Rope Pulley Block (Single & Double, Heavy Duty)',
+    modelCode: 'WRPSL / WRPSL2 series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'manual-hoists-pulley-blocks',
+    shortDescription: 'Heavy duty wire rope pulley block for rigging, available in single-sheave and double-sheave (closed) versions.',
+    specifications: [
+      { label: 'Item Code Prefix', value: 'WRPSL / WRPSL2 series' },
+      { label: 'Category', value: 'Wire Rope Pulley Block (Single & Double, Heavy Duty)' }
+    ],
+    images: ['/assets/products/lift-wire-rope-pulley-block.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 47',
+  },
+  {
+    id: 'manila-rope-pulley',
+    slug: 'manila-rope-pulley',
+    name: 'Manila Rope Pulley',
+    modelCode: 'MPSB / MPDB series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'manual-hoists-pulley-blocks',
+    shortDescription: 'Fibre (manila) rope pulley block, available in single and double sheave versions.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '3/4"x4" - 1.5"x8"' },
+      { label: 'Item Code Prefix', value: 'MPSB / MPDB series' },
+      { label: 'Category', value: 'Manila Rope Pulley' }
+    ],
+    sizeRange: '3/4"x4" - 1.5"x8"',
+    images: ['/assets/products/lift-manila-rope-pulley.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 48',
+  },
+  {
+    id: 'horizontal-plate-lifting-clamp',
+    slug: 'horizontal-plate-lifting-clamp',
+    name: 'Horizontal Plate Lifting Clamp (PDB Type)',
+    modelCode: 'HZPCSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'plate-pipe-lifting-clamps',
+    shortDescription: 'Horizontal plate lifting clamp for handling steel plate flat-side up.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '1 - 16 Tonnes' },
+      { label: 'Item Code Prefix', value: 'HZPCSL series' },
+      { label: 'Category', value: 'Horizontal Plate Lifting Clamp (PDB Type)' }
+    ],
+    sizeRange: '1 - 16 Tonnes',
+    images: ['/assets/products/lift-horizontal-plate-lifting-clamp.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 49',
+  },
+  {
+    id: 'lateral-plate-clamp',
+    slug: 'lateral-plate-clamp',
+    name: 'Lateral Plate Clamp',
+    modelCode: 'LPLCSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'plate-pipe-lifting-clamps',
+    shortDescription: 'Lateral plate clamp for handling steel plate from the side edge.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '1 - 12 Tonnes' },
+      { label: 'Item Code Prefix', value: 'LPLCSL series' },
+      { label: 'Category', value: 'Lateral Plate Clamp' }
+    ],
+    sizeRange: '1 - 12 Tonnes',
+    images: ['/assets/products/lift-lateral-plate-clamp.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 49',
+  },
+  {
+    id: 'vertical-plate-lifting-clamp',
+    slug: 'vertical-plate-lifting-clamp',
+    name: 'Vertical Plate Lifting Clamp',
+    modelCode: 'VPLCSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'plate-pipe-lifting-clamps',
+    shortDescription: 'Vertical plate lifting clamp for handling steel plate on its edge.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '1 - 10 Tonnes' },
+      { label: 'Item Code Prefix', value: 'VPLCSL series' },
+      { label: 'Category', value: 'Vertical Plate Lifting Clamp' }
+    ],
+    sizeRange: '1 - 10 Tonnes',
+    images: ['/assets/products/lift-vertical-plate-lifting-clamp.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 50',
+  },
+  {
+    id: 'universal-plate-lifting-clamp',
+    slug: 'universal-plate-lifting-clamp',
+    name: 'Universal Plate Lifting Clamp',
+    modelCode: 'UPLCSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'plate-pipe-lifting-clamps',
+    shortDescription: 'Universal plate lifting clamp usable in both horizontal and vertical plate handling.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '1 - 5 Tonnes' },
+      { label: 'Item Code Prefix', value: 'UPLCSL series' },
+      { label: 'Category', value: 'Universal Plate Lifting Clamp' }
+    ],
+    sizeRange: '1 - 5 Tonnes',
+    images: ['/assets/products/lift-universal-plate-lifting-clamp.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 50',
+  },
+  {
+    id: 'pipe-lifting-clamp',
+    slug: 'pipe-lifting-clamp',
+    name: 'Pipe Lifting Clamp (TPH Type)',
+    modelCode: 'PLCLSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'plate-pipe-lifting-clamps',
+    shortDescription: 'Pipe lifting clamp (TPH type) for handling pipe and other cylindrical loads.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '1.5 - 10 Tonnes' },
+      { label: 'Item Code Prefix', value: 'PLCLSL series' },
+      { label: 'Category', value: 'Pipe Lifting Clamp (TPH Type)' }
+    ],
+    sizeRange: '1.5 - 10 Tonnes',
+    images: ['/assets/products/lift-pipe-lifting-clamp.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 51',
+  },
+  {
+    id: 'beam-clamp',
+    slug: 'beam-clamp',
+    name: 'Beam Clamp',
+    modelCode: 'BEAMSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'plate-pipe-lifting-clamps',
+    shortDescription: 'Adjustable beam clamp for creating a temporary lifting anchor point on a structural beam.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '1 - 10 Tonnes' },
+      { label: 'Item Code Prefix', value: 'BEAMSL series' },
+      { label: 'Category', value: 'Beam Clamp' }
+    ],
+    sizeRange: '1 - 10 Tonnes',
+    images: ['/assets/products/lift-beam-clamp.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 51',
+  },
+  {
+    id: 'scissor-lift-pallet-truck',
+    slug: 'scissor-lift-pallet-truck',
+    name: 'Scissor Lift Pallet Truck',
+    modelCode: 'SLPT series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'material-handling-trucks-trolleys',
+    shortDescription: 'Scissor lift pallet truck designed to load, unload and position pallets or containers at conveyors, feed presses and similar applications.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '1000 / 1500 kg' },
+      { label: 'Item Code Prefix', value: 'SLPT series' },
+      { label: 'Category', value: 'Scissor Lift Pallet Truck' }
+    ],
+    sizeRange: '1000 / 1500 kg',
+    images: ['/assets/products/lift-scissor-lift-pallet-truck.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 52',
+  },
+  {
+    id: 'hand-pallet-truck',
+    slug: 'hand-pallet-truck',
+    name: 'Hand Pallet Truck',
+    modelCode: 'HPT series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'material-handling-trucks-trolleys',
+    shortDescription: 'Manual hand pallet truck for short-distance transport in warehouses and on lorries, with heavy duty steel construction and a controlled-speed lowering valve.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '2.5 - 5 Tonnes' },
+      { label: 'Item Code Prefix', value: 'HPT series' },
+      { label: 'Category', value: 'Hand Pallet Truck' }
+    ],
+    sizeRange: '2.5 - 5 Tonnes',
+    images: ['/assets/products/lift-hand-pallet-truck.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 53',
+  },
+  {
+    id: 'rough-terrain-truck',
+    slug: 'rough-terrain-truck',
+    name: 'Rough Terrain Truck',
+    modelCode: 'RTT series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'material-handling-trucks-trolleys',
+    shortDescription: 'Rough terrain hand pallet truck fitted with pneumatic tyres and adjustable forks for open, unpaved and uneven surfaces.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '1000 kg' },
+      { label: 'Item Code Prefix', value: 'RTT series' },
+      { label: 'Category', value: 'Rough Terrain Truck' }
+    ],
+    sizeRange: '1000 kg',
+    images: ['/assets/products/lift-rough-terrain-truck.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 55',
+  },
+  {
+    id: 'hydraulic-lifting-table',
+    slug: 'hydraulic-lifting-table',
+    name: 'Hydraulic Lifting Table',
+    modelCode: 'HLTSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'material-handling-trucks-trolleys',
+    shortDescription: 'Mobile hydraulic scissor lifting table trolley for raising and positioning loads at a working height.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '500 - 1000 kg' },
+      { label: 'Item Code Prefix', value: 'HLTSL series' },
+      { label: 'Category', value: 'Hydraulic Lifting Table' }
+    ],
+    sizeRange: '500 - 1000 kg',
+    images: ['/assets/products/lift-hydraulic-lifting-table.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 56',
+  },
+  {
+    id: 'drum-trolley',
+    slug: 'drum-trolley',
+    name: 'Drum Trolley',
+    modelCode: 'DTSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'material-handling-trucks-trolleys',
+    shortDescription: 'Hydraulic drum trolley for moving and positioning steel or fibre drums.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '300 kg' },
+      { label: 'Item Code Prefix', value: 'DTSL series' },
+      { label: 'Category', value: 'Drum Trolley' }
+    ],
+    sizeRange: '300 kg',
+    images: ['/assets/products/lift-drum-trolley.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 56',
+  },
+  {
+    id: 'drum-lifter-cum-tilter',
+    slug: 'drum-lifter-cum-tilter',
+    name: 'Drum Lifter Cum Tilter',
+    modelCode: 'DLCT series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'material-handling-trucks-trolleys',
+    shortDescription: 'Drum lifter and tilter with a spring-loaded clamp, swivel steering castors and precision roller bearing load wheels.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '350 kg' },
+      { label: 'Item Code Prefix', value: 'DLCT series' },
+      { label: 'Category', value: 'Drum Lifter Cum Tilter' }
+    ],
+    sizeRange: '350 kg',
+    images: ['/assets/products/lift-drum-lifter-cum-tilter.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 57',
+  },
+  {
+    id: 'hand-stacker',
+    slug: 'hand-stacker',
+    name: 'Hand Stacker',
+    modelCode: 'HHSSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'material-handling-trucks-trolleys',
+    shortDescription: 'Hand push and hand lift stacker with an ergonomic rubber handle and foot-pedal lift for cost-efficient vehicle loading and production-area handling.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '1000 - 2000 kg' },
+      { label: 'Item Code Prefix', value: 'HHSSL series' },
+      { label: 'Category', value: 'Hand Stacker' }
+    ],
+    sizeRange: '1000 - 2000 kg',
+    images: ['/assets/products/lift-hand-stacker.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 58',
+  },
+  {
+    id: 'electric-stacker',
+    slug: 'electric-stacker',
+    name: 'Electric Stacker',
+    modelCode: 'FESSL series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'material-handling-trucks-trolleys',
+    shortDescription: 'Electric stacker with electro-hydraulic lift and motorised travel, suitable for racking, shelving and unloading.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '1500 kg' },
+      { label: 'Item Code Prefix', value: 'FESSL series' },
+      { label: 'Category', value: 'Electric Stacker' }
+    ],
+    sizeRange: '1500 kg',
+    images: ['/assets/products/lift-electric-stacker.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 59',
+  },
+  {
+    id: 'wire-mesh-container',
+    slug: 'wire-mesh-container',
+    name: 'Wire Mesh Container',
+    modelCode: 'WMCN / WMCW series',
+    brandSlug: 'western-hardware-mart',
+    categorySlug: 'specialty-lifting-equipment',
+    shortDescription: 'Collapsible galvanised wire mesh storage container, available with or without castor wheels.',
+    specifications: [
+      { label: 'Capacity / Size Range', value: '800x600x640mm - 1200x1000x890mm' },
+      { label: 'Item Code Prefix', value: 'WMCN / WMCW series' },
+      { label: 'Category', value: 'Wire Mesh Container' }
+    ],
+    sizeRange: '800x600x640mm - 1200x1000x890mm',
+    images: ['/assets/products/lift-wire-mesh-container.jpg'],
+    catalogueSource: 'Western Hardware Mart lifting & rigging equipment catalogue — page 60',
   },
 ];

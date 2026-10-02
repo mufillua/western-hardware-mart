@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, computed, effect, inject, signal } 
 import { ActivatedRoute } from '@angular/router';
 
 import { ProductsService } from '../../data/products.service';
+import { CATEGORY_SLUG_REDIRECTS } from '../../data/category-redirects.data';
 import { filterProducts } from '../../core/utils/search.util';
 import { SearchBar } from '../../components/search-bar/search-bar';
 import { Filters } from '../../components/filters/filters';
@@ -75,12 +76,15 @@ export class Products {
     });
 
     // Supports homepage category/brand cards linking in with a pre-set filter,
-    // e.g. /products?category=ball-valves
+    // e.g. /products?category=wrenches-spanners-allen-keys
     const params = this.route.snapshot.queryParamMap;
     const category = params.get('category');
     const brand = params.get('brand');
     const q = params.get('q');
-    if (category) this.categorySlug.set(category);
+    // Old bookmarked/indexed links may still use a pre-consolidation category
+    // slug (from when the catalogue had 132 categories instead of 25) —
+    // resolve it to the new slug it was merged into so the link still works.
+    if (category) this.categorySlug.set(CATEGORY_SLUG_REDIRECTS[category] ?? category);
     if (brand) this.brandSlug.set(brand);
     if (q) this.query.set(q);
 
