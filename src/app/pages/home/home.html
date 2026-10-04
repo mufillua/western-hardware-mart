@@ -72,6 +72,47 @@
   <whm-brand-logo-carousel class="wh-reveal" whmReveal />
 </section>
 
+<!-- ============ PRODUCT RANGE SHOWCASE ============ -->
+<section class="whm-showcase" aria-labelledby="whm-showcase-title">
+  <div class="wh-container">
+    
+    <div class="whm-showcase__grid wh-reveal-stagger" whmReveal>
+      <a class="whm-showcase__card" routerLink="/categories">
+        <img
+          src="assets/showcase/hand-tools.jpg"
+          width="1000"
+          height="700"
+          loading="lazy"
+          alt="Taparia hand tools — pipe wrench, pliers, hammer, torque wrench, spirit level, adjustable wrench, tool chest, jacks, grease pump and tool box"
+        />
+        <span class="whm-showcase__caption">
+          <span>
+            <strong>Hand Tools &amp; Workshop Equipment</strong>
+            <small>{{ handToolsCount }} products from Taparia</small>
+          </span>
+          <span class="whm-showcase__arrow" aria-hidden="true">→</span>
+        </span>
+      </a>
+      <a class="whm-showcase__card" routerLink="/categories">
+        <img
+          src="assets/showcase/lifting-rigging.jpg"
+          width="1000"
+          height="700"
+          loading="lazy"
+          alt="Lifting and rigging equipment — chain pulley block, plate lifting clamp, sling hooks, master link, shackle, round sling, load binder, hand stacker and pallet truck"
+        />
+        <span class="whm-showcase__caption">
+          <span>
+            <strong>Lifting &amp; Rigging Equipment</strong>
+            <small>{{ liftingCount }} products — hoists, slings, hooks, clamps &amp; trucks</small>
+          </span>
+          <span class="whm-showcase__arrow" aria-hidden="true">→</span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ============ CATEGORIES ============ -->
 <section id="categories" class="wh-section">
   <div class="wh-container">

@@ -12,6 +12,12 @@ import { Category } from '../models/category.model';
  * old-slug -> new-slug mapping.
  */
 export const CATEGORIES: Category[] = [
+    {
+    slug: 'marine-containers',
+    name: 'Marine & Shipping Containers',
+    description: 'Refurbished shipping containers, supplied directly by Western Hardware Mart.',
+    sourceBrands: ['western-hardware-mart'],
+  },
   {
     slug: 'process-flow-control-valves',
     name: 'Process & Flow Control Valves',
@@ -47,12 +53,6 @@ export const CATEGORIES: Category[] = [
     name: 'Hydraulic Filtration & Tank Accessories',
     description: 'Filters, strainers, breathers, level gauges and tank/reservoir accessories.',
     sourceBrands: ['hydroline'],
-  },
-  {
-    slug: 'marine-containers',
-    name: 'Marine & Shipping Containers',
-    description: 'Second-hand shipping containers, supplied directly by Western Hardware Mart.',
-    sourceBrands: ['western-hardware-mart'],
   },
   {
     slug: 'wrenches-spanners-allen-keys',

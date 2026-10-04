@@ -25,6 +25,7 @@ export class Home {
   private readonly seo = inject(SeoService);
 
   readonly company = COMPANY_CONFIG;
+
   constructor() {
     this.seo.update({
       title: `${COMPANY_CONFIG.name} — ${COMPANY_CONFIG.tagline}`,
@@ -58,6 +59,19 @@ export class Home {
   readonly totalProducts = this.productsService.all().length;
   readonly totalBrands = this.productsService.brands().length;
 
+  /** Live counts for the "What we supply" showcase cards. */
+  readonly handToolsCount = this.productsService.countByBrand().get('taparia') ?? 0;
+  private readonly liftingCategorySlugs = [
+    'manual-hoists-pulley-blocks',
+    'electric-chain-hoists-trolleys',
+    'slings-chains-lashing',
+    'rigging-hardware-shackles-hooks-links',
+    'plate-pipe-lifting-clamps',
+    'material-handling-trucks-trolleys',
+    'specialty-lifting-equipment',
+  ];
+  readonly liftingCount = this.liftingCategorySlugs.reduce((sum, slug) => sum + this.categoryCount(slug), 0);
+
   readonly usps = COMPANY_VALUES;
 
   /**
@@ -65,7 +79,7 @@ export class Home {
    * all real catalogue products (the three with confirmed photos first),
    * not a "most popular" claim we have no data to back.
    */
-  private readonly featuredSlugs = ['marine-container-40ft', 'yuken-dsg01', 'ah-series', 'khb2sf', 'hydroline-cut', 'gauge-ip', 'polyhydron-tcm10', '3vm'];
+  private readonly featuredSlugs = ['marine-container-40ft', 'yuken-dsg01', 'pulling-lifting-machine-heavy-duty' ,'ah-series', 'khb2sf', 'hydroline-cut', 'gauge-ip', 'polyhydron-tcm10', '3vm'];
   readonly featuredProducts = this.featuredSlugs
     .map((slug) => this.productsService.bySlug(slug))
     .filter((p): p is Product => !!p);
