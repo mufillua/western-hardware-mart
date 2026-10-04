@@ -3382,7 +3382,7 @@ export const PRODUCTS: Product[] = [
     slug: 'marine-container-40ft',
     name: 'Marine Container',
     modelCode: '',
-    brandSlug: 'western-hardware-mart',
+    brandSlug: 'western-hardware-mart2',
     categorySlug: 'marine-containers',
     shortDescription: 'Refurbished 40 ft dry marine shipping container, mild steel construction — supplied directly by Western Hardware Mart.',
     specifications: [

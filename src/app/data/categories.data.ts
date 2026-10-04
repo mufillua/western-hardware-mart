@@ -16,7 +16,7 @@ export const CATEGORIES: Category[] = [
     slug: 'marine-containers',
     name: 'Marine & Shipping Containers',
     description: 'Refurbished shipping containers, supplied directly by Western Hardware Mart.',
-    sourceBrands: ['western-hardware-mart'],
+    sourceBrands: ['western-hardware-mart2'],
   },
   {
     slug: 'process-flow-control-valves',

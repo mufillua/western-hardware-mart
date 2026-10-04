@@ -94,4 +94,10 @@ export const BRANDS: Brand[] = [
     description: 'Stock supplied directly by Western Hardware Mart — not sourced from an external manufacturer catalogue.',
     catalogueSource: 'Provided directly by Western Hardware Mart — not from an uploaded manufacturer catalogue',
   },
+  {
+    slug: 'western-hardware-mart2',
+    name: 'Marine Container',
+    description: 'Stock supplied directly by Western Hardware Mart — not sourced from an external manufacturer catalogue.',
+    catalogueSource: 'Provided directly by Western Hardware Mart — not from an uploaded manufacturer catalogue',
+  },
 ];
