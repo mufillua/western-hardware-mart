@@ -9,5 +9,5 @@ export interface TeamMember {
  */
 export const TEAM: TeamMember[] = [
   { name: 'M. Maimoon', role: 'Partner' },
-  { name: 'N. Lokhandwala', role: 'Partner' },
+  { name: 'H. Lokhandwala', role: 'Partner' },
 ];
